@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="AnylineExamplesApp.Modules.Energy.ScanEnergy"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AnylineExamplesApp.Modules.Energy"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:anyline="using:AnylineSDK.Modules.Energy">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <anyline:EnergyScanView x:Name="AnylineScanView" PreferredCameraDevice="Back"/>
+        <local:EnergyResultView x:Name="ResultView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
+        <Grid RequestedTheme="Dark">
+            <StackPanel x:Name="RadioButtonGroup" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                <StackPanel.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.25"/>
+                </StackPanel.Background>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
