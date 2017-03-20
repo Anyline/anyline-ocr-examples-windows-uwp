@@ -1,9 +1,9 @@
 # anyline-ocr-examples-windows-uwp
 Anyline SDK for Windows UWP
 
+
 ## File summary
 
-* `BindingSource` - Xamarin [iOS](https://developer.xamarin.com/guides/ios/advanced_topics/binding_objective-c/) and [Android](https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/) Binding Libraries, including wrappers
 * `Anyline Windows UWP Examples` - [Example App](Anyline Windows UWP Examples)
 * `AnylineWindowsCore.dll` - Precompiled Anyline Core
 * `AnylineWindowsCore.winmd` - Metadata for the Anyline Core
@@ -11,13 +11,16 @@ Anyline SDK for Windows UWP
 * `README.md` - This readme.
 * `LICENSE.md` - The license file.
 
+
 ## Requirements
 
 - Windows 10 + Visual Studio 2015 with the Windows 10 SDK
 - An Windows 10 x86 device
 - An integrated or external camera/webcam (recommended: 720p and focus capability)
 
+
 ## Quick Start
+
 
 ### 0. Clone or Download
 
@@ -29,14 +32,17 @@ Download git lfs from https://help.github.com/articles/installing-git-large-file
 git lfs install
 ```
 
+
 ### 1. Integrate Anyline in your UWP App
 
 Add `AnylineSDK.dll` and `AnylineWindowsCore.winmd` as reference to the project.
 Make sure that `AnylineWindowsCore.dll` is in the same directory as the winmd file.
 
+
 ### 2. Configure the Project
 
 Make sure to set The capabilities "Webcam", "Microphone" and "Internet (Client)" in Package.appxmanifest. Set the project build configuration to "x86" because currently, ARM is not yet supported.
+
 
 ### 3. License & Package Name
 
@@ -47,6 +53,7 @@ To generate a license key for windows, you'll need the Package Name located unde
 To claim a free developer / trial license, go to: [Anyline SDK Register Form](http://anyline.io/sdk-register?utm_source=githubios&utm_medium=readme&utm_campaign=examplesapp)
 
 The software underlies the MIT License. As Anyline is a paid software for Commerical Projects, the License Agreement of Anyline GmbH apply, when used commercially. Please have a look at [Anyline License Agreement](https://anylinewebsiteresource.blob.core.windows.net/wordpressmedia/2015/12/ULA-AnylineSDK-August2015.pdf)
+
 
 ### 4. Add a View configuration as .json
 
@@ -86,9 +93,11 @@ Example for **config** for MRZ:
 	}
 ```
 
+
 ### 5. Follow the implementation below and enjoy scanning! :)
 
-For a detailed implementation guide, follow the Windows implementation guide on the [Anyline documentation site](https://documentation.anyline.io).
+For a detailed implementation guide, follow the Windows implementation guide on the [Anyline documentation](https://documentation.anyline.io) website.
+
 
 ## License
 
