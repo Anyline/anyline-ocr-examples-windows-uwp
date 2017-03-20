@@ -1,10 +1,10 @@
 # anyline-ocr-examples-windows-uwp
-Anyline SDK for Windows UWP
+Anyline - A powerful OCR SDK for Windows UWP
 
 
 ## File summary
 
-* `Anyline Windows UWP Examples` - [Example App](Anyline Windows UWP Examples)
+* `Anyline Windows UWP Examples` - Example app source code
 * `AnylineWindowsCore.dll` - Precompiled Anyline Core
 * `AnylineWindowsCore.winmd` - Metadata for the Anyline Core
 * `AnylineSDK.dll` - Precompiled library for the Anyline SDK
