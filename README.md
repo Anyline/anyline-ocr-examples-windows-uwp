@@ -5,8 +5,8 @@ Anyline - A powerful OCR SDK for Windows UWP
 ## File summary
 
 * `Anyline Windows UWP Examples` - Example app source code
-* `AnylineWindowsCore.dll` - Precompiled Anyline Core
-* `AnylineWindowsCore.winmd` - Metadata for the Anyline Core
+* `Anyline.dll` - Precompiled Anyline Core
+* `Anyline.winmd` - Metadata for the Anyline Core
 * `AnylineSDK.dll` - Precompiled library for the Anyline SDK
 * `README.md` - This readme.
 * `LICENSE.md` - The license file.
@@ -35,13 +35,13 @@ git lfs install
 
 ### 1. Integrate Anyline in your UWP App
 
-Add `AnylineSDK.dll` and `AnylineWindowsCore.winmd` as reference to the project.
-Make sure that `AnylineWindowsCore.dll` is in the same directory as the winmd file.
+Add `AnylineSDK.dll` and `Anyline.winmd` as reference to the project.
+Make sure that `Anyline.dll` is in the same directory as the winmd file.
 
 
 ### 2. Configure the Project
 
-Make sure to set The capabilities "Webcam", "Microphone" and "Internet (Client)" in Package.appxmanifest. Set the project build configuration to "x86" because currently, ARM is not yet supported.
+Make sure to set The capabilities "Webcam", "Microphone" and "Internet (Client)" in Package.appxmanifest. Set the project build configuration to "x86". x64 and ARM are not supported.
 
 
 ### 3. License & Package Name
@@ -64,32 +64,37 @@ Example for **config** for MRZ:
 
 ```json
 	{
-		"captureResolution":"1080p",
-
-		"cutout": {
-			"style": "rect",
-			"maxWidthPercent": "90%",
-			"maxHeightPercent": "90%",
-			"alignment": "center",
-			"strokeWidth": 2,
-			"cornerRadius": 4,
-			"strokeColor": "FFFFFF",
-			"outerColor": "000000",
-			"outerAlpha": 0.3,
-			"feedbackStrokeColor": "0099FF",
-			"cropOffset": {
-				"x": 10,
-				"y": 20
-			}
-		},
-		"flash": {
-			"mode": "manual",
-			"alignment": "bottom_right"
-		},
-		"beepOnResult": true,
-		"vibrateOnResult": true,
-		"blinkAnimationOnResult": true,
-		"cancelOnResult": true
+	"captureResolution":"1080p",
+	"cutout": {
+		"style": "rect",
+		"maxWidthPercent": "90%",
+		"maxHeightPercent": "90%",
+		"alignment": "center",
+		"strokeWidth": 2,
+		"cornerRadius": 4,
+		"strokeColor": "FFFFFF",
+		"outerColor": "000000",
+		"outerAlpha": 0.3,
+		"feedbackStrokeColor": "0099FF",
+		"cropOffset": {
+			"x": 10,
+			"y": 20
+		}
+	},
+	"flash": {
+		"mode": "manual",
+		"alignment": "bottom_right"
+	},
+	"beepOnResult": true,
+	"vibrateOnResult": true,
+	"blinkAnimationOnResult": true,
+	"cancelOnResult": true,
+	"visualFeedback": {
+		"style": "RECT",
+		"strokeColor": "0099FF",
+		"fillColor": "220099FF",
+		"animationDuration": 70
+		}
 	}
 ```
 
