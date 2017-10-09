@@ -55,8 +55,11 @@ namespace AnylineExamplesApp.Modules.Mrz
             ResultView?.Dispose();
             ResultView = null;
 
-            AnylineScanView.CancelScanning();
-            AnylineScanView.ReleaseCameraInBackground();
+            if (AnylineScanView != null)
+            {
+                AnylineScanView.CancelScanning();
+                AnylineScanView.ReleaseCameraInBackground();
+            }
             AnylineScanView = null;
         }
         #endregion
@@ -68,7 +71,8 @@ namespace AnylineExamplesApp.Modules.Mrz
             Debug.WriteLine($"Camera closed {s}");
 
             // we cancel scanning when the camera is closed
-            AnylineScanView.CancelScanning();            
+            if (AnylineScanView != null)
+                AnylineScanView.CancelScanning();
         }
 
         public void OnCameraError(Exception e)
@@ -84,7 +88,8 @@ namespace AnylineExamplesApp.Modules.Mrz
                 ResultView.Visibility = Visibility.Collapsed;
 
             // As soon as the camera is opened, we start scanning
-            AnylineScanView.StartScanning();
+            if (AnylineScanView != null)
+                AnylineScanView.StartScanning();
         }
         #endregion
 

@@ -12,5 +12,5 @@ var searchData=
   ['iimageprovider',['IImageProvider',['../interface_anyline_1_1_s_d_k_1_1_core_1_1_i_image_provider.html',1,'Anyline::SDK::Core']]],
   ['imrzresultlistener',['IMrzResultListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_i_mrz_result_listener.html',1,'Anyline::SDK::Modules::Mrz']]],
   ['inativebarcoderesultlistener',['INativeBarcodeResultListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_native_barcode_result_listener.html',1,'Anyline::SDK::Modules::Energy']]],
-  ['iphotocapturelistener',['IPhotoCaptureListener',['../interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_photo_capture_listener.html',1,'Anyline::SDK::Camera']]]
+  ['iphotocapturelistener',['IPhotoCaptureListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html',1,'Anyline::SDK::Modules::Energy']]]
 ];

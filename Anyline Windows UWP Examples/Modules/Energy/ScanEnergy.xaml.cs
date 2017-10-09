@@ -11,13 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Windows.UI;
 using Windows.UI.Xaml.Media;
-using AnylineExamplesApp.Util;
 using Windows.UI.Xaml.Media.Imaging;
-using Windows.UI.ViewManagement;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Media.Animation;
-using System.Threading.Tasks;
-using Windows.ApplicationModel.ExtendedExecution;
 
 namespace AnylineExamplesApp.Modules.Energy
 {
@@ -69,11 +63,11 @@ namespace AnylineExamplesApp.Modules.Energy
                 new MessageDialog(e.Message, "Exception").ShowAsync().AsTask().ConfigureAwait(false);
             }
 
-			// to handle camera callbacks
+            // to handle camera callbacks
             AnylineScanView.CameraListener = this;
-			
-			// to handle photo capture callbacks
-			AnylineScanView.PhotoCaptureListener = this;
+
+            // to handle photo capture callbacks
+            AnylineScanView.PhotoCaptureListener = this;
 
             ResultView.OkButton.Tapped += ResultView_Tapped;            
         }
@@ -145,8 +139,11 @@ namespace AnylineExamplesApp.Modules.Energy
             UnregisterRadioButtons();
             ResultView.OkButton.Tapped -= ResultView_Tapped;
 
-            AnylineScanView.CancelScanning();
-            AnylineScanView.ReleaseCameraInBackground();
+            if (AnylineScanView != null)
+            {
+                AnylineScanView.CancelScanning();
+                AnylineScanView.ReleaseCameraInBackground();
+            }
             AnylineScanView = null;            
         }
         #endregion
@@ -222,7 +219,8 @@ namespace AnylineExamplesApp.Modules.Energy
         #region camera callbacks
         public void OnCameraClosed(bool success)
         {
-            AnylineScanView.CancelScanning();
+            if (AnylineScanView != null)
+                AnylineScanView.CancelScanning();
         }
 
         public void OnCameraError(Exception e)
@@ -241,7 +239,8 @@ namespace AnylineExamplesApp.Modules.Energy
                 (rb as RadioButton).IsEnabled = true;
 
             // As soon as the camera is opened, we start scanning
-            AnylineScanView.StartScanning();
+            if (AnylineScanView != null)
+                AnylineScanView.StartScanning();
         }
         #endregion
 

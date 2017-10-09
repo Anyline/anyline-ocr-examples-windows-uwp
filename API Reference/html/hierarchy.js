@@ -49,7 +49,7 @@ var hierarchy =
     [ "Anyline.SDK.Modules.Mrz.Identification", "class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html", null ],
     [ "Anyline.SDK.Core.IImageProvider", "interface_anyline_1_1_s_d_k_1_1_core_1_1_i_image_provider.html", null ],
     [ "Anyline.SDK.Modules.Energy.INativeBarcodeResultListener", "interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_native_barcode_result_listener.html", null ],
-    [ "Anyline.SDK.Camera.IPhotoCaptureListener", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_photo_capture_listener.html", null ],
+    [ "Anyline.SDK.Modules.Energy.IPhotoCaptureListener", "interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html", null ],
     [ "Anyline.SDK.Modules.Energy.NativeBarcodeScanner", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_native_barcode_scanner.html", null ],
     [ "Anyline.SDK.Camera.VisualFeedbackConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html", null ]
 ];
