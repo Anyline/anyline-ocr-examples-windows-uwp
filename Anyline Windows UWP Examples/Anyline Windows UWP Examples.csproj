@@ -89,12 +89,16 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="Assets\FlashIcons\torch_auto.png" />
+    <Content Include="Assets\FlashIcons\torch_off.png" />
+    <Content Include="Assets\FlashIcons\torch_on.png" />
     <Content Include="Modules\Energy\EnergyConfig.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Modules\Mrz\MrzConfig.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Modules\Energy\PhotoCaptureConfig.json" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -180,11 +184,11 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Anyline">
+      <HintPath>..\Anyline.winmd</HintPath>
+    </Reference>
     <Reference Include="AnylineSDK">
       <HintPath>..\AnylineSDK.dll</HintPath>
-    </Reference>
-    <Reference Include="AnylineWindowsCore">
-      <HintPath>..\AnylineWindowsCore.winmd</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

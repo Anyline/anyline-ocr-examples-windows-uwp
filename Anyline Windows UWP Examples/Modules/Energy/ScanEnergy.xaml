@@ -6,9 +6,9 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    xmlns:anyline="using:AnylineSDK.Modules.Energy">
+    xmlns:anyline="using:Anyline.SDK.Modules.Energy">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" x:Name="RootGrid">
         <anyline:EnergyScanView x:Name="AnylineScanView" PreferredCameraDevice="Back"/>
         <local:EnergyResultView x:Name="ResultView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
         <Grid RequestedTheme="Dark">

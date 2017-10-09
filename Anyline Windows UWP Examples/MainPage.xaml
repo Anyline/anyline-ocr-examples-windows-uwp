@@ -36,10 +36,17 @@
             </StackPanel>
         </DataTemplate>
 
+        <!-- version template -->
+        <DataTemplate x:DataType="viewModels:EntryViewModel" x:Key="versionTemplate">
+            <TextBlock Text="{x:Bind Name, Mode=OneWay}" 
+                       FontSize="14" FontWeight="Thin" FontStyle="Normal"/>
+        </DataTemplate>
+        
         <!-- template selector -->
         <local:TemplateSelector x:Key="templateSelector" 
             HeaderTemplate="{StaticResource headerTemplate}"
-            EntryTemplate="{StaticResource entryTemplate}" />
+            EntryTemplate="{StaticResource entryTemplate}"
+            VersionTemplate="{StaticResource versionTemplate}"/>
 
     </Page.Resources>
 

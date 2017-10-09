@@ -1,4 +1,4 @@
-﻿using AnylineSDK.Modules.Energy;
+﻿using Anyline.SDK.Modules.Energy;
 using Windows.UI.Xaml.Controls;
 
 namespace AnylineExamplesApp.Modules.Energy

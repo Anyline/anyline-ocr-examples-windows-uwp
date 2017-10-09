@@ -7,10 +7,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewModels="using:ViewModels"
     mc:Ignorable="d"
-    xmlns:anyline="using:AnylineSDK.Modules.Mrz">
+    xmlns:anyline="using:Anyline.SDK.Modules.Mrz">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <anyline:MrzScanView x:Name="AnylineScanView" PreferredCameraDevice="ExternalFront" />
+        <!-- to use the external front camera, use the following line instead: -->
+        <!-- <anyline:MrzScanView x:Name="AnylineScanView" PreferredCameraDevice="ExternalFront" /> -->
+        <anyline:MrzScanView x:Name="AnylineScanView" />
         <local:MrzResultView x:Name="ResultView" HorizontalAlignment="Center" VerticalAlignment="Center" Visibility="Collapsed"/>
     </Grid>
 </Page>

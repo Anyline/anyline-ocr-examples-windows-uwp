@@ -21,7 +21,7 @@ using Windows.UI.Xaml.Navigation;
 /*
  * How to integrate Anyline in your UWP App:
  * 
- * 1) Add AnylineSDK.dll and AnylineWindowsCore.winmd as reference to the project.
+ * 1) Add AnylineSDK.dll, AnylineWindowsCore.winmd and Newtonsonft.Json.dll as reference to the project.
  * Make sure that AnylineWindowsCore.dll is in the same directory as the winmd file.
  * 
  * 2) Make sure to set The capabilities "Webcam", "Microphone" and "Internet (Client)" in Package.appxmanifest.
@@ -50,13 +50,11 @@ namespace AnylineExamplesApp
         public MainPage()
         {
             // We don't want to keep multiple instances of the scan views that we're navigating to.
-            NavigationCacheMode = NavigationCacheMode.Enabled;
+            NavigationCacheMode = NavigationCacheMode.Disabled;
             ((Frame)Window.Current.Content).CacheSize = 0;
             
             ApplicationView.GetForCurrentView().Title = "Anyline Examples";
-
-            Utils.ResizeWindow(300, 425);
-
+            
             InitializeComponent();
             MainList = new ListViewModel();
             MainListView.SelectionChanged += OnSelectionChanged;
@@ -113,6 +111,12 @@ namespace AnylineExamplesApp
                     break;
                 case Model.UseCase.BarcodeScan:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "barcode");
+                    break;
+                case Model.UseCase.PhotoMode:
+                    Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "photo");
+                    break;
+                case Model.UseCase.SerialNumbers:
+                    Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "serialnumber");
                     break;
                 case Model.UseCase.MRZScan:
                     Frame.Navigate(typeof(Modules.Mrz.ScanMrz));

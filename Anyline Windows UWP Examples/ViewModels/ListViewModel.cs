@@ -39,7 +39,7 @@ namespace ViewModels
             {
                 var e = new EntryViewModel(entry);
                 _entries.Add(e);
-            }
+            }            
         }
     }
 }

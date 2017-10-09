@@ -6,7 +6,9 @@
         AnalogMeter = 0,
         DigitalMeter,
         BarcodeScan,
-        MRZScan
+        MRZScan,
+        PhotoMode,
+        SerialNumbers
     }
 
     /// <summary>

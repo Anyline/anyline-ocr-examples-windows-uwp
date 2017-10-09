@@ -1,4 +1,4 @@
-﻿using AnylineSDK.Modules.Mrz;
+﻿using Anyline.SDK.Modules.Mrz;
 using System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;

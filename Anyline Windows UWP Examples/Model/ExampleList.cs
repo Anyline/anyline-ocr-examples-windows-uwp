@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Reflection;
 
 namespace AnylineExamplesApp.Model
 {    
@@ -19,7 +21,8 @@ namespace AnylineExamplesApp.Model
                 // MRZ
                 new Entry { Name="MRZ" },
 
-                new Entry {
+                new Entry
+                {
                     Name ="MRZ",
                     Description ="Scan MRZ of passport or ID",
                     BackgroundSource = "ms-appx:///Assets/Images/passport.png",
@@ -28,34 +31,69 @@ namespace AnylineExamplesApp.Model
                 },
 
                 // Energy
-                new Entry { Name="Energy (BETA)" },
+                new Entry { Name="Energy" },
 
-                new Entry {
+                new Entry
+                {
                     Name ="Analog Meters",
                     Description ="Scan analog meters",
                     BackgroundSource = "ms-appx:///Assets/Images/electric.png",
                     IconSource = "ms-appx:///Assets/Images/icon_analog.png",
                     UseCase = UseCase.AnalogMeter
                 },
-                new Entry {
+                new Entry
+                {
                     Name ="Digital Meters",
                     Description ="Scan digital meters",
                     BackgroundSource = "ms-appx:///Assets/Images/digital.png",
                     IconSource = "ms-appx:///Assets/Images/icon_digital.png",
                     UseCase = UseCase.DigitalMeter
                 },
+                new Entry
+                {
+                    Name ="Photo Snapper",
+                    Description ="Take photos for meters",
+                    BackgroundSource = "ms-appx:///Assets/Images/electric.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
+                    UseCase = UseCase.PhotoMode
+                },
+
+                new Entry
+                {
+                    Name ="Serial Numbers",
+                    Description ="Scan serial numbers",
+                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
+                    UseCase = UseCase.SerialNumbers
+                },
 
                 // Barcode
-                new Entry { Name="Barcode (BETA)" },
+                new Entry { Name="Barcode" },
 
-                new Entry {
+                new Entry
+                {
                     Name ="Barcodes",
                     Description ="Scan barcodes & QR codes",
                     BackgroundSource = "ms-appx:///Assets/Images/barcode.png",
                     IconSource = "ms-appx:///Assets/Images/icon_barcode.png",
                     UseCase = UseCase.BarcodeScan
-                }                
+                },
+
+                new Entry {
+                    Name = GetAssemblyVersion()
+                }
             };
-        }        
+        }
+
+        private string GetAssemblyVersion()
+        {
+            var assembly = typeof(Anyline.SDK.Core.AnylineController).GetTypeInfo().Assembly;
+            if (assembly != null)
+            {
+                Version ver = assembly.GetName().Version;
+                return $"SDK version: {ver}";
+            }
+            return "";
+        }
     }
 }

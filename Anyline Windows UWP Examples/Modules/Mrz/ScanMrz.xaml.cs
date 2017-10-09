@@ -1,13 +1,13 @@
-﻿using AnylineSDK.Modules.Mrz;
+﻿using Anyline.SDK.Modules.Mrz;
 using System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
-using AnylineSDK.Models;
+using Anyline.SDK.Models;
 using System.Diagnostics;
 using Windows.UI.Popups;
-using AnylineSDK.Camera;
+using Anyline.SDK.Camera;
 using AnylineExamplesApp.Util;
 
 namespace AnylineExamplesApp.Modules.Mrz
@@ -21,9 +21,7 @@ namespace AnylineExamplesApp.Modules.Mrz
             ((Frame)Window.Current.Content).CacheSize = 0;
 
             InitializeComponent();
-
-            Utils.ResizeWindow(664, 478);
-            
+                        
             try
             {
                 AnylineScanView.SetConfigFromAsset("Modules/Mrz/MrzConfig.json");
@@ -36,10 +34,9 @@ namespace AnylineExamplesApp.Modules.Mrz
                 new MessageDialog(e.Message, "Exception").ShowAsync().AsTask().ConfigureAwait(false);
             }
             
-            ResultView.Tapped += ResultView_Tapped;
-            
+            ResultView.Tapped += ResultView_Tapped;            
         }
-
+        
         private void ResultView_Tapped(object sender, TappedRoutedEventArgs e)
         {
             ResultView.FadeOut();
@@ -58,8 +55,9 @@ namespace AnylineExamplesApp.Modules.Mrz
             ResultView?.Dispose();
             ResultView = null;
 
-            // Frees every managed and unmanaged resource.
-            AnylineScanView?.Dispose();
+            AnylineScanView.CancelScanning();
+            AnylineScanView.ReleaseCameraInBackground();
+            AnylineScanView = null;
         }
         #endregion
 
@@ -70,7 +68,7 @@ namespace AnylineExamplesApp.Modules.Mrz
             Debug.WriteLine($"Camera closed {s}");
 
             // we cancel scanning when the camera is closed
-            AnylineScanView?.CancelScanning();
+            AnylineScanView.CancelScanning();            
         }
 
         public void OnCameraError(Exception e)
@@ -82,17 +80,20 @@ namespace AnylineExamplesApp.Modules.Mrz
         {
             Debug.WriteLine($"Camera opened: {width}x{height}.");
 
+            if (ResultView != null)
+                ResultView.Visibility = Visibility.Collapsed;
+
             // As soon as the camera is opened, we start scanning
             AnylineScanView.StartScanning();
         }
         #endregion
 
-        #region result callback
-        public void OnResult(Identification result, AnylineImage resultImage)
+        #region result callback        
+        public void OnResult(MrzResult scanResult)
         {
-            Debug.WriteLine("Result: " + result);
+            Debug.WriteLine("Result: " + scanResult.Result);
 
-            ResultView.UpdateResult(result);
+            ResultView.UpdateResult(scanResult.Result);
             ResultView.FadeIn();
         }
         #endregion
