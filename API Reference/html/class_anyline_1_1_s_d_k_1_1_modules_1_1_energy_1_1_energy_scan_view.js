@@ -9,6 +9,7 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view =
       [ "HeatMeter6", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a5918efafc1b79212a1cb829cb7a11cdb", null ],
       [ "Barcode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9ab93eaef026c32ad9b73e53ba24a5875e", null ],
       [ "SerialNumber", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aa54372ef430f726c8343fc5550fade42", null ],
+      [ "SerialNumberAlphaNumeric3Letters", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aadc72df240df56328e4f9c559caf3a09", null ],
       [ "PhotoCapture", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a011221aecbea1fb88f44757d8cbf07df", null ]
     ] ],
     [ "EnergyScanView", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#acc039397df31e25ad1329d5d5d287b90", null ],

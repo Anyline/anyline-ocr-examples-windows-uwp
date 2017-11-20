@@ -128,6 +128,9 @@ namespace AnylineExamplesApp.Modules.Energy
                 case "serialnumber":
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumber);
                     break;
+                case "serialnumber3al":
+                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumberAlphaNumeric3Letters);
+                    break;
             }           
         }
 

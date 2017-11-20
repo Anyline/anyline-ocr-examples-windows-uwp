@@ -8,7 +8,8 @@
         BarcodeScan,
         MRZScan,
         PhotoMode,
-        SerialNumbers
+        SerialNumbers,
+        SerialNumberAlphaNumeric3Letters
     }
 
     /// <summary>

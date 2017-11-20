@@ -30,7 +30,7 @@
   "outerAlpha": 0.3
   },
   "flash": {
-    "mode": "none",
+    "mode": "auto",
     "alignment": "bottom_right",
     "imageOn": "torch_on",
     "imageOff": "torch_off",
