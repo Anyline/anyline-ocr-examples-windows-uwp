@@ -21,8 +21,8 @@ using Windows.UI.Xaml.Navigation;
 /*
  * How to integrate Anyline in your UWP App:
  * 
- * 1) Add AnylineSDK.dll, AnylineWindowsCore.winmd and Newtonsonft.Json.dll as reference to the project.
- * Make sure that AnylineWindowsCore.dll is in the same directory as the winmd file.
+ * 1) Add AnylineSDK.dll, Anyline.winmd as reference to the project.
+ * Make sure that Anyline.dll is in the same directory as the winmd file.
  * 
  * 2) Make sure to set The capabilities "Webcam", "Microphone" and "Internet (Client)" in Package.appxmanifest.
  * 
