@@ -10,7 +10,9 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view =
       [ "Barcode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9ab93eaef026c32ad9b73e53ba24a5875e", null ],
       [ "SerialNumber", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aa54372ef430f726c8343fc5550fade42", null ],
       [ "SerialNumberAlphaNumeric3Letters", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aadc72df240df56328e4f9c559caf3a09", null ],
-      [ "PhotoCapture", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a011221aecbea1fb88f44757d8cbf07df", null ]
+      [ "PhotoCapture", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a011221aecbea1fb88f44757d8cbf07df", null ],
+      [ "DialMeter", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9abe5fdb0262396a66e7462ae4399edcff", null ],
+      [ "DotMatrixMeter", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a598909552ea3ab4f1efd1d3fa6ecf980", null ]
     ] ],
     [ "EnergyScanView", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#acc039397df31e25ad1329d5d5d287b90", null ],
     [ "GetScanMode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a9bc16e9c052868753127937f5507c1f7", null ],
