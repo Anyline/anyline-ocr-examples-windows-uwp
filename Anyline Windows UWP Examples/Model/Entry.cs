@@ -9,7 +9,9 @@
         MRZScan,
         PhotoMode,
         SerialNumbers,
-        SerialNumberAlphaNumeric3Letters
+        SerialNumberAlphaNumeric3Letters,
+        DialMeter,
+        DotMatrixMeter
     }
 
     /// <summary>

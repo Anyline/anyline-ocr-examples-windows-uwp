@@ -51,6 +51,22 @@ namespace AnylineExamplesApp.Model
                 },
                 new Entry
                 {
+                    Name ="Dial Meters",
+                    Description ="Scan dial meters",
+                    BackgroundSource = "ms-appx:///Assets/Images/electric.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_analog.png",
+                    UseCase = UseCase.DialMeter
+                },
+                new Entry
+                {
+                    Name ="Dot Matrix Meters",
+                    Description ="Scan dot matrix meters",
+                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_digital.png",
+                    UseCase = UseCase.DotMatrixMeter
+                },
+                new Entry
+                {
                     Name ="Photo Snapper",
                     Description ="Take photos for meters",
                     BackgroundSource = "ms-appx:///Assets/Images/electric.png",

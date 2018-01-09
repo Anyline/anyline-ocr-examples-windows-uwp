@@ -131,6 +131,12 @@ namespace AnylineExamplesApp.Modules.Energy
                 case "serialnumber3al":
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumberAlphaNumeric3Letters);
                     break;
+                case "dial":
+                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DialMeter);
+                    break;
+                case "dotmatrix":
+                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DotMatrixMeter);
+                    break;
             }           
         }
 
