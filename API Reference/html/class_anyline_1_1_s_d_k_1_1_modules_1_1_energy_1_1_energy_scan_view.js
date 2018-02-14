@@ -18,6 +18,8 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view =
     [ "GetScanMode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a9bc16e9c052868753127937f5507c1f7", null ],
     [ "InitAnyline", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a64897e61948596fa333cfc6765c09353", null ],
     [ "SetScanMode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#aeb7c16471b1278bfd0358a805c21025f", null ],
+    [ "SetSerialNumberCharWhitelist", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a1c2ba77fd8b9cb4f6184691b9ded0c88", null ],
+    [ "SetSerialNumberValidationRegex", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a81f7c3000d7cfa53b0e6961d7c7ed9e1", null ],
     [ "StartScanning", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a23340e52c16b25de6f0459371590a634", null ],
     [ "PhotoCaptureListener", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#afcc0e565f83232da89c2f0e42082f501", null ]
 ];
