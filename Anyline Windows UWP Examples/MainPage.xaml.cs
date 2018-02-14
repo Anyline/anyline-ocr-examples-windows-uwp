@@ -118,9 +118,6 @@ namespace AnylineExamplesApp
                 case Model.UseCase.SerialNumbers:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "serialnumber");
                     break;
-                case Model.UseCase.SerialNumberAlphaNumeric3Letters:
-                    Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "serialnumber3al");
-                    break;
                 case Model.UseCase.DialMeter:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "dial");
                     break;

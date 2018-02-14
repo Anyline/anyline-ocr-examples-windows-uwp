@@ -127,9 +127,12 @@ namespace AnylineExamplesApp.Modules.Energy
                     break;
                 case "serialnumber":
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumber);
-                    break;
-                case "serialnumber3al":
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumberAlphaNumeric3Letters);
+
+                    // we can optionally set a character whitelist and a regular expression
+                    // for the SerialNumber scan mode
+                    AnylineScanView.SetSerialNumberCharWhitelist("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+                    AnylineScanView.SetSerialNumberValidationRegex("^[A-Z0-9]{5,}$");
+
                     break;
                 case "dial":
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DialMeter);

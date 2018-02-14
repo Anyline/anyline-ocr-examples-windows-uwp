@@ -82,14 +82,6 @@ namespace AnylineExamplesApp.Model
                     IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
                     UseCase = UseCase.SerialNumbers
                 },
-                new Entry
-                {
-                    Name ="Serial Numbers (with 3 Letter Prefix)",
-                    Description ="Scan serial numbers with 3-letter alphanumeric prefix",
-                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
-                    UseCase = UseCase.SerialNumberAlphaNumeric3Letters
-                },
 
                 // Barcode
                 new Entry { Name="Barcode" },
