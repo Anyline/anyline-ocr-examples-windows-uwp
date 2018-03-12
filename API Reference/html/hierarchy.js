@@ -15,7 +15,9 @@ var hierarchy =
     [ "Anyline.SDK.Models.AnylineScanResult< string >", "class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html", [
       [ "Anyline.SDK.Modules.Energy.EnergyResult", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html", null ]
     ] ],
+    [ "Anyline.SDK.Camera.AnylineViewConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html", null ],
     [ "Anyline.SDK.Camera.CameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_config.html", null ],
+    [ "Anyline.SDK.Util.DimensUtil", "class_anyline_1_1_s_d_k_1_1_util_1_1_dimens_util.html", null ],
     [ "Exception", null, [
       [ "Anyline.SDK.Core.AnylineException", "class_anyline_1_1_s_d_k_1_1_core_1_1_anyline_exception.html", [
         [ "Anyline.SDK.Core.ArgumentException", "class_anyline_1_1_s_d_k_1_1_core_1_1_argument_exception.html", null ],
@@ -51,5 +53,6 @@ var hierarchy =
     [ "Anyline.SDK.Modules.Energy.INativeBarcodeResultListener", "interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_native_barcode_result_listener.html", null ],
     [ "Anyline.SDK.Modules.Energy.IPhotoCaptureListener", "interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html", null ],
     [ "Anyline.SDK.Modules.Energy.NativeBarcodeScanner", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_native_barcode_scanner.html", null ],
+    [ "Anyline.SDK.Util.ResolutionRatio", "struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html", null ],
     [ "Anyline.SDK.Camera.VisualFeedbackConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html", null ]
 ];

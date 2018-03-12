@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['scanmode',['ScanMode',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html#ad9722bc6eb8e4c826041daad23f2010b',1,'Anyline::SDK::Modules::Energy::EnergyResult']]],
-  ['sex',['Sex',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#aefa64429503a821c1988958a63df654b',1,'Anyline::SDK::Modules::Mrz::Identification']]],
-  ['strokecolor',['StrokeColor',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a3e69ef160b35c9f07cb73c45381bd2dc',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
-  ['strokewidth',['StrokeWidth',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a8259fea533d78eac40a33014de3dc692',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
-  ['surnames',['SurNames',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#adb9629b22d8fe1067a016632d0934293',1,'Anyline::SDK::Modules::Mrz::Identification']]]
+  ['redrawtimeout',['RedrawTimeout',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a7b69c5acb6877e34e9ae18d2ed02ceeb',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
+  ['resolutionratio',['ResolutionRatio',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#ab000ec6251e200f8be9fde43c647cedc',1,'Anyline::SDK::Camera::AnylineViewConfig']]],
+  ['result',['Result',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a8ba4b2ea5991dfcc151908b88416a058',1,'Anyline::SDK::Models::AnylineScanResult']]]
 ];

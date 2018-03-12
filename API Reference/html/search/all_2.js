@@ -2,9 +2,12 @@ var searchData=
 [
   ['cameraconfig',['CameraConfig',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_config.html',1,'Anyline::SDK::Camera']]],
   ['cameralistener',['CameraListener',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aa2208d0e789dfa5add19ae4114b764a8',1,'Anyline::SDK::Camera::CameraView']]],
+  ['cameratocanvassize',['CameraToCanvasSize',['../class_anyline_1_1_s_d_k_1_1_util_1_1_dimens_util.html#ae49213ef9c317808f2b08715e754720f',1,'Anyline::SDK::Util::DimensUtil']]],
   ['cameraview',['CameraView',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html',1,'Anyline.SDK.Camera.CameraView'],['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aa5b32e259f15574ca77395b8117261bb',1,'Anyline.SDK.Camera.CameraView.CameraView()']]],
+  ['cancelonresult',['CancelOnResult',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a9953a406410b283dd34949bb28c5914a',1,'Anyline::SDK::Camera::AnylineViewConfig']]],
   ['cancelscanning',['CancelScanning',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a9304f7f3b72a8bf90589be53d69297b2',1,'Anyline.SDK.Modules.AnylineModuleView.CancelScanning()'],['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html#a748d8c02b215d277d030bf184b2c7c0a',1,'Anyline.SDK.Modules.IAnylineModuleView.CancelScanning()']]],
   ['captureelement',['CaptureElement',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a793e317db1afdc2d5f080d85afaaa525',1,'Anyline::SDK::Camera::CameraView']]],
+  ['captureresolution',['CaptureResolution',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a61b6c9e050a0ba845c584f7940f126f3',1,'Anyline::SDK::Camera::AnylineViewConfig']]],
   ['center',['Center',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a1fd19561448a3beedbb0491d5789af04a4f1f6016fc9f3f2353c0cc7c67b292bd',1,'Anyline::SDK::Camera']]],
   ['checkdigitdayofbirth',['CheckDigitDayOfBirth',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a3633905668a801e2992ba99512eb2a32',1,'Anyline::SDK::Modules::Mrz::Identification']]],
   ['checkdigitexpirationdate',['CheckDigitExpirationDate',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a7ac9e57b21696b492a2e88d257e0981b',1,'Anyline::SDK::Modules::Mrz::Identification']]],
@@ -16,10 +19,15 @@ var searchData=
   ['contourrect',['ContourRect',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#aeebc28e1459efb84104b73de144e0990a623da1f53545d4d987706144ed986b0a',1,'Anyline::SDK::Camera']]],
   ['contourunderline',['ContourUnderline',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#aeebc28e1459efb84104b73de144e0990a36297c6b9ccdde8260b12ba1db23be76',1,'Anyline::SDK::Camera']]],
   ['copy',['Copy',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a3c9943f8e77db1e0f7e05a39c9bf19ec',1,'Anyline::SDK::Models::AnylineImage']]],
-  ['cornerradius',['CornerRadius',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a5f7f46d231f3dd7f26f9c1c280d9ad1c',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
+  ['cornerradius',['CornerRadius',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a6fec7b026fb9e410b5111a8f460c4af6',1,'Anyline.SDK.Camera.AnylineViewConfig.CornerRadius()'],['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a5f7f46d231f3dd7f26f9c1c280d9ad1c',1,'Anyline.SDK.Camera.VisualFeedbackConfig.CornerRadius()']]],
   ['countrycode',['CountryCode',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a7c53f716d9ac8e79f6a2bdd7843914cf',1,'Anyline::SDK::Modules::Mrz::Identification']]],
   ['crop',['Crop',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a80ab819fa1a3e8bc3587cec438ef83da',1,'Anyline::SDK::Models::AnylineImage']]],
-  ['cutoutalignment',['CutoutAlignment',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a1fd19561448a3beedbb0491d5789af04',1,'Anyline::SDK::Camera']]],
-  ['cutoutimage',['CutoutImage',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a492648f0d1c54672a54fd5a61552f3e2',1,'Anyline::SDK::Models::AnylineScanResult']]],
-  ['cutoutstyle',['CutoutStyle',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a8bf26207994d9c170a3249cb3af4f94e',1,'Anyline::SDK::Camera']]]
+  ['cropoffset',['CropOffset',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a612322b63fd382b004f0445ade765bce',1,'Anyline::SDK::Camera::AnylineViewConfig']]],
+  ['croppadding',['CropPadding',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#afb32e52cd1676922593dee27c497e3f2',1,'Anyline::SDK::Camera::AnylineViewConfig']]],
+  ['cutoutalignment',['CutoutAlignment',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a1055c2ccab2a85381a250b33d5777126',1,'Anyline.SDK.Camera.AnylineViewConfig.CutoutAlignment()'],['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a1fd19561448a3beedbb0491d5789af04',1,'Anyline.SDK.Camera.CutoutAlignment()']]],
+  ['cutoutimage',['CutoutImage',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a4e6e424b2f753af1c50b096355625df7',1,'Anyline.SDK.Camera.AnylineViewConfig.CutoutImage()'],['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a492648f0d1c54672a54fd5a61552f3e2',1,'Anyline.SDK.Models.AnylineScanResult.CutoutImage()']]],
+  ['cutoutoffset',['CutoutOffset',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a3dbab0f74961fff2a57627fff8eabac3',1,'Anyline::SDK::Camera::AnylineViewConfig']]],
+  ['cutoutratiofromsize',['CutoutRatioFromSize',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#aa235fddda37b9dc2a0c20a36edc079e7',1,'Anyline::SDK::Camera::AnylineViewConfig']]],
+  ['cutoutstyle',['CutoutStyle',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a385c453e6922269a0ba99120d5f8ccae',1,'Anyline.SDK.Camera.AnylineViewConfig.CutoutStyle()'],['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a8bf26207994d9c170a3249cb3af4f94e',1,'Anyline.SDK.Camera.CutoutStyle()']]],
+  ['cutoutwidth',['CutoutWidth',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html#a9cd899becbee8718b40342bf7648d215',1,'Anyline::SDK::Camera::AnylineViewConfig']]]
 ];

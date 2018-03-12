@@ -1,5 +1,6 @@
 var namespace_anyline_1_1_s_d_k_1_1_camera =
 [
+    [ "AnylineViewConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config.html", "class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_view_config" ],
     [ "CameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_config.html", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_config" ],
     [ "CameraView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view" ],
     [ "FocusController", "class_anyline_1_1_s_d_k_1_1_camera_1_1_focus_controller.html", "class_anyline_1_1_s_d_k_1_1_camera_1_1_focus_controller" ],
