@@ -253,6 +253,8 @@ namespace AnylineExamplesApp.Modules.Energy
             // As soon as the camera is opened, we start scanning
             if (AnylineScanView != null)
                 AnylineScanView.StartScanning();
+
+            Debug.WriteLine($"Camera opened ({width} x {height})");
         }
         #endregion
 
