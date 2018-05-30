@@ -10,7 +10,8 @@
         PhotoMode,
         SerialNumbers,
         DialMeter,
-        DotMatrixMeter
+        DotMatrixMeter,
+        DoubleTariff
     }
 
     /// <summary>

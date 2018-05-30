@@ -12,6 +12,12 @@ using System.Linq;
 using Windows.UI;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.Storage;
+using Windows.Storage.Streams;
+using Windows.Storage.Pickers;
+using Windows.Graphics.Imaging;
+using System.Threading.Tasks;
+using Windows.Foundation;
 
 namespace AnylineExamplesApp.Modules.Energy
 {
@@ -31,7 +37,7 @@ namespace AnylineExamplesApp.Modules.Energy
             ((Frame)Window.Current.Content).CacheSize = 0;
             
             InitializeComponent();
-                        
+
             TxtBarcodeResult = new TextBlock
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
@@ -55,8 +61,9 @@ namespace AnylineExamplesApp.Modules.Energy
             
             try
             {
+                // set viewconfig for analog meter here, because module is initialized with it
                 AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                AnylineScanView.InitAnyline(MainPage.LicenseKey, this);                
+                AnylineScanView.InitAnyline(MainPage.LicenseKey, this);            
             }
             catch (Exception e)
             {
@@ -99,7 +106,8 @@ namespace AnylineExamplesApp.Modules.Energy
             
             switch (modeSelection)
             {
-                case "analog":                                        
+                case "analog":
+                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.AnalogMeter);
                     RegisterRadioButtons(new Dictionary<string, EnergyScanView.ScanMode>
                     {
@@ -115,9 +123,11 @@ namespace AnylineExamplesApp.Modules.Energy
                         {"Heat Meter 5 digits (up to 3 dec.)", EnergyScanView.ScanMode.HeatMeter5},
                         {"Heat Meter 6 digits (up to 3 dec.)", EnergyScanView.ScanMode.HeatMeter6}
                     });
+                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DigitalMeter);
                     break;
                 case "barcode":
+                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.Barcode);
                     AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = FeedbackStyle.Rect;
                     break;
@@ -126,18 +136,20 @@ namespace AnylineExamplesApp.Modules.Energy
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.PhotoCapture);
                     break;
                 case "serialnumber":
+                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumber);
 
-                    // we can optionally set a character whitelist and a regular expression
-                    // for the SerialNumber scan mode
+                    // after setting the SerialNumber scan mode, you can optionally set the character whitelist and regex
                     AnylineScanView.SetSerialNumberCharWhitelist("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-                    AnylineScanView.SetSerialNumberValidationRegex("^[A-Z0-9]{5,}$");
-
+                    AnylineScanView.SetSerialNumberValidationRegex("^[A-Z]{1}[A-Z0-9]{1,}$");
+                    
                     break;
                 case "dial":
+                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DialMeter);
                     break;
                 case "dotmatrix":
+                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DotMatrixMeter);
                     break;
             }           
@@ -272,7 +284,41 @@ namespace AnylineExamplesApp.Modules.Energy
             ResultView.SetResult(resultBitmap, scanResult.Result);
 
             ResultView.FadeIn();
+
+            // Images can be saved like this
+            //await SaveAnylineImageAsync(scanResult.FullImage, "FullImage");
+            //await SaveAnylineImageAsync(scanResult.CutoutImage, "CutoutImage");
+            
         }
+
+// small helper method to save images
+public async Task SaveAnylineImageAsync(AnylineImage image, string suggestedName)
+{
+    if (image == null || image.Data == null) return;
+
+    // Create the picker object and set options
+    var savePicker = new Windows.Storage.Pickers.FileSavePicker();
+    savePicker.SuggestedStartLocation = Windows.Storage.Pickers.PickerLocationId.Desktop;
+    // Dropdown of file types the user can save the file as
+    savePicker.FileTypeChoices.Add("png", new List<string> { ".png" });
+    // Default file name if the user does not type one in or select a file to replace
+    savePicker.SuggestedFileName = suggestedName;
+
+    StorageFile saveFile = await savePicker.PickSaveFileAsync();
+    if (saveFile != null)
+    {
+        using (IRandomAccessStream fileStream = await saveFile.OpenAsync(Windows.Storage.FileAccessMode.ReadWrite))
+        {
+            // save the image as PNG
+            BitmapEncoder encode = await BitmapEncoder.CreateAsync(BitmapEncoder.PngEncoderId, fileStream);
+            byte[] buf = image.Data;
+            encode.SetPixelData(BitmapPixelFormat.Bgra8, BitmapAlphaMode.Ignore,
+                (uint)image.Width, (uint)image.Height, 96.0, 96.0, buf);
+            await encode.FlushAsync();
+            await fileStream.FlushAsync();
+        }
+    }
+}
 
         /// <summary>
         /// When a photo is captured in the PhotoCapture scan mode, this method is called.

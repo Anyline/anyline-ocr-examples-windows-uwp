@@ -1,33 +1,37 @@
 ﻿{
-  "captureResolution": "1080p",
+  "captureResolution": "2448",
+  "resolutionRatio": {
+    "numerator": 4,
+    "denominator": 3
+  },
   "cutout": {
-  "style": "rect",
-  "width": 650,
-  "maxWidthPercent": "75%",
-  "maxHeightPercent": "75%",
-  "alignment": "top_half",
-  "image": "Overlay",
-  "ratioFromSize": {
-    "width": 125,
-    "height": 115
-  },
-  "strokeWidth": 2,
-  "strokeColor": "FFFFFF",
-  "cornerRadius": 4,
-  "offset": {
-    "x": 0,
-    "y": 0
-  },
-  "cropPadding": {
-    "x": 0,
-    "y": 0
-  },
-  "cropOffset": {
-    "x": 0,
-    "y": 0
-  },
-  "outerColor": "000000",
-  "outerAlpha": 0.3
+    "style": "rect",
+    "width": 1200,
+    "maxWidthPercent": "75%",
+    "maxHeightPercent": "75%",
+    "alignment": "top_half",
+    "image": "Overlay",
+    "ratioFromSize": {
+      "width": 125,
+      "height": 115
+    },
+    "strokeWidth": 2,
+    "strokeColor": "FFFFFF",
+    "cornerRadius": 4,
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "cropPadding": {
+      "x": 0,
+      "y": 0
+    },
+    "cropOffset": {
+      "x": 0,
+      "y": 0
+    },
+    "outerColor": "000000",
+    "outerAlpha": 0.3
   },
   "flash": {
     "mode": "auto",

@@ -61,19 +61,15 @@ namespace AnylineExamplesApp
 
             // Back button functionality
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
-            SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
-        
+            SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;        
         }
                 
         void App_BackRequested(object sender, BackRequestedEventArgs args)
         {
-            // immediately unsubscribe from the event
-            SystemNavigationManager.GetForCurrentView().BackRequested -= App_BackRequested;
-
             Frame rootFrame = Window.Current.Content as Frame;
             if (rootFrame == null)
                 return;
-
+            
             // Navigate back if possible, and if the event has not 
             // already been handled.
             if (args.Handled == false)
@@ -117,12 +113,15 @@ namespace AnylineExamplesApp
                     break;
                 case Model.UseCase.SerialNumbers:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "serialnumber");
-                    break;
+                    break;                
                 case Model.UseCase.DialMeter:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "dial");
                     break;
                 case Model.UseCase.DotMatrixMeter:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "dotmatrix");
+                    break;
+                case Model.UseCase.DoubleTariff:
+                    Frame.Navigate(typeof(Modules.Energy.ScanEnergyDoubleTariff));
                     break;
                 case Model.UseCase.MRZScan:
                     Frame.Navigate(typeof(Modules.Mrz.ScanMrz));

@@ -83,6 +83,15 @@ namespace AnylineExamplesApp.Model
                     UseCase = UseCase.SerialNumbers
                 },
 
+                new Entry
+                {
+                    Name ="Double Tariff Meters",
+                    Description ="Scan double tariff numbers",
+                    BackgroundSource = "ms-appx:///Assets/Images/electric.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_analog.png",
+                    UseCase = UseCase.DoubleTariff
+                },
+
                 // Barcode
                 new Entry { Name="Barcode" },
 

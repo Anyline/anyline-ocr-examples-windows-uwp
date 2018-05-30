@@ -68,12 +68,19 @@
     </Compile>
     <Compile Include="Model\Entry.cs" />
     <Compile Include="Model\ExampleList.cs" />
+    <Compile Include="Modules\Energy\DoubleTariffCutoutView.cs" />
+    <Compile Include="Modules\Energy\DoubleTariffResultPage.xaml.cs">
+      <DependentUpon>DoubleTariffResultPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Energy\EnergyResultView.xaml.cs">
       <DependentUpon>EnergyResultView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modules\Energy\ExtendedRadioButton.cs" />
     <Compile Include="Modules\Energy\ScanEnergy.xaml.cs">
       <DependentUpon>ScanEnergy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Energy\ScanEnergyDoubleTariff.xaml.cs">
+      <DependentUpon>ScanEnergyDoubleTariff.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modules\Mrz\MrzResultView.xaml.cs">
       <DependentUpon>MrzResultView.xaml</DependentUpon>
@@ -122,6 +129,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Modules\Energy\DoubleTariffResultPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Modules\Energy\EnergyResultView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -129,6 +140,10 @@
     <Page Include="Modules\Energy\ScanEnergy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\Energy\ScanEnergyDoubleTariff.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Modules\Mrz\MrzResultView.xaml">
       <SubType>Designer</SubType>
