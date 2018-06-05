@@ -37,7 +37,7 @@ namespace AnylineExamplesApp.Modules.Energy
 
             AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
             AnylineScanView.InitAnyline(MainPage.LicenseKey, this);
-            
+
             AnylineScanView.CameraListener = this;
 
             doubleTariffCutoutView = new DoubleTariffCutoutView();
@@ -45,10 +45,10 @@ namespace AnylineExamplesApp.Modules.Energy
             doubleTariffCutoutView.StrokeBrush = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
             doubleTariffCutoutView.FillBrush = new SolidColorBrush(Color.FromArgb(60, 255, 255, 255));
 
-            RootGrid.Children.Add(doubleTariffCutoutView);
+            RootGrid.Children.Add(doubleTariffCutoutView);            
         }
 
-        
+
         protected override void OnNavigatedTo(NavigationEventArgs args)
         {
             base.OnNavigatedTo(args);
@@ -63,7 +63,8 @@ namespace AnylineExamplesApp.Modules.Energy
             
             if (AnylineScanView != null)
             {
-                AnylineScanView.CancelScanning();
+                if (AnylineScanView.IsScanning)
+                    AnylineScanView.CancelScanning();
                 AnylineScanView.ReleaseCameraInBackground();
             }
             AnylineScanView = null;
@@ -74,12 +75,18 @@ namespace AnylineExamplesApp.Modules.Energy
         {
             if (AnylineScanView == null) return;
             var bounds = AnylineScanView.CutoutView.GetBounds();
+
+            // we define how we want to shift the 2nd cutout
             double verticalDistance = 2 * bounds.Height;
             
-            // 1 to draw below, -1 to draw above
-            int direction = 1 - 2*Convert.ToInt32(isScanningSecondMeter);
-            doubleTariffCutoutView.UpdateSizeForRect(
-                new Rect(bounds.X, bounds.Y + direction * verticalDistance, bounds.Width, bounds.Height));
+            Rect newRect;
+
+            if (!isScanningSecondMeter)
+                newRect = new Rect(bounds.X, bounds.Y + verticalDistance, bounds.Width, bounds.Height);
+            else
+                newRect = new Rect(bounds.X, bounds.Y - verticalDistance, bounds.Width, bounds.Height);
+
+            doubleTariffCutoutView.UpdateSizeForRect(newRect);
         }
         
         #region camera callbacks
@@ -112,7 +119,8 @@ namespace AnylineExamplesApp.Modules.Energy
 
                 AnylineViewConfig.CutoutOffset = new Point(0, 2 * AnylineScanView.CutoutView.GetBounds().Height);
                 AnylineScanView.InvokeScanViewUpdate();
-                
+
+                // start scanning again
                 AnylineScanView.StartScanning();
             }
             else

@@ -6,9 +6,9 @@
     </DebugEngines>
     <BackgroundTaskDebugEngines>
     </BackgroundTaskDebugEngines>
-    <RemoteDebugMachine>192.168.100.27:4020 (DESKTOP-4E978BE)</RemoteDebugMachine>
+    <RemoteDebugMachine>DESKTOP-BBCEU9P</RemoteDebugMachine>
     <AuthenticationMode>Windows</AuthenticationMode>
-    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
     <CreateCleanLayout>false</CreateCleanLayout>
     <UseEmulator>false</UseEmulator>
     <DeviceId>6C3DD314-EF85-06D2-68DF-7734EA48770B</DeviceId>
