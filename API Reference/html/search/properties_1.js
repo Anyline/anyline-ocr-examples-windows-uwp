@@ -9,5 +9,6 @@ var searchData=
   ['confidence',['Confidence',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a97474459dd85fb2add8537fe6155f4f5',1,'Anyline::SDK::Models::AnylineScanResult']]],
   ['cornerradius',['CornerRadius',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a5f7f46d231f3dd7f26f9c1c280d9ad1c',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
   ['countrycode',['CountryCode',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a7c53f716d9ac8e79f6a2bdd7843914cf',1,'Anyline::SDK::Modules::Mrz::Identification']]],
-  ['cutoutimage',['CutoutImage',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a492648f0d1c54672a54fd5a61552f3e2',1,'Anyline::SDK::Models::AnylineScanResult']]]
+  ['cutoutimage',['CutoutImage',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a492648f0d1c54672a54fd5a61552f3e2',1,'Anyline::SDK::Models::AnylineScanResult']]],
+  ['cutoutview',['CutoutView',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a494f68847b5befd852c55e5f4e9582a8',1,'Anyline::SDK::Modules::AnylineModuleView']]]
 ];

@@ -9,14 +9,6 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
-<link href="navtree.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="resize.js"></script>
-<script type="text/javascript" src="navtreedata.js"></script>
-<script type="text/javascript" src="navtree.js"></script>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-  $(document).ready(initResizable);
-/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -55,22 +47,6 @@ $(function() {
 /* @license-end */</script>
 <div id="main-nav"></div>
 </div><!-- top -->
-<div id="side-nav" class="ui-resizable side-nav-resizable">
-  <div id="nav-tree">
-    <div id="nav-tree-contents">
-      <div id="nav-sync" class="sync"></div>
-    </div>
-  </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
-       class="ui-resizable-handle">
-  </div>
-</div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('functions_func.html','');});
-/* @license-end */
-</script>
-<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -124,6 +100,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>Crop()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a80ab819fa1a3e8bc3587cec438ef83da">Anyline.SDK.Models.AnylineImage</a>
 </li>
+<li>CutoutView()
+: <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#a6923353f17e80d1441a9a450c680b035">Anyline.SDK.Camera.CutoutView</a>
+</li>
 </ul>
 
 
@@ -164,6 +143,12 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>GetBitmapAsync()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a55235acd2af8acb7c2ffc37a3491aa99">Anyline.SDK.Models.AnylineImage</a>
 </li>
+<li>GetBounds()
+: <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#adb8e3dbac6391d958a863f4e273d0a33">Anyline.SDK.Camera.CutoutView</a>
+</li>
+<li>GetBoundsToSize()
+: <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#afe6c96717fb19440df9305235dab0ea7">Anyline.SDK.Camera.CutoutView</a>
+</li>
 <li>GetImageWithFullSize()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a1ef8963e4bba21922f857074acfa61d4">Anyline.SDK.Camera.CameraView</a>
 </li>
@@ -173,6 +158,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>GetScanMode()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a9bc16e9c052868753127937f5507c1f7">Anyline.SDK.Modules.Energy.EnergyScanView</a>
+</li>
+<li>GetStrokeWidth()
+: <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#a9bf339270019bec3a662df552609c5eb">Anyline.SDK.Camera.CutoutView</a>
 </li>
 </ul>
 
@@ -194,6 +182,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 , <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a64897e61948596fa333cfc6765c09353">Anyline.SDK.Modules.Energy.EnergyScanView</a>
 , <a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html#a3186da39aa6d2ed70c0ef08a949064fc">Anyline.SDK.Modules.IAnylineModuleView&lt; T &gt;</a>
 , <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_scan_view.html#abee5798bd902a9adcc776f12ee77cf3f">Anyline.SDK.Modules.Mrz.MrzScanView</a>
+</li>
+<li>InvokeScanViewUpdate()
+: <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#adcd211305e2ceaf81813910aa635d9ae">Anyline.SDK.Modules.AnylineModuleView&lt; T &gt;</a>
 </li>
 <li>IsScanning()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_core_1_1_anyline_controller.html#ad58c192c900495200355c3e90110561a">Anyline.SDK.Core.AnylineController</a>
@@ -266,6 +257,9 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 <li>ReleaseCameraInBackground()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#abd31a6384fb3623e63e6441d7bbb709c">Anyline.SDK.Camera.CameraView</a>
 </li>
+<li>ResolutionRatio()
+: <a class="el" href="struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html#a78f30ae510e36f62a339af006e874528">Anyline.SDK.Util.ResolutionRatio</a>
+</li>
 <li>RunFailure()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_core_1_1_run_failure.html#afba8056aa942354c155873a47a1c9464">Anyline.SDK.Core.RunFailure</a>
 </li>
@@ -314,8 +308,7 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 <li>StartScanning()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_core_1_1_anyline_controller.html#ae35cd1eec131bda0969bead689eda5b7">Anyline.SDK.Core.AnylineController</a>
-, <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a852850481758bace5265146fdef8c08c">Anyline.SDK.Modules.AnylineModuleView&lt; T &gt;</a>
-, <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a23340e52c16b25de6f0459371590a634">Anyline.SDK.Modules.Energy.EnergyScanView</a>
+, <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a395a481f454759b82115a44cf22a8b5a">Anyline.SDK.Modules.AnylineModuleView&lt; T &gt;</a>
 , <a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html#a5db91d764c11405d5e62214bae6ed7e6">Anyline.SDK.Modules.IAnylineModuleView&lt; T &gt;</a>
 </li>
 <li>StopAutoFocusTask()
@@ -341,8 +334,14 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>UpdateDraw()
+: <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#a578db6d7a9163a66fce1a92917a8d9d8">Anyline.SDK.Camera.CutoutView</a>
+</li>
 <li>UpdateFocusRegionAsync()
 : <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_focus_controller.html#ab6cf1060609bafe803aa44fefc23c52f">Anyline.SDK.Camera.FocusController</a>
+</li>
+<li>UpdateFromConfig()
+: <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#a01312de34bf311c8600f50fe66b56bef">Anyline.SDK.Camera.CutoutView</a>
 </li>
 </ul>
 
@@ -353,14 +352,11 @@ $(document).ready(function(){initNavTree('functions_func.html','');});
 </li>
 </ul>
 </div><!-- contents -->
-</div><!-- doc-content -->
 <!-- start footer part -->
-<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
-  <ul>
-    <li class="footer">Generated by
-    <a href="http://www.doxygen.org/index.html">
-    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
-  </ul>
-</div>
+<hr class="footer"/><address class="footer"><small>
+Generated by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
 </body>
 </html>

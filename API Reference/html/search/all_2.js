@@ -21,5 +21,6 @@ var searchData=
   ['crop',['Crop',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a80ab819fa1a3e8bc3587cec438ef83da',1,'Anyline::SDK::Models::AnylineImage']]],
   ['cutoutalignment',['CutoutAlignment',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a1fd19561448a3beedbb0491d5789af04',1,'Anyline::SDK::Camera']]],
   ['cutoutimage',['CutoutImage',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a492648f0d1c54672a54fd5a61552f3e2',1,'Anyline::SDK::Models::AnylineScanResult']]],
-  ['cutoutstyle',['CutoutStyle',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a8bf26207994d9c170a3249cb3af4f94e',1,'Anyline::SDK::Camera']]]
+  ['cutoutstyle',['CutoutStyle',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a8bf26207994d9c170a3249cb3af4f94e',1,'Anyline::SDK::Camera']]],
+  ['cutoutview',['CutoutView',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html',1,'Anyline.SDK.Camera.CutoutView'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a494f68847b5befd852c55e5f4e9582a8',1,'Anyline.SDK.Modules.AnylineModuleView.CutoutView()'],['../class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#a6923353f17e80d1441a9a450c680b035',1,'Anyline.SDK.Camera.CutoutView.CutoutView()']]]
 ];
