@@ -6,7 +6,7 @@
     </DebugEngines>
     <BackgroundTaskDebugEngines>
     </BackgroundTaskDebugEngines>
-    <RemoteDebugMachine>192.168.100.75:4020 (DESKTOP-P597JTR)</RemoteDebugMachine>
+    <RemoteDebugMachine>DESKTOP-4E978BE</RemoteDebugMachine>
     <AuthenticationMode>Windows</AuthenticationMode>
     <RemoteDebugEnabled>true</RemoteDebugEnabled>
     <CreateCleanLayout>false</CreateCleanLayout>
