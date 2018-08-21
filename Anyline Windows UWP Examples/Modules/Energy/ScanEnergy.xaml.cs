@@ -12,6 +12,9 @@ using System.Linq;
 using Windows.UI;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
+using Anyline.SDK.Util;
+using Windows.Storage;
+using Windows.Storage.Streams;
 
 namespace AnylineExamplesApp.Modules.Energy
 {
@@ -68,6 +71,14 @@ namespace AnylineExamplesApp.Modules.Energy
 
             // to handle photo capture callbacks
             AnylineScanView.PhotoCaptureListener = this;
+
+            // always free memory as soon as possible
+            ResourceManager.MemoryCollectionRate = MemoryCollectionRate.Always;
+
+            // store photos to file instead of returning the image object
+            AnylineScanView.PhotoCaptureTarget = PhotoCaptureTarget.File;
+
+            AnylineDebug.SetVerbosity(Verbosity.Diagnostic);
 
             ResultView.OkButton.Tapped += ResultView_Tapped;            
         }
@@ -156,6 +167,7 @@ namespace AnylineExamplesApp.Modules.Energy
                 AnylineScanView.CancelScanning();
                 AnylineScanView.ReleaseCameraInBackground();
             }
+            AnylineScanView.Dispose();
             AnylineScanView = null;            
         }
         #endregion
@@ -289,7 +301,24 @@ namespace AnylineExamplesApp.Modules.Energy
                 FullFrameImage.Height = bitmap.PixelHeight / 3;
                 FullFrameImage.Visibility = Visibility.Visible;
             }
-        }        
+        }
+
+        /// <summary>
+        /// When a photo is captured in the PhotoCapture scan mode, but the target is set to 'File'
+        /// </summary>
+        /// <param name="file"></param>
+        public async void OnPhotoToFile(StorageFile file)
+        {
+            using (FileRandomAccessStream stream = (FileRandomAccessStream)await file.OpenAsync(FileAccessMode.Read))
+            {
+                var bitmap = new BitmapImage();
+                bitmap.SetSource(stream);
+                FullFrameImage.Source = bitmap;
+                FullFrameImage.Width = bitmap.PixelWidth / 3;
+                FullFrameImage.Height = bitmap.PixelHeight / 3;
+                FullFrameImage.Visibility = Visibility.Visible;
+            }            
+        }
         #endregion
     }
 }
