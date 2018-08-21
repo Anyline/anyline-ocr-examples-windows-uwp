@@ -7,6 +7,7 @@ var searchData=
   ['oncameraopened',['OnCameraOpened',['../interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html#acdafadc8abf1c378dc892a065769efcb',1,'Anyline::SDK::Camera::ICameraListener']]],
   ['onfinishedwithoutput',['OnFinishedWithOutput',['../interface_anyline_1_1_s_d_k_1_1_core_1_1_i_anyline_listener.html#aaa477898021f1f3a8a8f757757ef876c',1,'Anyline::SDK::Core::IAnylineListener']]],
   ['onphotocaptured',['OnPhotoCaptured',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html#a30b68d14ca846df2eee82664b62c1fbe',1,'Anyline::SDK::Modules::Energy::IPhotoCaptureListener']]],
+  ['onphototofile',['OnPhotoToFile',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html#aff2509ab293fdb8f03bf305d1f723efe',1,'Anyline::SDK::Modules::Energy::IPhotoCaptureListener']]],
   ['onreportsvariable',['OnReportsVariable',['../interface_anyline_1_1_s_d_k_1_1_core_1_1_i_anyline_listener.html#a31d4db380ce923bce7adb656bf72df54',1,'Anyline::SDK::Core::IAnylineListener']]],
   ['onresult',['OnResult',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html#aeeeefbdec636ae3adb90d928d15a1be0',1,'Anyline::SDK::Modules::IAnylineModuleResultListener']]],
   ['opencamerainbackground',['OpenCameraInBackground',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#ab762fd0e63a09060cac90a2ef29ae146',1,'Anyline::SDK::Camera::CameraView']]]

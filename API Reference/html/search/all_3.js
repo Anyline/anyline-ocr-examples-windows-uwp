@@ -2,11 +2,20 @@ var searchData=
 [
   ['data',['Data',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#ad1e585978d5afbda1e55370cc2173293',1,'Anyline::SDK::Models::AnylineImage']]],
   ['dayofbirth',['DayOfBirth',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a900162524dbef499976544a1c5f87044',1,'Anyline::SDK::Modules::Mrz::Identification']]],
+  ['debug',['Debug',['../namespace_anyline_1_1_s_d_k_1_1_util.html#a44753ef31f217f72f7825f856ba71715aa603905470e2a5b8c13e96b579ef0dba',1,'Anyline.SDK.Util.Debug()'],['../_anyline_debug_8cs.html#ad72dbcf6d0153db1b8d8a58001feed83',1,'DEBUG():&#160;AnylineDebug.cs']]],
+  ['defaultbehavior',['DefaultBehavior',['../namespace_anyline_1_1_s_d_k_1_1_util.html#ac1aae387015883581404690b7ce329d1a02565d9a898caeac9d76e1c42a9ba709',1,'Anyline::SDK::Util']]],
+  ['denominator',['Denominator',['../struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html#aacd8493bb5fcfa885469c650e5409275',1,'Anyline::SDK::Util::ResolutionRatio']]],
   ['devicetype',['DeviceType',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#abd869d2a27c8e4efdb9073ad17d0223f',1,'Anyline::SDK::Camera']]],
+  ['diagnostic',['Diagnostic',['../namespace_anyline_1_1_s_d_k_1_1_util.html#a44753ef31f217f72f7825f856ba71715a7f84beab04579bef70043ca0cc72fb85',1,'Anyline::SDK::Util']]],
   ['dialmeter',['DialMeter',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9abe5fdb0262396a66e7462ae4399edcff',1,'Anyline::SDK::Modules::Energy::EnergyScanView']]],
   ['digitalmeter',['DigitalMeter',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a740d4fc7ffc1deb8bd107feab6e7c07b',1,'Anyline::SDK::Modules::Energy::EnergyScanView']]],
+  ['dimensutil_2ecs',['DimensUtil.cs',['../_dimens_util_8cs.html',1,'']]],
   ['disablebarcodedetection',['DisableBarcodeDetection',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_native_barcode_scanner.html#a0a8d07385355e32d2395f42c8d8c79e2',1,'Anyline::SDK::Modules::Energy::NativeBarcodeScanner']]],
+  ['dispose',['Dispose',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a5096856338ac4f0626617a8e3375551c',1,'Anyline.SDK.Camera.CameraView.Dispose()'],['../class_anyline_1_1_s_d_k_1_1_core_1_1_anyline_controller.html#ae826bc01ca73cfffbd01fa0a5fc8f0d2',1,'Anyline.SDK.Core.AnylineController.Dispose()'],['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#aa61d2078bfa07032fae43eeeecce1936',1,'Anyline.SDK.Models.AnylineImage.Dispose()'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a0c58a0046a36f676489e2fd1f7b08d96',1,'Anyline.SDK.Modules.AnylineModuleView.Dispose()']]],
   ['documentnumber',['DocumentNumber',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a241082d0ce68ad54281ab47b133ba066',1,'Anyline::SDK::Modules::Mrz::Identification']]],
   ['documenttype',['DocumentType',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a61bf9c4025a01101bba324450df86898',1,'Anyline::SDK::Modules::Mrz::Identification']]],
-  ['dotmatrixmeter',['DotMatrixMeter',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a598909552ea3ab4f1efd1d3fa6ecf980',1,'Anyline::SDK::Modules::Energy::EnergyScanView']]]
+  ['dotmatrixmeter',['DotMatrixMeter',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a598909552ea3ab4f1efd1d3fa6ecf980',1,'Anyline::SDK::Modules::Energy::EnergyScanView']]],
+  ['temporarygeneratedfile_5f036c0b5b_2d1481_2d4323_2d8d20_2d8f5adcb23d92_2ecs',['TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs',['../_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs.html',1,'']]],
+  ['temporarygeneratedfile_5f5937a670_2d0e60_2d4077_2d877b_2df7221da3dda1_2ecs',['TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs',['../_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs.html',1,'']]],
+  ['temporarygeneratedfile_5fe7a71f73_2d0f8d_2d4b9b_2db56e_2d8e70b10bc5d3_2ecs',['TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs',['../_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs.html',1,'']]]
 ];

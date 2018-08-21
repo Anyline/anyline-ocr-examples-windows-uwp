@@ -1,10 +1,14 @@
 var searchData=
 [
   ['cameraconfig',['CameraConfig',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_config.html',1,'Anyline::SDK::Camera']]],
+  ['cameraconfig_2ecs',['CameraConfig.cs',['../_camera_config_8cs.html',1,'']]],
+  ['camerahelper_2ecs',['CameraHelper.cs',['../_camera_helper_8cs.html',1,'']]],
   ['cameralistener',['CameraListener',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aa2208d0e789dfa5add19ae4114b764a8',1,'Anyline::SDK::Camera::CameraView']]],
   ['cameraview',['CameraView',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html',1,'Anyline.SDK.Camera.CameraView'],['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aa5b32e259f15574ca77395b8117261bb',1,'Anyline.SDK.Camera.CameraView.CameraView()']]],
+  ['cameraview_2ecs',['CameraView.cs',['../_camera_view_8cs.html',1,'']]],
   ['cancelscanning',['CancelScanning',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a9304f7f3b72a8bf90589be53d69297b2',1,'Anyline.SDK.Modules.AnylineModuleView.CancelScanning()'],['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html#a748d8c02b215d277d030bf184b2c7c0a',1,'Anyline.SDK.Modules.IAnylineModuleView.CancelScanning()']]],
   ['captureelement',['CaptureElement',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a793e317db1afdc2d5f080d85afaaa525',1,'Anyline::SDK::Camera::CameraView']]],
+  ['capturemanager_2ecs',['CaptureManager.cs',['../_capture_manager_8cs.html',1,'']]],
   ['center',['Center',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a1fd19561448a3beedbb0491d5789af04a4f1f6016fc9f3f2353c0cc7c67b292bd',1,'Anyline::SDK::Camera']]],
   ['checkdigitdayofbirth',['CheckDigitDayOfBirth',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a3633905668a801e2992ba99512eb2a32',1,'Anyline::SDK::Modules::Mrz::Identification']]],
   ['checkdigitexpirationdate',['CheckDigitExpirationDate',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a7ac9e57b21696b492a2e88d257e0981b',1,'Anyline::SDK::Modules::Mrz::Identification']]],
@@ -19,7 +23,10 @@ var searchData=
   ['cornerradius',['CornerRadius',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a5f7f46d231f3dd7f26f9c1c280d9ad1c',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
   ['countrycode',['CountryCode',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a7c53f716d9ac8e79f6a2bdd7843914cf',1,'Anyline::SDK::Modules::Mrz::Identification']]],
   ['crop',['Crop',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a80ab819fa1a3e8bc3587cec438ef83da',1,'Anyline::SDK::Models::AnylineImage']]],
+  ['crypto_2ecs',['Crypto.cs',['../_crypto_8cs.html',1,'']]],
   ['cutoutalignment',['CutoutAlignment',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a1fd19561448a3beedbb0491d5789af04',1,'Anyline::SDK::Camera']]],
   ['cutoutimage',['CutoutImage',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a492648f0d1c54672a54fd5a61552f3e2',1,'Anyline::SDK::Models::AnylineScanResult']]],
-  ['cutoutstyle',['CutoutStyle',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a8bf26207994d9c170a3249cb3af4f94e',1,'Anyline::SDK::Camera']]]
+  ['cutoutstyle',['CutoutStyle',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a8bf26207994d9c170a3249cb3af4f94e',1,'Anyline::SDK::Camera']]],
+  ['cutoutview',['CutoutView',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html',1,'Anyline.SDK.Camera.CutoutView'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a494f68847b5befd852c55e5f4e9582a8',1,'Anyline.SDK.Modules.AnylineModuleView.CutoutView()'],['../class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html#a6923353f17e80d1441a9a450c680b035',1,'Anyline.SDK.Camera.CutoutView.CutoutView()']]],
+  ['cutoutview_2ecs',['CutoutView.cs',['../_cutout_view_8cs.html',1,'']]]
 ];
