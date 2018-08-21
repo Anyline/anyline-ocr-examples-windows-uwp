@@ -77,9 +77,7 @@ namespace AnylineExamplesApp.Modules.Energy
 
             // store photos to file instead of returning the image object
             AnylineScanView.PhotoCaptureTarget = PhotoCaptureTarget.File;
-
-            AnylineDebug.SetVerbosity(Verbosity.Diagnostic);
-
+            
             ResultView.OkButton.Tapped += ResultView_Tapped;            
         }
 
