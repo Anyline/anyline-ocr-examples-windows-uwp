@@ -18,7 +18,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <RemoteDebugMachine>192.168.100.138:4020 (DESKTOP-4E978BE)</RemoteDebugMachine>
     <AuthenticationMode>Windows</AuthenticationMode>
-    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
     <CreateCleanLayout>true</CreateCleanLayout>
   </PropertyGroup>
   <PropertyGroup>
