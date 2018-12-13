@@ -6,8 +6,8 @@
     </DebugEngines>
     <BackgroundTaskDebugEngines>
     </BackgroundTaskDebugEngines>
-    <RemoteDebugMachine>192.168.0.242:4020 (DESKTOP-JQ10QFQ)</RemoteDebugMachine>
-    <AuthenticationMode>None</AuthenticationMode>
+    <RemoteDebugMachine>192.168.100.138:4020 (DESKTOP-4E978BE)</RemoteDebugMachine>
+    <AuthenticationMode>Windows</AuthenticationMode>
     <RemoteDebugEnabled>true</RemoteDebugEnabled>
     <CreateCleanLayout>false</CreateCleanLayout>
     <UseEmulator>false</UseEmulator>

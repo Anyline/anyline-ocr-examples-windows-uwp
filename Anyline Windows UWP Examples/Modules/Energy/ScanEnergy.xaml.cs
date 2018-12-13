@@ -128,7 +128,7 @@ namespace AnylineExamplesApp.Modules.Energy
                     break;
                 case "barcode":
                     AnylineScanView.SetScanMode(EnergyScanView.ScanMode.Barcode);
-                    AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = FeedbackStyle.Rect;
+                    AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = Anyline.SDK.Views.ScanFeedbackConfig.ScanFeedbackStyle.Rect;
                     break;
                 case "photo":
                     AnylineScanView.SetConfigFromAsset("Modules/Energy/PhotoCaptureConfig.json");
@@ -165,7 +165,7 @@ namespace AnylineExamplesApp.Modules.Energy
                 AnylineScanView.CancelScanning();
                 AnylineScanView.ReleaseCameraInBackground();
             }
-            AnylineScanView.Dispose();
+
             AnylineScanView = null;            
         }
         #endregion
@@ -224,11 +224,11 @@ namespace AnylineExamplesApp.Modules.Energy
 
             // we override the visual feedback with another style for heat meters for cosmetic purposes
             if (selected.Value == EnergyScanView.ScanMode.DigitalMeter)
-                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = FeedbackStyle.ContourRect;
+                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = Anyline.SDK.Views.ScanFeedbackConfig.ScanFeedbackStyle.ContourRect;
             if (selected.Value == EnergyScanView.ScanMode.HeatMeter4
                 || selected.Value == EnergyScanView.ScanMode.HeatMeter5
                 || selected.Value == EnergyScanView.ScanMode.HeatMeter6)
-                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = FeedbackStyle.Rect;
+                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = Anyline.SDK.Views.ScanFeedbackConfig.ScanFeedbackStyle.Rect;
             
             lock (_lock)
                 _isBusy = false;

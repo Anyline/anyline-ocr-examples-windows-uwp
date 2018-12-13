@@ -151,9 +151,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Anyline.winmd</HintPath>
     </Reference>
-    <Reference Include="AnylineSDK, Version=3.21.0.0, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\AnylineSDK.dll</HintPath>
+    <Reference Include="Anyline.SDK">
+      <HintPath>..\Anyline.SDK.dll</HintPath>
     </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">

@@ -1,0 +1,1 @@
+MainPackage=D:\ANYLINE\anyline-ocr-examples-windows-uwp\Anyline Windows UWP Examples\bin\x86\Release\Anyline Windows UWP Examples_1.0.5.0_x86.appx

@@ -33,14 +33,34 @@ namespace AnylineExamplesApp.Modules.Mrz
             {
                 new MessageDialog(e.Message, "Exception").ShowAsync().AsTask().ConfigureAwait(false);
             }
-            
-            ResultView.Tapped += ResultView_Tapped;            
+
+            Window.Current.VisibilityChanged += Current_VisibilityChanged;
+            ResultView.Tapped += ResultView_Tapped;
+
+            // Necessary for Anyline 4+ because the camera doesn't open automatically.
+            if (!AnylineScanView.IsCameraOpen())
+                AnylineScanView.OpenCameraInBackground();
         }
         
         private void ResultView_Tapped(object sender, TappedRoutedEventArgs e)
         {
             ResultView.FadeOut();
             AnylineScanView.StartScanning();
+        }
+
+        // Necessary for Anyline 4+ because the events were removed out of the SDK due to internal restructuring
+        private void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
+        {
+            if (args.Visible == false)
+            {
+                if (AnylineScanView.IsCameraOpen())
+                    AnylineScanView.ReleaseCameraInBackground();
+            }
+            if (args.Visible == true)
+            {
+                if (!AnylineScanView.IsCameraOpen())
+                    AnylineScanView.OpenCameraInBackground();
+            }
         }
         #endregion
 
@@ -51,6 +71,7 @@ namespace AnylineExamplesApp.Modules.Mrz
             base.OnNavigatedFrom(args);
 
             ResultView.Tapped -= ResultView_Tapped;
+            Window.Current.VisibilityChanged -= Current_VisibilityChanged;
 
             ResultView?.Dispose();
             ResultView = null;

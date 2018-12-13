@@ -30,71 +30,6 @@ namespace AnylineExamplesApp.Model
                     UseCase = UseCase.MRZScan
                 },
 
-                // Energy
-                new Entry { Name="Energy" },
-
-                new Entry
-                {
-                    Name ="Analog Meters",
-                    Description ="Scan analog meters",
-                    BackgroundSource = "ms-appx:///Assets/Images/electric.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_analog.png",
-                    UseCase = UseCase.AnalogMeter
-                },
-                new Entry
-                {
-                    Name ="Digital Meters",
-                    Description ="Scan digital meters",
-                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_digital.png",
-                    UseCase = UseCase.DigitalMeter
-                },
-                new Entry
-                {
-                    Name ="Dial Meters",
-                    Description ="Scan dial meters",
-                    BackgroundSource = "ms-appx:///Assets/Images/electric.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_analog.png",
-                    UseCase = UseCase.DialMeter
-                },
-                new Entry
-                {
-                    Name ="Dot Matrix Meters",
-                    Description ="Scan dot matrix meters",
-                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_digital.png",
-                    UseCase = UseCase.DotMatrixMeter
-                },
-                new Entry
-                {
-                    Name ="Photo Snapper",
-                    Description ="Take photos for meters",
-                    BackgroundSource = "ms-appx:///Assets/Images/electric.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
-                    UseCase = UseCase.PhotoMode
-                },
-
-                new Entry
-                {
-                    Name ="Serial Numbers",
-                    Description ="Scan serial numbers",
-                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
-                    UseCase = UseCase.SerialNumbers
-                },
-
-                // Barcode
-                new Entry { Name="Barcode" },
-
-                new Entry
-                {
-                    Name ="Barcodes",
-                    Description ="Scan barcodes & QR codes",
-                    BackgroundSource = "ms-appx:///Assets/Images/barcode.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_barcode.png",
-                    UseCase = UseCase.BarcodeScan
-                },
-
                 new Entry {
                     Name = GetAssemblyVersion()
                 }
@@ -103,7 +38,7 @@ namespace AnylineExamplesApp.Model
 
         private string GetAssemblyVersion()
         {
-            var assembly = typeof(Anyline.SDK.Core.AnylineController).GetTypeInfo().Assembly;
+            var assembly = typeof(Anyline.SDK.Views.ScanView).GetTypeInfo().Assembly;
             if (assembly != null)
             {
                 Version ver = assembly.GetName().Version;
