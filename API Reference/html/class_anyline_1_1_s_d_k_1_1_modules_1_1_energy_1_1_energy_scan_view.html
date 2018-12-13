@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Anyline Windows SDK: Anyline.SDK.Modules.Energy.EnergyScanView Class Reference</title>
+<title>Anyline SDK: Anyline.SDK.Modules.Energy.EnergyScanView Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Anyline Windows SDK
-   &#160;<span id="projectnumber">3.21</span>
+   <div id="projectname">Anyline SDK
+   &#160;<span id="projectnumber">6.0</span>
    </div>
   </td>
  </tr>
@@ -76,108 +76,115 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the energy scan view to scan all sorts of meters and can also scan barcodes and serial numbers.  
+<p>Represents the scan view for scanning meters.  
  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#details">More...</a></p>
 
-<p>Inherits <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; EnergyResult &gt;</a>.</p>
+<p>Inherits <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; MeterScanViewPlugin, MeterScanPlugin, IEnergyResultListener, MeterScanResult, EnergyResult, string, string &gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
 <tr class="memitem:af2732b13b20a316d74457330495486b9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9">ScanMode</a> { <br />
-&#160;&#160;<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9ad5142f4a336552635219b7c8c23db26a">ScanMode.AutoAnalogDigitalMeter</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a4dd0b1acca1018599177ee61793c0c4d">ScanMode.AnalogMeter</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a740d4fc7ffc1deb8bd107feab6e7c07b">ScanMode.DigitalMeter</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9ab97378acc12a770d49c4e69b1f9764a7">ScanMode.HeatMeter4</a>, 
+&#160;&#160;<b>AutoAnalogDigitalMeter</b>, 
+<b>AnalogMeter</b>, 
+<b>DigitalMeter</b>, 
+<b>HeatMeter4</b>, 
 <br />
-&#160;&#160;<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aebb6ef5ed70a0b1ba991ddf05bc03c2a">ScanMode.HeatMeter5</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a5918efafc1b79212a1cb829cb7a11cdb">ScanMode.HeatMeter6</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9ab93eaef026c32ad9b73e53ba24a5875e">ScanMode.Barcode</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aa54372ef430f726c8343fc5550fade42">ScanMode.SerialNumber</a>, 
+&#160;&#160;<b>HeatMeter5</b>, 
+<b>HeatMeter6</b>, 
+<b>Barcode</b>, 
+<b>SerialNumber</b>, 
 <br />
-&#160;&#160;<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aadc72df240df56328e4f9c559caf3a09">ScanMode.SerialNumberAlphaNumeric3Letters</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a011221aecbea1fb88f44757d8cbf07df">ScanMode.PhotoCapture</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9abe5fdb0262396a66e7462ae4399edcff">ScanMode.DialMeter</a>, 
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a598909552ea3ab4f1efd1d3fa6ecf980">ScanMode.DotMatrixMeter</a>
+&#160;&#160;<b>SerialNumberAlphaNumeric3Letters</b>, 
+<b>PhotoCapture</b>, 
+<b>DialMeter</b>, 
+<b>DotMatrixMeter</b>
 <br />
  }</td></tr>
-<tr class="memdesc:af2732b13b20a316d74457330495486b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the energy scan mode.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9">More...</a><br /></td></tr>
+<tr class="memdesc:af2732b13b20a316d74457330495486b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the scan modes for meter scanning.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9">More...</a><br /></td></tr>
 <tr class="separator:af2732b13b20a316d74457330495486b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acc039397df31e25ad1329d5d5d287b90"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#acc039397df31e25ad1329d5d5d287b90">EnergyScanView</a> ()</td></tr>
-<tr class="memdesc:acc039397df31e25ad1329d5d5d287b90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the energy scan view.  <a href="#acc039397df31e25ad1329d5d5d287b90">More...</a><br /></td></tr>
-<tr class="separator:acc039397df31e25ad1329d5d5d287b90"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64897e61948596fa333cfc6765c09353"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a64897e61948596fa333cfc6765c09353">InitAnyline</a> (string licenseKey, <a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html">IAnylineModuleResultListener</a>&lt; <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html">EnergyResult</a> &gt; resultListener)</td></tr>
-<tr class="memdesc:a64897e61948596fa333cfc6765c09353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the scan view with a given license key and a given result listener.  <a href="#a64897e61948596fa333cfc6765c09353">More...</a><br /></td></tr>
-<tr class="separator:a64897e61948596fa333cfc6765c09353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bc16e9c052868753127937f5507c1f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9">ScanMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a9bc16e9c052868753127937f5507c1f7">GetScanMode</a> ()</td></tr>
-<tr class="memdesc:a9bc16e9c052868753127937f5507c1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current scan mode.  <a href="#a9bc16e9c052868753127937f5507c1f7">More...</a><br /></td></tr>
+<tr class="memdesc:a9bc16e9c052868753127937f5507c1f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the scan mode.  <a href="#a9bc16e9c052868753127937f5507c1f7">More...</a><br /></td></tr>
 <tr class="separator:a9bc16e9c052868753127937f5507c1f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb7c16471b1278bfd0358a805c21025f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#aeb7c16471b1278bfd0358a805c21025f">SetScanMode</a> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9">ScanMode</a> scanMode)</td></tr>
-<tr class="memdesc:aeb7c16471b1278bfd0358a805c21025f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scan mode. Cancels scanning and attempts to restart it, if the module is scanning at the time this method is called.  <a href="#aeb7c16471b1278bfd0358a805c21025f">More...</a><br /></td></tr>
+<tr class="memdesc:aeb7c16471b1278bfd0358a805c21025f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the scan mode.  <a href="#aeb7c16471b1278bfd0358a805c21025f">More...</a><br /></td></tr>
 <tr class="separator:aeb7c16471b1278bfd0358a805c21025f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81f7c3000d7cfa53b0e6961d7c7ed9e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a81f7c3000d7cfa53b0e6961d7c7ed9e1">SetSerialNumberValidationRegex</a> (string validationRegex)</td></tr>
-<tr class="memdesc:a81f7c3000d7cfa53b0e6961d7c7ed9e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the validation regex for the serial number scan mode.  <a href="#a81f7c3000d7cfa53b0e6961d7c7ed9e1">More...</a><br /></td></tr>
-<tr class="separator:a81f7c3000d7cfa53b0e6961d7c7ed9e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c2ba77fd8b9cb4f6184691b9ded0c88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a1c2ba77fd8b9cb4f6184691b9ded0c88">SetSerialNumberCharWhitelist</a> (string charWhitelist)</td></tr>
-<tr class="memdesc:a1c2ba77fd8b9cb4f6184691b9ded0c88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the character whitelist for the serial number scan mode.  <a href="#a1c2ba77fd8b9cb4f6184691b9ded0c88">More...</a><br /></td></tr>
-<tr class="separator:a1c2ba77fd8b9cb4f6184691b9ded0c88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; EnergyResult &gt;</a></td></tr>
-<tr class="memitem:a916078eb02e1bd7274e3412977d8691f inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a916078eb02e1bd7274e3412977d8691f">SetDebugReportingEnabled</a> (bool isReportingEnabled)</td></tr>
-<tr class="memdesc:a916078eb02e1bd7274e3412977d8691f inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enables or disables the debug reporting. Only works if the license allows it.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a916078eb02e1bd7274e3412977d8691f">More...</a><br /></td></tr>
-<tr class="separator:a916078eb02e1bd7274e3412977d8691f inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84f7c96f5779e4fa586a13f455e24e5c inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">abstract void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a84f7c96f5779e4fa586a13f455e24e5c">InitAnyline</a> (string licenseKey, <a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html">IAnylineModuleResultListener</a>&lt; T &gt; resultListener)</td></tr>
-<tr class="memdesc:a84f7c96f5779e4fa586a13f455e24e5c inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes <a class="el" href="namespace_anyline.html">Anyline</a> with a given license key and a result listener. This method must be called before <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a395a481f454759b82115a44cf22a8b5a" title="Starts the scan process. ">StartScanning</a> is called!  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a84f7c96f5779e4fa586a13f455e24e5c">More...</a><br /></td></tr>
-<tr class="separator:a84f7c96f5779e4fa586a13f455e24e5c inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a395a481f454759b82115a44cf22a8b5a inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a395a481f454759b82115a44cf22a8b5a">StartScanning</a> ()</td></tr>
-<tr class="memdesc:a395a481f454759b82115a44cf22a8b5a inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the scan process.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a395a481f454759b82115a44cf22a8b5a">More...</a><br /></td></tr>
-<tr class="separator:a395a481f454759b82115a44cf22a8b5a inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9304f7f3b72a8bf90589be53d69297b2 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a9304f7f3b72a8bf90589be53d69297b2">CancelScanning</a> ()</td></tr>
-<tr class="memdesc:a9304f7f3b72a8bf90589be53d69297b2 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the scan process.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a9304f7f3b72a8bf90589be53d69297b2">More...</a><br /></td></tr>
-<tr class="separator:a9304f7f3b72a8bf90589be53d69297b2 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd211305e2ceaf81813910aa635d9ae inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#adcd211305e2ceaf81813910aa635d9ae">InvokeScanViewUpdate</a> ()</td></tr>
-<tr class="memdesc:adcd211305e2ceaf81813910aa635d9ae inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Recalculates and updates the visual parameters of the scan view.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#adcd211305e2ceaf81813910aa635d9ae">More...</a><br /></td></tr>
-<tr class="separator:adcd211305e2ceaf81813910aa635d9ae inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae74fa47a938e5f3551f8f8743463476 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aae74fa47a938e5f3551f8f8743463476">SetConfigFromAsset</a> (string filename)</td></tr>
-<tr class="memdesc:aae74fa47a938e5f3551f8f8743463476 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the configuration from a given json file.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aae74fa47a938e5f3551f8f8743463476">More...</a><br /></td></tr>
-<tr class="separator:aae74fa47a938e5f3551f8f8743463476 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab00a3dd4929cc08de6381c498f8c40d8 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#ab00a3dd4929cc08de6381c498f8c40d8">SetCancelOnResult</a> (bool b)</td></tr>
-<tr class="memdesc:ab00a3dd4929cc08de6381c498f8c40d8 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether the scan process should stop after finding a result.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#ab00a3dd4929cc08de6381c498f8c40d8">More...</a><br /></td></tr>
-<tr class="separator:ab00a3dd4929cc08de6381c498f8c40d8 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c58a0046a36f676489e2fd1f7b08d96 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">override void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a0c58a0046a36f676489e2fd1f7b08d96">Dispose</a> ()</td></tr>
-<tr class="memdesc:a0c58a0046a36f676489e2fd1f7b08d96 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will dispose the object.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a0c58a0046a36f676489e2fd1f7b08d96">More...</a><br /></td></tr>
-<tr class="separator:a0c58a0046a36f676489e2fd1f7b08d96 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb14a2ea891d1a341f054e186164d982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#abb14a2ea891d1a341f054e186164d982">SetSerialNumberCharWhitelist</a> (string whiteList)</td></tr>
+<tr class="memdesc:abb14a2ea891d1a341f054e186164d982"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the character whitelist for scanning serial numbers.  <a href="#abb14a2ea891d1a341f054e186164d982">More...</a><br /></td></tr>
+<tr class="separator:abb14a2ea891d1a341f054e186164d982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2da0591673640b683f1422323aabbf67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a2da0591673640b683f1422323aabbf67">SetSerialNumberValidationRegex</a> (string regex)</td></tr>
+<tr class="memdesc:a2da0591673640b683f1422323aabbf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the validation regex for scanning serial numbers.  <a href="#a2da0591673640b683f1422323aabbf67">More...</a><br /></td></tr>
+<tr class="separator:a2da0591673640b683f1422323aabbf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; MeterScanViewPlugin, MeterScanPlugin, IEnergyResultListener, MeterScanResult, EnergyResult, string, string &gt;</a></td></tr>
+<tr class="memitem:a6e4cf366c15fa2f6517dd9c8bf1a7957 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a6e4cf366c15fa2f6517dd9c8bf1a7957">InitAnyline</a> (string licenseKey, TModuleResultListenerType resultListener)</td></tr>
+<tr class="memdesc:a6e4cf366c15fa2f6517dd9c8bf1a7957 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the module with a given license key and a result listener.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a6e4cf366c15fa2f6517dd9c8bf1a7957">More...</a><br /></td></tr>
+<tr class="separator:a6e4cf366c15fa2f6517dd9c8bf1a7957 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21f7212ff7e369e9b644490df48d971 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#af21f7212ff7e369e9b644490df48d971">SetConfigFromAsset</a> (string filename)</td></tr>
+<tr class="memdesc:af21f7212ff7e369e9b644490df48d971 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the config from a given asset path. This has to be called before InitAnyline.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#af21f7212ff7e369e9b644490df48d971">More...</a><br /></td></tr>
+<tr class="separator:af21f7212ff7e369e9b644490df48d971 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441d5ea4502011fdecb54d389001d4a2 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a441d5ea4502011fdecb54d389001d4a2">InvokeScanViewUpdate</a> ()</td></tr>
+<tr class="memdesc:a441d5ea4502011fdecb54d389001d4a2 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes an update of the visual calculations of the scan view.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a441d5ea4502011fdecb54d389001d4a2">More...</a><br /></td></tr>
+<tr class="separator:a441d5ea4502011fdecb54d389001d4a2 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a361bf9f8815e0eae16f7bbe069c01de9 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a361bf9f8815e0eae16f7bbe069c01de9">SetCancelOnResult</a> (bool b)</td></tr>
+<tr class="memdesc:a361bf9f8815e0eae16f7bbe069c01de9 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not the scan process should stop after a result is found.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a361bf9f8815e0eae16f7bbe069c01de9">More...</a><br /></td></tr>
+<tr class="separator:a361bf9f8815e0eae16f7bbe069c01de9 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3898a41b00cb5d5884768c070f9a768e inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a3898a41b00cb5d5884768c070f9a768e">StartScanning</a> ()</td></tr>
+<tr class="memdesc:a3898a41b00cb5d5884768c070f9a768e inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the scan process in a background thread.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a3898a41b00cb5d5884768c070f9a768e">More...</a><br /></td></tr>
+<tr class="separator:a3898a41b00cb5d5884768c070f9a768e inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4305f083abc7f11256b0890bad312972 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a4305f083abc7f11256b0890bad312972">CancelScanning</a> ()</td></tr>
+<tr class="memdesc:a4305f083abc7f11256b0890bad312972 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the scan process.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a4305f083abc7f11256b0890bad312972">More...</a><br /></td></tr>
+<tr class="separator:a4305f083abc7f11256b0890bad312972 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a148daae45d877da20797dde587766019 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a148daae45d877da20797dde587766019">SetDebugReportingEnabled</a> (bool isReportingEnabled)</td></tr>
+<tr class="memdesc:a148daae45d877da20797dde587766019 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets whether or not debug reporting should be enabled.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a148daae45d877da20797dde587766019">More...</a><br /></td></tr>
+<tr class="separator:a148daae45d877da20797dde587766019 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed53326bccce74d09b60bde7339e9f5b inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aed53326bccce74d09b60bde7339e9f5b">OnResult</a> (TPluginScanResultType result)</td></tr>
+<tr class="memdesc:aed53326bccce74d09b60bde7339e9f5b inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invokes the result callback on the UI thread when a scan result is found.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aed53326bccce74d09b60bde7339e9f5b">More...</a><br /></td></tr>
+<tr class="separator:aed53326bccce74d09b60bde7339e9f5b inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb4e2ec6f16ee0624f39d3a9bb54371 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fb4e2ec6f16ee0624f39d3a9bb54371">IsCameraOpen</a> ()</td></tr>
+<tr class="memdesc:a2fb4e2ec6f16ee0624f39d3a9bb54371 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the camera is opened.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fb4e2ec6f16ee0624f39d3a9bb54371">More...</a><br /></td></tr>
+<tr class="separator:a2fb4e2ec6f16ee0624f39d3a9bb54371 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5868f9f4699dcee025464116da78bb96 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a5868f9f4699dcee025464116da78bb96">OpenCameraInBackground</a> ()</td></tr>
+<tr class="memdesc:a5868f9f4699dcee025464116da78bb96 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens the camera in a background thread.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a5868f9f4699dcee025464116da78bb96">More...</a><br /></td></tr>
+<tr class="separator:a5868f9f4699dcee025464116da78bb96 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a48aba285c0101199206ae65d5d1c6 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a87a48aba285c0101199206ae65d5d1c6">ReleaseCameraInBackground</a> ()</td></tr>
+<tr class="memdesc:a87a48aba285c0101199206ae65d5d1c6 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the camera in a background thread.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a87a48aba285c0101199206ae65d5d1c6">More...</a><br /></td></tr>
+<tr class="separator:a87a48aba285c0101199206ae65d5d1c6 inherit pub_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:afcc0e565f83232da89c2f0e42082f501"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html">IPhotoCaptureListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#afcc0e565f83232da89c2f0e42082f501">PhotoCaptureListener</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:afcc0e565f83232da89c2f0e42082f501"><td class="mdescLeft">&#160;</td><td class="mdescRight">The photo capture listener that handles callbacks when a picture is taken in PhotoCapture mode.  <a href="#afcc0e565f83232da89c2f0e42082f501">More...</a><br /></td></tr>
+<tr class="memdesc:afcc0e565f83232da89c2f0e42082f501"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the PhotoCapture listener.  <a href="#afcc0e565f83232da89c2f0e42082f501">More...</a><br /></td></tr>
 <tr class="separator:afcc0e565f83232da89c2f0e42082f501"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa26129b1ebd1d898a36c797857c11f0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087">PhotoCaptureTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#aa26129b1ebd1d898a36c797857c11f0a">PhotoCaptureTarget</a> = <a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087abe53a0541a6d36f6ecb879fa2c584b08">PhotoCaptureTarget.Image</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:aa26129b1ebd1d898a36c797857c11f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the PhotoCaptureTarget.  <a href="#aa26129b1ebd1d898a36c797857c11f0a">More...</a><br /></td></tr>
+<tr class="memitem:aa26129b1ebd1d898a36c797857c11f0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087">PhotoCaptureTarget</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#aa26129b1ebd1d898a36c797857c11f0a">PhotoCaptureTarget</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aa26129b1ebd1d898a36c797857c11f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the PhotoCapture target. Depending on this target, the listener will raise different callbacks.  <a href="#aa26129b1ebd1d898a36c797857c11f0a">More...</a><br /></td></tr>
 <tr class="separator:aa26129b1ebd1d898a36c797857c11f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td colspan="2" onclick="javascript:toggleInherit('properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; EnergyResult &gt;</a></td></tr>
-<tr class="memitem:a494f68847b5befd852c55e5f4e9582a8 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html">CutoutView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a494f68847b5befd852c55e5f4e9582a8">CutoutView</a><code> [get]</code></td></tr>
-<tr class="memdesc:a494f68847b5befd852c55e5f4e9582a8 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the CutoutView  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a494f68847b5befd852c55e5f4e9582a8">More...</a><br /></td></tr>
-<tr class="separator:a494f68847b5befd852c55e5f4e9582a8 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7296b7884602f14051afefc4a6e8d68c inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a7296b7884602f14051afefc4a6e8d68c">IsScanning</a><code> [get]</code></td></tr>
-<tr class="memdesc:a7296b7884602f14051afefc4a6e8d68c inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether <a class="el" href="namespace_anyline.html">Anyline</a> is currently scanning.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a7296b7884602f14051afefc4a6e8d68c">More...</a><br /></td></tr>
-<tr class="separator:a7296b7884602f14051afefc4a6e8d68c inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; EnergyResult &gt;</a></td></tr>
-<tr class="memitem:a030c7ac6fa5a804dd28e27b7fdcd3ae4 inherit pro_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a030c7ac6fa5a804dd28e27b7fdcd3ae4">AnylineModuleView</a> ()</td></tr>
-<tr class="memdesc:a030c7ac6fa5a804dd28e27b7fdcd3ae4 inherit pro_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a030c7ac6fa5a804dd28e27b7fdcd3ae4" title="Initializes a new instance of the AnylineModuleView&lt;T&gt; class. ">AnylineModuleView&lt;T&gt;</a> class.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a030c7ac6fa5a804dd28e27b7fdcd3ae4">More...</a><br /></td></tr>
-<tr class="separator:a030c7ac6fa5a804dd28e27b7fdcd3ae4 inherit pro_methods_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pro_attribs_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; EnergyResult &gt;</a></td></tr>
-<tr class="memitem:a7c021e02f2160a21565961b9f5344c74 inherit pro_attribs_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html">IAnylineModuleResultListener</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a7c021e02f2160a21565961b9f5344c74">ModuleResultListener</a></td></tr>
-<tr class="memdesc:a7c021e02f2160a21565961b9f5344c74 inherit pro_attribs_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">The module result listener. <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a7c021e02f2160a21565961b9f5344c74">More...</a><br /></td></tr>
-<tr class="separator:a7c021e02f2160a21565961b9f5344c74 inherit pro_attribs_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td colspan="2" onclick="javascript:toggleInherit('properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; MeterScanViewPlugin, MeterScanPlugin, IEnergyResultListener, MeterScanResult, EnergyResult, string, string &gt;</a></td></tr>
+<tr class="memitem:a899762a4559a01b2532bdfcef3863c17 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a id="a899762a4559a01b2532bdfcef3863c17"></a>
+<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html">ScanView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ScanView</b><code> [get, set]</code></td></tr>
+<tr class="separator:a899762a4559a01b2532bdfcef3863c17 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31ac16d41b989a920b9d5f7366c9fc57 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a id="a31ac16d41b989a920b9d5f7366c9fc57"></a>
+TScanViewPluginType&#160;</td><td class="memItemRight" valign="bottom"><b>ScanViewPlugin</b><code> [get, set]</code></td></tr>
+<tr class="separator:a31ac16d41b989a920b9d5f7366c9fc57 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a075a007da3b985744e7178ebaa59ca84 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a id="a075a007da3b985744e7178ebaa59ca84"></a>
+TScanPluginType&#160;</td><td class="memItemRight" valign="bottom"><b>ScanPlugin</b><code> [get]</code></td></tr>
+<tr class="separator:a075a007da3b985744e7178ebaa59ca84 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4740bd420ada42f15958234bf95a001c inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html">CutoutView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a4740bd420ada42f15958234bf95a001c">CutoutView</a><code> [get]</code></td></tr>
+<tr class="memdesc:a4740bd420ada42f15958234bf95a001c inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the CutoutView.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a4740bd420ada42f15958234bf95a001c">More...</a><br /></td></tr>
+<tr class="separator:a4740bd420ada42f15958234bf95a001c inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fd7253358116fa3a2646727d49a4c37 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_camera.html#abd869d2a27c8e4efdb9073ad17d0223f">DeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fd7253358116fa3a2646727d49a4c37">PreferredCameraDevice</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a2fd7253358116fa3a2646727d49a4c37 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the preferred camera device.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fd7253358116fa3a2646727d49a4c37">More...</a><br /></td></tr>
+<tr class="separator:a2fd7253358116fa3a2646727d49a4c37 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6407158d47eddb94df2b4e367286b324 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a6407158d47eddb94df2b4e367286b324">IsScanning</a><code> [get]</code></td></tr>
+<tr class="memdesc:a6407158d47eddb94df2b4e367286b324 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the module is currently scanning.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a6407158d47eddb94df2b4e367286b324">More...</a><br /></td></tr>
+<tr class="separator:a6407158d47eddb94df2b4e367286b324 inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb527defde44230cbd8dca9de22878d inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html">ICameraListener</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aebb527defde44230cbd8dca9de22878d">CameraListener</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:aebb527defde44230cbd8dca9de22878d inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the camera listener.  <a href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aebb527defde44230cbd8dca9de22878d">More...</a><br /></td></tr>
+<tr class="separator:aebb527defde44230cbd8dca9de22878d inherit properties_class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the energy scan view to scan all sorts of meters and can also scan barcodes and serial numbers. </p>
+<div class="textblock"><p>Represents the scan view for scanning meters. </p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="af2732b13b20a316d74457330495486b9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af2732b13b20a316d74457330495486b9">&#9670;&nbsp;</a></span>ScanMode</h2>
@@ -199,53 +206,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Represents the energy scan mode. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9ad5142f4a336552635219b7c8c23db26a"></a>AutoAnalogDigitalMeter&#160;</td><td class="fielddoc"><p>Scan analog/digital electric meters.</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9a4dd0b1acca1018599177ee61793c0c4d"></a>AnalogMeter&#160;</td><td class="fielddoc"><p>Scan Analog electric meters.</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9a740d4fc7ffc1deb8bd107feab6e7c07b"></a>DigitalMeter&#160;</td><td class="fielddoc"><p>Scan digital meters.</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9ab97378acc12a770d49c4e69b1f9764a7"></a>HeatMeter4&#160;</td><td class="fielddoc"><p>Scan heat meters (4 pre-decimal digits).</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9aebb6ef5ed70a0b1ba991ddf05bc03c2a"></a>HeatMeter5&#160;</td><td class="fielddoc"><p>Scan heat meters (5 pre-decimal digits).</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9a5918efafc1b79212a1cb829cb7a11cdb"></a>HeatMeter6&#160;</td><td class="fielddoc"><p>Scan heat meters (6 pre-decimal digits).</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9ab93eaef026c32ad9b73e53ba24a5875e"></a>Barcode&#160;</td><td class="fielddoc"><p>Scan barcodes.</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9aa54372ef430f726c8343fc5550fade42"></a>SerialNumber&#160;</td><td class="fielddoc"><p>Scan serial numbers.</p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9aadc72df240df56328e4f9c559caf3a09"></a>SerialNumberAlphaNumeric3Letters&#160;</td><td class="fielddoc"><p>Scan serial numbers with 3 letter alphanumeric, followed by a minimum of 5 numbers. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9a011221aecbea1fb88f44757d8cbf07df"></a>PhotoCapture&#160;</td><td class="fielddoc"><p>Capture photos via button click. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9abe5fdb0262396a66e7462ae4399edcff"></a>DialMeter&#160;</td><td class="fielddoc"><p>Scan dial meters. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="af2732b13b20a316d74457330495486b9a598909552ea3ab4f1efd1d3fa6ecf980"></a>DotMatrixMeter&#160;</td><td class="fielddoc"><p>Scan digital dot matrix meters. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acc039397df31e25ad1329d5d5d287b90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc039397df31e25ad1329d5d5d287b90">&#9670;&nbsp;</a></span>EnergyScanView()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Anyline.SDK.Modules.Energy.EnergyScanView.EnergyScanView </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the energy scan view. </p>
+<p>Represents the scan modes for meter scanning. </p>
 
 </div>
 </div>
@@ -265,45 +226,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets the current scan mode. </p>
+<p>Gets the scan mode. </p>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="a64897e61948596fa333cfc6765c09353"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64897e61948596fa333cfc6765c09353">&#9670;&nbsp;</a></span>InitAnyline()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">override void Anyline.SDK.Modules.Energy.EnergyScanView.InitAnyline </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>licenseKey</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html">IAnylineModuleResultListener</a>&lt; <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html">EnergyResult</a> &gt;&#160;</td>
-          <td class="paramname"><em>resultListener</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the scan view with a given license key and a given result listener. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">licenseKey</td><td>The license key.</td></tr>
-    <tr><td class="paramname">resultListener</td><td>The result listener.</td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -323,18 +247,18 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the scan mode. Cancels scanning and attempts to restart it, if the module is scanning at the time this method is called. </p>
+<p>Sets the scan mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scanMode</td><td>The scan mode.</td></tr>
+    <tr><td class="paramname">scanMode</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1c2ba77fd8b9cb4f6184691b9ded0c88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c2ba77fd8b9cb4f6184691b9ded0c88">&#9670;&nbsp;</a></span>SetSerialNumberCharWhitelist()</h2>
+<a id="abb14a2ea891d1a341f054e186164d982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb14a2ea891d1a341f054e186164d982">&#9670;&nbsp;</a></span>SetSerialNumberCharWhitelist()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,24 +267,24 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void Anyline.SDK.Modules.Energy.EnergyScanView.SetSerialNumberCharWhitelist </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>charWhitelist</em></td><td>)</td>
+          <td class="paramname"><em>whiteList</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the character whitelist for the serial number scan mode. </p>
+<p>Sets the character whitelist for scanning serial numbers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">charWhitelist</td><td>The character whitelist.</td></tr>
+    <tr><td class="paramname">whiteList</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a81f7c3000d7cfa53b0e6961d7c7ed9e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81f7c3000d7cfa53b0e6961d7c7ed9e1">&#9670;&nbsp;</a></span>SetSerialNumberValidationRegex()</h2>
+<a id="a2da0591673640b683f1422323aabbf67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2da0591673640b683f1422323aabbf67">&#9670;&nbsp;</a></span>SetSerialNumberValidationRegex()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,16 +293,16 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void Anyline.SDK.Modules.Energy.EnergyScanView.SetSerialNumberValidationRegex </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>validationRegex</em></td><td>)</td>
+          <td class="paramname"><em>regex</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets the validation regex for the serial number scan mode. </p>
+<p>Sets the validation regex for scanning serial numbers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">validationRegex</td><td>The validation regex.</td></tr>
+    <tr><td class="paramname">regex</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -406,7 +330,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The photo capture listener that handles callbacks when a picture is taken in PhotoCapture mode. </p>
+<p>Gets or sets the PhotoCapture listener. </p>
 
 </div>
 </div>
@@ -420,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087">PhotoCaptureTarget</a> Anyline.SDK.Modules.Energy.EnergyScanView.PhotoCaptureTarget = <a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087abe53a0541a6d36f6ecb879fa2c584b08">PhotoCaptureTarget.Image</a></td>
+          <td class="memname"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087">PhotoCaptureTarget</a> Anyline.SDK.Modules.Energy.EnergyScanView.PhotoCaptureTarget</td>
         </tr>
       </table>
   </td>
@@ -430,12 +354,12 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the PhotoCaptureTarget. </p>
+<p>Gets or sets the PhotoCapture target. Depending on this target, the listener will raise different callbacks. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_energy_scan_view_8cs.html">EnergyScanView.cs</a></li>
+<li>EnergyScanView.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

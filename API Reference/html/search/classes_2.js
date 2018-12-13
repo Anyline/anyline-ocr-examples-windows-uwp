@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['energyresult',['EnergyResult',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html',1,'Anyline::SDK::Modules::Energy']]],
-  ['energyscanview',['EnergyScanView',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html',1,'Anyline::SDK::Modules::Energy']]]
+  ['cameraconfig',['CameraConfig',['../class_anyline_1_1_s_d_k_1_1_views_1_1_camera_config.html',1,'Anyline::SDK::Views']]],
+  ['cameraview',['CameraView',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html',1,'Anyline::SDK::Camera']]],
+  ['cutoutconfig',['CutoutConfig',['../class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html',1,'Anyline::SDK::Views']]],
+  ['cutoutview',['CutoutView',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html',1,'Anyline::SDK::Camera']]]
 ];

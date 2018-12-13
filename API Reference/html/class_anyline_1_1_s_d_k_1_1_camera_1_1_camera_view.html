@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Anyline Windows SDK: Anyline.SDK.Camera.CameraView Class Reference</title>
+<title>Anyline SDK: Anyline.SDK.Camera.CameraView Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Anyline Windows SDK
-   &#160;<span id="projectnumber">3.21</span>
+   <div id="projectname">Anyline SDK
+   &#160;<span id="projectnumber">6.0</span>
    </div>
   </td>
  </tr>
@@ -68,54 +68,36 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
+<a href="#events">Events</a> &#124;
 <a href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Anyline.SDK.Camera.CameraView Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Anyline.SDK.Camera.CameraView Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the camera view class, the base class for the <a class="el" href="namespace_anyline.html">Anyline</a> camera and all modules.  
+<p>Represents the camera view class which renders the camera stream.  
  <a href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#details">More...</a></p>
 
-<p>Inherits Grid, and IDisposable.</p>
-
-<p>Inherited by <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html">Anyline.SDK.Modules.AnylineModuleView&lt; T &gt;</a>.</p>
+<p>Inherits Grid.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab762fd0e63a09060cac90a2ef29ae146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#ab762fd0e63a09060cac90a2ef29ae146">OpenCameraInBackground</a> ()</td></tr>
-<tr class="memdesc:ab762fd0e63a09060cac90a2ef29ae146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the camera and starts the preview.  <a href="#ab762fd0e63a09060cac90a2ef29ae146">More...</a><br /></td></tr>
-<tr class="separator:ab762fd0e63a09060cac90a2ef29ae146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd31a6384fb3623e63e6441d7bbb709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#abd31a6384fb3623e63e6441d7bbb709c">ReleaseCameraInBackground</a> ()</td></tr>
-<tr class="memdesc:abd31a6384fb3623e63e6441d7bbb709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the camera.  <a href="#abd31a6384fb3623e63e6441d7bbb709c">More...</a><br /></td></tr>
-<tr class="separator:abd31a6384fb3623e63e6441d7bbb709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a884cfebd4de393c5182c87a8e9c11afd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a884cfebd4de393c5182c87a8e9c11afd">GetNewImage</a> ()</td></tr>
-<tr class="memdesc:a884cfebd4de393c5182c87a8e9c11afd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the current available cropped frame.  <a href="#a884cfebd4de393c5182c87a8e9c11afd">More...</a><br /></td></tr>
-<tr class="separator:a884cfebd4de393c5182c87a8e9c11afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a095ad436dee8b15578e7b969bf3c3361"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a095ad436dee8b15578e7b969bf3c3361">HasNewImage</a> ()</td></tr>
-<tr class="memdesc:a095ad436dee8b15578e7b969bf3c3361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether or not a new frame is available.  <a href="#a095ad436dee8b15578e7b969bf3c3361">More...</a><br /></td></tr>
-<tr class="separator:a095ad436dee8b15578e7b969bf3c3361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ef8963e4bba21922f857074acfa61d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a1ef8963e4bba21922f857074acfa61d4">GetImageWithFullSize</a> ()</td></tr>
-<tr class="memdesc:a1ef8963e4bba21922f857074acfa61d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current available full frame.  <a href="#a1ef8963e4bba21922f857074acfa61d4">More...</a><br /></td></tr>
-<tr class="separator:a1ef8963e4bba21922f857074acfa61d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5096856338ac4f0626617a8e3375551c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a5096856338ac4f0626617a8e3375551c">Dispose</a> ()</td></tr>
-<tr class="memdesc:a5096856338ac4f0626617a8e3375551c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disposes the <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html" title="Represents the camera view class, the base class for the Anyline camera and all modules. ">CameraView</a>.  <a href="#a5096856338ac4f0626617a8e3375551c">More...</a><br /></td></tr>
-<tr class="separator:a5096856338ac4f0626617a8e3375551c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
+<tr class="memitem:a50437b52bc6b8ed4131bc7a7bbddf2d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a50437b52bc6b8ed4131bc7a7bbddf2d8">SetCameraConfig</a> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_camera_config.html">CameraConfig</a> cameraConfig)</td></tr>
+<tr class="memdesc:a50437b52bc6b8ed4131bc7a7bbddf2d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the CameraConfig.  <a href="#a50437b52bc6b8ed4131bc7a7bbddf2d8">More...</a><br /></td></tr>
+<tr class="separator:a50437b52bc6b8ed4131bc7a7bbddf2d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5b32e259f15574ca77395b8117261bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aa5b32e259f15574ca77395b8117261bb">CameraView</a> ()</td></tr>
-<tr class="memdesc:aa5b32e259f15574ca77395b8117261bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html" title="Represents the camera view class, the base class for the Anyline camera and all modules. ">CameraView</a> class.  <a href="#aa5b32e259f15574ca77395b8117261bb">More...</a><br /></td></tr>
+<tr class="memdesc:aa5b32e259f15574ca77395b8117261bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html" title="Represents the camera view class which renders the camera stream. ">CameraView</a>.  <a href="#aa5b32e259f15574ca77395b8117261bb">More...</a><br /></td></tr>
 <tr class="separator:aa5b32e259f15574ca77395b8117261bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
-Protected Attributes</h2></td></tr>
-<tr class="memitem:a793e317db1afdc2d5f080d85afaaa525"><td class="memItemLeft" align="right" valign="top">CaptureElement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a793e317db1afdc2d5f080d85afaaa525">CaptureElement</a></td></tr>
-<tr class="memdesc:a793e317db1afdc2d5f080d85afaaa525"><td class="mdescLeft">&#160;</td><td class="mdescRight">The capture element. <a href="#a793e317db1afdc2d5f080d85afaaa525">More...</a><br /></td></tr>
-<tr class="separator:a793e317db1afdc2d5f080d85afaaa525"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab762fd0e63a09060cac90a2ef29ae146"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#ab762fd0e63a09060cac90a2ef29ae146">OpenCameraInBackground</a> ()</td></tr>
+<tr class="memdesc:ab762fd0e63a09060cac90a2ef29ae146"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the camera and starts the preview in a background thread.  <a href="#ab762fd0e63a09060cac90a2ef29ae146">More...</a><br /></td></tr>
+<tr class="separator:ab762fd0e63a09060cac90a2ef29ae146"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbdde05e978642206b470efdb65f02ce"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#adbdde05e978642206b470efdb65f02ce">IsCameraOpen</a> ()</td></tr>
+<tr class="memdesc:adbdde05e978642206b470efdb65f02ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets if the camera is opened.  <a href="#adbdde05e978642206b470efdb65f02ce">More...</a><br /></td></tr>
+<tr class="separator:adbdde05e978642206b470efdb65f02ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd31a6384fb3623e63e6441d7bbb709c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#abd31a6384fb3623e63e6441d7bbb709c">ReleaseCameraInBackground</a> ()</td></tr>
+<tr class="memdesc:abd31a6384fb3623e63e6441d7bbb709c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Releases the camera in background.  <a href="#abd31a6384fb3623e63e6441d7bbb709c">More...</a><br /></td></tr>
+<tr class="separator:abd31a6384fb3623e63e6441d7bbb709c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -125,21 +107,30 @@ Properties</h2></td></tr>
 <tr class="memitem:a1706c01329c3019182f5b0bd732f48c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_focus_controller.html">FocusController</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a1706c01329c3019182f5b0bd732f48c8">FocusController</a><code> [get]</code></td></tr>
 <tr class="memdesc:a1706c01329c3019182f5b0bd732f48c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the focus controller.  <a href="#a1706c01329c3019182f5b0bd732f48c8">More...</a><br /></td></tr>
 <tr class="separator:a1706c01329c3019182f5b0bd732f48c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbef44564c0dcabd1b0e3b8ea67b070e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_camera.html#abd869d2a27c8e4efdb9073ad17d0223f">DeviceType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#acbef44564c0dcabd1b0e3b8ea67b070e">PreferredCameraDevice</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:acbef44564c0dcabd1b0e3b8ea67b070e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets whether the front camera should be preferred. Per default, the integrated backfacing device is preferred. Note: For MRZ scanning, a camera with at least 720p and focus functionality is required.  <a href="#acbef44564c0dcabd1b0e3b8ea67b070e">More...</a><br /></td></tr>
-<tr class="separator:acbef44564c0dcabd1b0e3b8ea67b070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44ea4758b9101dd8ce200625ac33ed42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_camera_config.html">CameraConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a44ea4758b9101dd8ce200625ac33ed42">CameraConfig</a><code> [get]</code></td></tr>
+<tr class="memdesc:a44ea4758b9101dd8ce200625ac33ed42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the CameraConfig.  <a href="#a44ea4758b9101dd8ce200625ac33ed42">More...</a><br /></td></tr>
+<tr class="separator:a44ea4758b9101dd8ce200625ac33ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="events"></a>
+Events</h2></td></tr>
+<tr class="memitem:aeb2e494913ff15c8d3bf1a769c29076d"><td class="memItemLeft" align="right" valign="top">EventHandler&lt; Size &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aeb2e494913ff15c8d3bf1a769c29076d">CameraOpened</a></td></tr>
+<tr class="memdesc:aeb2e494913ff15c8d3bf1a769c29076d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is raised when the camera is opened.  <a href="#aeb2e494913ff15c8d3bf1a769c29076d">More...</a><br /></td></tr>
+<tr class="separator:aeb2e494913ff15c8d3bf1a769c29076d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a712d7f879ee8785a6282d1a47625b0"><td class="memItemLeft" align="right" valign="top">EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a9a712d7f879ee8785a6282d1a47625b0">CameraClosed</a></td></tr>
+<tr class="memdesc:a9a712d7f879ee8785a6282d1a47625b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is raised when the camera is closed.  <a href="#a9a712d7f879ee8785a6282d1a47625b0">More...</a><br /></td></tr>
+<tr class="separator:a9a712d7f879ee8785a6282d1a47625b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71641805b4bc678b3db8f94877f62c81"><td class="memItemLeft" align="right" valign="top">EventHandler&lt; Exception &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a71641805b4bc678b3db8f94877f62c81">CameraError</a></td></tr>
+<tr class="memdesc:a71641805b4bc678b3db8f94877f62c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">This event is raised when a camera error occurs.  <a href="#a71641805b4bc678b3db8f94877f62c81">More...</a><br /></td></tr>
+<tr class="separator:a71641805b4bc678b3db8f94877f62c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the camera view class, the base class for the <a class="el" href="namespace_anyline.html">Anyline</a> camera and all modules. </p>
+<div class="textblock"><p>Represents the camera view class which renders the camera stream. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa5b32e259f15574ca77395b8117261bb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa5b32e259f15574ca77395b8117261bb">&#9670;&nbsp;</a></span>CameraView()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Anyline.SDK.Camera.CameraView.CameraView </td>
@@ -148,55 +139,21 @@ Properties</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Initializes the <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html" title="Represents the camera view class, the base class for the Anyline camera and all modules. ">CameraView</a> class. </p>
+<p>Creates a new <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html" title="Represents the camera view class which renders the camera stream. ">CameraView</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5096856338ac4f0626617a8e3375551c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5096856338ac4f0626617a8e3375551c">&#9670;&nbsp;</a></span>Dispose()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual void Anyline.SDK.Camera.CameraView.Dispose </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Disposes the <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html" title="Represents the camera view class, the base class for the Anyline camera and all modules. ">CameraView</a>. </p>
-
-<p>Reimplemented in <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a0c58a0046a36f676489e2fd1f7b08d96">Anyline.SDK.Modules.AnylineModuleView&lt; T &gt;</a>.</p>
-
-</div>
-</div>
-<a id="a1ef8963e4bba21922f857074acfa61d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ef8963e4bba21922f857074acfa61d4">&#9670;&nbsp;</a></span>GetImageWithFullSize()</h2>
+<a id="adbdde05e978642206b470efdb65f02ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdde05e978642206b470efdb65f02ce">&#9670;&nbsp;</a></span>IsCameraOpen()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a> Anyline.SDK.Camera.CameraView.GetImageWithFullSize </td>
+          <td class="memname">bool Anyline.SDK.Camera.CameraView.IsCameraOpen </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -204,48 +161,8 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Returns the current available full frame. </p>
-<dl class="section return"><dt>Returns</dt><dd>Fullsized frame.</dd></dl>
-
-</div>
-</div>
-<a id="a884cfebd4de393c5182c87a8e9c11afd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a884cfebd4de393c5182c87a8e9c11afd">&#9670;&nbsp;</a></span>GetNewImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a> Anyline.SDK.Camera.CameraView.GetNewImage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the current available cropped frame. </p>
-<dl class="section return"><dt>Returns</dt><dd>The AnylineImage.</dd></dl>
-
-</div>
-</div>
-<a id="a095ad436dee8b15578e7b969bf3c3361"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a095ad436dee8b15578e7b969bf3c3361">&#9670;&nbsp;</a></span>HasNewImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Anyline.SDK.Camera.CameraView.HasNewImage </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets whether or not a new frame is available. </p>
-<dl class="section return"><dt>Returns</dt><dd>Image available?</dd></dl>
+<p>Gets if the camera is opened. </p>
+<dl class="section return"><dt>Returns</dt><dd>true if camera is opened.</dd></dl>
 
 </div>
 </div>
@@ -264,7 +181,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Initializes the camera and starts the preview. </p>
+<p>Initializes the camera and starts the preview in a background thread. </p>
 
 </div>
 </div>
@@ -283,13 +200,39 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Releases the camera. </p>
+<p>Releases the camera in background. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a793e317db1afdc2d5f080d85afaaa525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a793e317db1afdc2d5f080d85afaaa525">&#9670;&nbsp;</a></span>CaptureElement</h2>
+<a id="a50437b52bc6b8ed4131bc7a7bbddf2d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50437b52bc6b8ed4131bc7a7bbddf2d8">&#9670;&nbsp;</a></span>SetCameraConfig()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Anyline.SDK.Camera.CameraView.SetCameraConfig </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_camera_config.html">CameraConfig</a>&#160;</td>
+          <td class="paramname"><em>cameraConfig</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the CameraConfig. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cameraConfig</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Property Documentation</h2>
+<a id="a44ea4758b9101dd8ce200625ac33ed42"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44ea4758b9101dd8ce200625ac33ed42">&#9670;&nbsp;</a></span>CameraConfig</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -298,21 +241,20 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">CaptureElement Anyline.SDK.Camera.CameraView.CaptureElement</td>
+          <td class="memname"><a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_camera_config.html">CameraConfig</a> Anyline.SDK.Camera.CameraView.CameraConfig</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">get</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>The capture element.</p>
+<p>Gets the CameraConfig. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Property Documentation</h2>
 <a id="aa2208d0e789dfa5add19ae4114b764a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa2208d0e789dfa5add19ae4114b764a8">&#9670;&nbsp;</a></span>CameraListener</h2>
 
@@ -361,32 +303,57 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="acbef44564c0dcabd1b0e3b8ea67b070e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbef44564c0dcabd1b0e3b8ea67b070e">&#9670;&nbsp;</a></span>PreferredCameraDevice</h2>
+<h2 class="groupheader">Event Documentation</h2>
+<a id="a9a712d7f879ee8785a6282d1a47625b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a712d7f879ee8785a6282d1a47625b0">&#9670;&nbsp;</a></span>CameraClosed</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_camera.html#abd869d2a27c8e4efdb9073ad17d0223f">DeviceType</a> Anyline.SDK.Camera.CameraView.PreferredCameraDevice</td>
+          <td class="memname">EventHandler&lt;bool&gt; Anyline.SDK.Camera.CameraView.CameraClosed</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">get</span><span class="mlabel">set</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Gets or sets whether the front camera should be preferred. Per default, the integrated backfacing device is preferred. Note: For MRZ scanning, a camera with at least 720p and focus functionality is required. </p>
+<p>This event is raised when the camera is closed. </p>
+
+</div>
+</div>
+<a id="a71641805b4bc678b3db8f94877f62c81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71641805b4bc678b3db8f94877f62c81">&#9670;&nbsp;</a></span>CameraError</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler&lt;Exception&gt; Anyline.SDK.Camera.CameraView.CameraError</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This event is raised when a camera error occurs. </p>
+
+</div>
+</div>
+<a id="aeb2e494913ff15c8d3bf1a769c29076d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb2e494913ff15c8d3bf1a769c29076d">&#9670;&nbsp;</a></span>CameraOpened</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">EventHandler&lt;Size&gt; Anyline.SDK.Camera.CameraView.CameraOpened</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This event is raised when the camera is opened. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_camera_view_8cs.html">CameraView.cs</a></li>
+<li>CameraView.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

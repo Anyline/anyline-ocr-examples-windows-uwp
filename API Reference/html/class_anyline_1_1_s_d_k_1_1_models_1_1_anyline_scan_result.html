@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Anyline Windows SDK: Anyline.SDK.Models.AnylineScanResult&lt; T &gt; Class Template Reference</title>
+<title>Anyline SDK: Anyline.SDK.Models.AnylineScanResult&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,8 +21,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Anyline Windows SDK
-   &#160;<span id="projectnumber">3.21</span>
+   <div id="projectname">Anyline SDK
+   &#160;<span id="projectnumber">6.0</span>
    </div>
   </td>
  </tr>
@@ -67,6 +67,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result-members.html">List of all members</a>  </div>
@@ -78,8 +79,14 @@ $(function() {
 <p>The generic base class for <a class="el" href="namespace_anyline.html">Anyline</a> scan results.  
  <a href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#details">More...</a></p>
 
-<p>Inherits Anyline.SDK.Models.IAnylineScanResult.</p>
+<p>Inherits <a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html">Anyline.SDK.Models.IAnylineScanResult</a>.</p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4cdf09ba56fba71bd1a0fc44e7b513df"><td class="memItemLeft" align="right" valign="top">virtual JsonObject&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a4cdf09ba56fba71bd1a0fc44e7b513df">ToJson</a> ()</td></tr>
+<tr class="memdesc:a4cdf09ba56fba71bd1a0fc44e7b513df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a JSON object from the result. Images will be saved in a temporary location and their path will be stored in the JSON.  <a href="#a4cdf09ba56fba71bd1a0fc44e7b513df">More...</a><br /></td></tr>
+<tr class="separator:a4cdf09ba56fba71bd1a0fc44e7b513df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a685b03519f5a49fefd19c9b3b9392e2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a685b03519f5a49fefd19c9b3b9392e2b">AnylineScanResult</a> (List&lt; Point &gt; outline, int confidence, <a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a> cutoutImage, <a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a> fullImage, T result)</td></tr>
@@ -103,6 +110,22 @@ Properties</h2></td></tr>
 <tr class="memitem:a8ba4b2ea5991dfcc151908b88416a058"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a8ba4b2ea5991dfcc151908b88416a058">Result</a><code> [get]</code></td></tr>
 <tr class="memdesc:a8ba4b2ea5991dfcc151908b88416a058"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the result.  <a href="#a8ba4b2ea5991dfcc151908b88416a058">More...</a><br /></td></tr>
 <tr class="separator:a8ba4b2ea5991dfcc151908b88416a058"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html">Anyline.SDK.Models.IAnylineScanResult</a></td></tr>
+<tr class="memitem:a0eb04ca4495c59ee2921f04885dc46ba inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memItemLeft" align="right" valign="top">List&lt; Point &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a0eb04ca4495c59ee2921f04885dc46ba">Outline</a><code> [get]</code></td></tr>
+<tr class="memdesc:a0eb04ca4495c59ee2921f04885dc46ba inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the list of points that define the outline of the result.  <a href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a0eb04ca4495c59ee2921f04885dc46ba">More...</a><br /></td></tr>
+<tr class="separator:a0eb04ca4495c59ee2921f04885dc46ba inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f89198ff429798f8596e139da48171d inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a3f89198ff429798f8596e139da48171d">Confidence</a><code> [get]</code></td></tr>
+<tr class="memdesc:a3f89198ff429798f8596e139da48171d inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the confidence.  <a href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a3f89198ff429798f8596e139da48171d">More...</a><br /></td></tr>
+<tr class="separator:a3f89198ff429798f8596e139da48171d inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007a68b324f2be05fea07ea62ca6b9b5 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a007a68b324f2be05fea07ea62ca6b9b5">CutoutImage</a><code> [get]</code></td></tr>
+<tr class="memdesc:a007a68b324f2be05fea07ea62ca6b9b5 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the cutout image.  <a href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a007a68b324f2be05fea07ea62ca6b9b5">More...</a><br /></td></tr>
+<tr class="separator:a007a68b324f2be05fea07ea62ca6b9b5 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a832c0f18dd8baf69010d54e574dc69c7 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html">AnylineImage</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a832c0f18dd8baf69010d54e574dc69c7">FullImage</a><code> [get]</code></td></tr>
+<tr class="memdesc:a832c0f18dd8baf69010d54e574dc69c7 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the full image.  <a href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#a832c0f18dd8baf69010d54e574dc69c7">More...</a><br /></td></tr>
+<tr class="separator:a832c0f18dd8baf69010d54e574dc69c7 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a99bd84623356c083fd15c8f9a2145 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#ab6a99bd84623356c083fd15c8f9a2145">Result</a><code> [get]</code></td></tr>
+<tr class="memdesc:ab6a99bd84623356c083fd15c8f9a2145 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the result.  <a href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#ab6a99bd84623356c083fd15c8f9a2145">More...</a><br /></td></tr>
+<tr class="separator:ab6a99bd84623356c083fd15c8f9a2145 inherit properties_interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The generic base class for <a class="el" href="namespace_anyline.html">Anyline</a> scan results. </p>
@@ -176,6 +199,39 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4cdf09ba56fba71bd1a0fc44e7b513df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cdf09ba56fba71bd1a0fc44e7b513df">&#9670;&nbsp;</a></span>ToJson()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual JsonObject <a class="el" href="class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html">Anyline.SDK.Models.AnylineScanResult</a>&lt; T &gt;.ToJson </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a JSON object from the result. Images will be saved in a temporary location and their path will be stored in the JSON. </p>
+<dl class="section return"><dt>Returns</dt><dd>Result as JSON</dd></dl>
+
+<p>Implements <a class="el" href="interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#ad2b7cff83d3a50c6f8b901425e6481fa">Anyline.SDK.Models.IAnylineScanResult</a>.</p>
+
+<p>Reimplemented in <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_result.html#aea7dc4d5758f8ae14b91262a8eccc83f">Anyline.SDK.Modules.Ocr.AnylineOcrResult</a>, <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html#a30c0462849dbb757d160c30112b086e0">Anyline.SDK.Modules.Energy.EnergyResult</a>, <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_barcode_1_1_barcode_result.html#adbd01082319132554561a4c27d2c4f34">Anyline.SDK.Modules.Barcode.BarcodeResult</a>, <a class="el" href="class_anyline_1_1_s_d_k_1_1_modules_1_1_license_plate_1_1_license_plate_result.html#af18587606b18a2705dfdeb6be66882a6">Anyline.SDK.Modules.LicensePlate.LicensePlateResult</a>, and <a class="el" href="class_anyline_1_1_s_d_k_1_1_plugins_1_1_scan_result.html#a71ee721029f17a05909ff0d64d25d87d">Anyline.SDK.Plugins.ScanResult&lt; TScanResultType &gt;</a>.</p>
 
 </div>
 </div>
@@ -301,7 +357,7 @@ Properties</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="_anyline_scan_result_8cs.html">AnylineScanResult.cs</a></li>
+<li>AnylineScanResult.cs</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

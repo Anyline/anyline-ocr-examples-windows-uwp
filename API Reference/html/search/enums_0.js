@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['animationstyle',['AnimationStyle',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#ab56c75537cc76c44bdc35b7566b3d12e',1,'Anyline::SDK::Camera']]]
+  ['barcodeformat',['BarcodeFormat',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_barcode_1_1_barcode_scan_view.html#a4eab328031bb85717d926888b1941472',1,'Anyline::SDK::Modules::Barcode::BarcodeScanView']]]
 ];
