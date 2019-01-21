@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="AnylineExamplesApp.Modules.DrivingLicense.ScanDrivingLicense"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AnylineExamplesApp.Modules.DrivingLicense"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:anyline="using:Anyline.SDK.Views"
+    xmlns:util="using:AnylineExamplesApp.Util">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" BorderBrush="White" BorderThickness="2">
+        <anyline:ScanView x:Name="AnylineScanView" />
+        <util:ResultView x:Name="ResultView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
+    </Grid>
+</Page>

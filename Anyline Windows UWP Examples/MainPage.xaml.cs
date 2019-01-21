@@ -62,24 +62,20 @@ namespace AnylineExamplesApp
             // Back button functionality
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
-        
         }
                 
         void App_BackRequested(object sender, BackRequestedEventArgs args)
         {
-            // immediately unsubscribe from the event
-            SystemNavigationManager.GetForCurrentView().BackRequested -= App_BackRequested;
-
             Frame rootFrame = Window.Current.Content as Frame;
             if (rootFrame == null)
                 return;
-
+            
             // Navigate back if possible, and if the event has not 
             // already been handled.
             if (args.Handled == false)
-            {                
+            {
                 args.Handled = true;
-                if (rootFrame.CanGoBack)
+                if (rootFrame.CanGoBack && rootFrame.CurrentSourcePageType != typeof(MainPage))
                     rootFrame.GoBack();
                 else
                     Application.Current.Exit();
@@ -115,19 +111,29 @@ namespace AnylineExamplesApp
                 case Model.UseCase.PhotoMode:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "photo");
                     break;
-                case Model.UseCase.SerialNumbers:
-                    Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "serialnumber");
-                    break;
+                case Model.UseCase.UniversalSerialNumber:
+                    Frame.Navigate(typeof(Modules.Ocr.ScanUniversalSerialNumber));
+                    break;                
                 case Model.UseCase.DialMeter:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "dial");
                     break;
                 case Model.UseCase.DotMatrixMeter:
                     Frame.Navigate(typeof(Modules.Energy.ScanEnergy), "dotmatrix");
                     break;
+                case Model.UseCase.DoubleTariff:
+                    Frame.Navigate(typeof(Modules.Energy.ScanEnergyDoubleTariff));
+                    break;
                 case Model.UseCase.MRZScan:
                     Frame.Navigate(typeof(Modules.Mrz.ScanMrz));
                     break;
-                default:break;
+                case Model.UseCase.LicensePlate:
+                    Frame.Navigate(typeof(Modules.LicensePlate.ScanLicensePlate));
+                    break;
+                case Model.UseCase.DrivingLicense:
+                    Frame.Navigate(typeof(Modules.DrivingLicense.ScanDrivingLicense));
+                    break;
+
+                default: break;
             }            
         }
     }

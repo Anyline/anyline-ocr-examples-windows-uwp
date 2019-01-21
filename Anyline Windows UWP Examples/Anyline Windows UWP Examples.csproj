@@ -16,13 +16,12 @@
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>
-    </PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>4E8BEA67735B9D70281E26DE5516E457938BD793</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>Anyline Windows UWP Examples_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>00B2F2235346B350D6F29C093EC226CB59FBA432</PackageCertificateThumbprint>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86</AppxBundlePlatforms>
-    <AppxPackageDir>\\192.168.100.183\Neuer Ordner\</AppxPackageDir>
+    <AppxPackageDir>D:\ANYLINE\anyline-ocr-examples-windows-uwp\DELETE\</AppxPackageDir>
     <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
@@ -54,15 +53,14 @@
     <Content Include="Assets\FlashIcons\torch_off.png" />
     <Content Include="Assets\FlashIcons\torch_on.png" />
     <Content Include="Assets\Images\pass.png" />
-    <Content Include="Modules\Mrz\MrzConfig.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Modules\Energy\EnergyConfig.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Modules\Energy\PhotoCaptureConfig.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Anyline Windows UWP Examples_StoreKey.pfx" />
+    <Content Include="Modules\DrivingLicense\driving_license_view_config.json" />
+    <Content Include="Modules\Energy\energy_view_config.json" />
+    <Content Include="Modules\Energy\photocapture_view_config.json" />
+    <Content Include="Modules\LicensePlate\license_plate_view_config.json" />
+    <Content Include="Modules\Mrz\mrz_view_config.json" />
+    <Content Include="Modules\Ocr\serial_number_view_config.json" />
+    <Content Include="Modules\Ocr\USNr.any" />
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
@@ -70,11 +68,21 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\ExistsToVisibleConverter.cs" />
+    <Compile Include="LoadingPage.xaml.cs">
+      <DependentUpon>LoadingPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Entry.cs" />
     <Compile Include="Model\ExampleList.cs" />
+    <Compile Include="Modules\DrivingLicense\ScanDrivingLicense.xaml.cs">
+      <DependentUpon>ScanDrivingLicense.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Energy\DoubleTariffCutoutView.cs" />
+    <Compile Include="Modules\Energy\DoubleTariffResultPage.xaml.cs">
+      <DependentUpon>DoubleTariffResultPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Energy\EnergyResultView.xaml.cs">
       <DependentUpon>EnergyResultView.xaml</DependentUpon>
     </Compile>
@@ -82,13 +90,25 @@
     <Compile Include="Modules\Energy\ScanEnergy.xaml.cs">
       <DependentUpon>ScanEnergy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Energy\ScanEnergyDoubleTariff.xaml.cs">
+      <DependentUpon>ScanEnergyDoubleTariff.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\LicensePlate\ScanLicensePlate.xaml.cs">
+      <DependentUpon>ScanLicensePlate.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Modules\Mrz\MrzResultView.xaml.cs">
       <DependentUpon>MrzResultView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modules\Mrz\ScanMrz.xaml.cs">
       <DependentUpon>ScanMrz.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Modules\Ocr\ScanUniversalSerialNumber.xaml.cs">
+      <DependentUpon>ScanUniversalSerialNumber.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ResultView.xaml.cs">
+      <DependentUpon>ResultView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Util\TemplateSelector.cs" />
     <Compile Include="Util\Utils.cs" />
     <Compile Include="ViewModels\EntryViewModel.cs" />
@@ -111,6 +131,7 @@
     <Content Include="Assets\Images\icon_digital.png" />
     <Content Include="Assets\Images\icon_mrz.png" />
     <Content Include="Assets\Images\passport.png" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -125,7 +146,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="LoadingPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Modules\DrivingLicense\ScanDrivingLicense.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Modules\Energy\DoubleTariffResultPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -137,6 +170,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Modules\Energy\ScanEnergyDoubleTariff.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Modules\LicensePlate\ScanLicensePlate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Modules\Mrz\MrzResultView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -144,6 +185,14 @@
     <Page Include="Modules\Mrz\ScanMrz.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modules\Ocr\ScanUniversalSerialNumber.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Util\ResultView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -155,6 +204,7 @@
       <HintPath>..\Anyline.SDK.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -1,45 +1,61 @@
-﻿using Anyline.SDK.Modules.Mrz;
+﻿using Anyline.SDK.Camera;
+using Anyline.SDK.Modules.Ocr;
 using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using System.Linq;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Foundation;
+using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Primitives;
+using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
+using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Anyline.SDK.Models;
-using System.Diagnostics;
-using Windows.UI.Popups;
-using Anyline.SDK.Camera;
-using AnylineExamplesApp.Util;
-using Windows.Data.Json;
 
-namespace AnylineExamplesApp.Modules.Mrz
+namespace AnylineExamplesApp.Modules.Ocr
 {
-    public sealed partial class ScanMrz : Page, IMrzResultListener, ICameraListener
+    public sealed partial class ScanUniversalSerialNumber : Page, ICameraListener, IAnylineOcrResultListener
     {
         #region initialization
-        public ScanMrz()
+        public ScanUniversalSerialNumber()
         {
             NavigationCacheMode = NavigationCacheMode.Enabled;
             ((Frame)Window.Current.Content).CacheSize = 0;
 
             InitializeComponent();
-                        
+
             try
             {
-                AnylineScanView.SetConfigFromAsset("Modules/Mrz/mrz_view_config.json");
+                AnylineScanView.SetConfigFromAsset("Modules/Ocr/serial_number_view_config.json");
                 AnylineScanView.InitAnyline(MainPage.LicenseKey, this);
 
                 AnylineScanView.CameraListener = this;
+
+                SetOcrConfig();
+
+                ResultView.OkButton.Tapped += ResultView_Tapped;
             }
             catch (Exception e)
             {
                 new MessageDialog(e.Message, "Exception").ShowAsync().AsTask().ConfigureAwait(false);
             }
 
-            ResultView.Tapped += ResultView_Tapped;
             Window.Current.VisibilityChanged += Current_VisibilityChanged;
 
             if (!AnylineScanView.IsCameraOpen())
                 AnylineScanView.OpenCameraInBackground();
+        }
+
+        private void ResultView_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        {
+            ResultView.Visibility = Visibility.Collapsed;
+            if (AnylineScanView != null && !AnylineScanView.IsScanning)
+                AnylineScanView?.StartScanning();
         }
 
         // we do this because the UWP camera stream automatically shuts down when a window is minimized
@@ -57,10 +73,17 @@ namespace AnylineExamplesApp.Modules.Mrz
             }
         }
 
-        private void ResultView_Tapped(object sender, TappedRoutedEventArgs e)
+        private void SetOcrConfig()
         {
-            ResultView.FadeOut();
-            AnylineScanView.StartScanning();
+            AnylineOcrConfig anylineOcrConfig = new AnylineOcrConfig();
+
+            anylineOcrConfig.SetLanguages(@"Modules\Ocr\USNr.any");
+            // AUTO ScanMode automatically detects the correct text without any further parameters to be set
+            anylineOcrConfig.ScanMode = AnylineOcrConfig.OcrScanMode.Auto;
+            anylineOcrConfig.ValidationRegex = "[A-Z0-9]{4,}";
+            
+            // set the ocr config
+            AnylineScanView.SetAnylineOcrConfig(anylineOcrConfig);
         }
         #endregion
 
@@ -71,10 +94,6 @@ namespace AnylineExamplesApp.Modules.Mrz
             base.OnNavigatedFrom(args);
 
             Window.Current.VisibilityChanged -= Current_VisibilityChanged;
-            ResultView.Tapped -= ResultView_Tapped;
-
-            ResultView?.Dispose();
-            ResultView = null;
 
             if (AnylineScanView != null)
             {
@@ -104,10 +123,8 @@ namespace AnylineExamplesApp.Modules.Mrz
         public void OnCameraOpened(uint width, uint height)
         {
             Debug.WriteLine($"Camera opened: {width}x{height}.");
+            ResultView.Visibility = Visibility.Collapsed;
 
-            if (ResultView != null)
-                ResultView.Visibility = Visibility.Collapsed;
-            
             // As soon as the camera is opened, we start scanning
             if (AnylineScanView != null)
                 AnylineScanView.StartScanning();
@@ -115,11 +132,12 @@ namespace AnylineExamplesApp.Modules.Mrz
         #endregion
 
         #region result callback        
-        public void OnResult(MrzResult scanResult)
+        public async void OnResult(AnylineOcrResult scanResult)
         {
+            var resultBitmap = await scanResult.CutoutImage.GetBitmapAsync();
+
             Debug.WriteLine("Result: " + scanResult.Result);
-            
-            ResultView.UpdateResult(scanResult.Result);
+            ResultView.SetResult(resultBitmap, scanResult.Result);
             ResultView.FadeIn();
         }
         #endregion
