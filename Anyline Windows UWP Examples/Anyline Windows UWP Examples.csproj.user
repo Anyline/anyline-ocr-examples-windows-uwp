@@ -16,9 +16,9 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <RemoteDebugMachine>192.168.100.138:4020 (DESKTOP-4E978BE)</RemoteDebugMachine>
+    <RemoteDebugMachine>DESKTOP-P597JTR</RemoteDebugMachine>
     <AuthenticationMode>Windows</AuthenticationMode>
-    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <RemoteDebugEnabled>true</RemoteDebugEnabled>
     <CreateCleanLayout>true</CreateCleanLayout>
   </PropertyGroup>
   <PropertyGroup>
