@@ -35,7 +35,7 @@ namespace AnylineExamplesApp.Modules.Energy
 
             InitializeComponent();
 
-            AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
+            AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
             AnylineScanView.InitAnyline(MainPage.LicenseKey, this);
 
             AnylineScanView.CameraListener = this;
@@ -45,9 +45,28 @@ namespace AnylineExamplesApp.Modules.Energy
             doubleTariffCutoutView.StrokeBrush = new SolidColorBrush(Color.FromArgb(0, 0, 0, 0));
             doubleTariffCutoutView.FillBrush = new SolidColorBrush(Color.FromArgb(60, 255, 255, 255));
 
-            RootGrid.Children.Add(doubleTariffCutoutView);            
-        }
+            RootGrid.Children.Add(doubleTariffCutoutView);
 
+            Window.Current.VisibilityChanged += Current_VisibilityChanged;
+            
+            if (!AnylineScanView.IsCameraOpen())
+                AnylineScanView.OpenCameraInBackground();
+        }
+        
+        // we do this because the UWP camera stream automatically shuts down when a window is minimized
+        private void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
+        {
+            if (args.Visible == false)
+            {
+                if (AnylineScanView.IsCameraOpen())
+                    AnylineScanView.ReleaseCameraInBackground();
+            }
+            if (args.Visible == true)
+            {
+                if (!AnylineScanView.IsCameraOpen())
+                    AnylineScanView.OpenCameraInBackground();
+            }
+        }
 
         protected override void OnNavigatedTo(NavigationEventArgs args)
         {
@@ -60,6 +79,8 @@ namespace AnylineExamplesApp.Modules.Energy
         protected override void OnNavigatedFrom(NavigationEventArgs args)
         {
             base.OnNavigatedFrom(args);
+
+            Window.Current.VisibilityChanged -= Current_VisibilityChanged;
             
             if (AnylineScanView != null)
             {
@@ -80,12 +101,12 @@ namespace AnylineExamplesApp.Modules.Energy
             double verticalDistance = 2 * bounds.Height;
             
             Rect newRect;
-
+            
             if (!isScanningSecondMeter)
                 newRect = new Rect(bounds.X, bounds.Y + verticalDistance, bounds.Width, bounds.Height);
             else
                 newRect = new Rect(bounds.X, bounds.Y - verticalDistance, bounds.Width, bounds.Height);
-
+            
             doubleTariffCutoutView.UpdateSizeForRect(newRect);
         }
         
@@ -103,6 +124,8 @@ namespace AnylineExamplesApp.Modules.Energy
 
         public void OnCameraOpened(uint width, uint height)
         {
+            CutoutView_LayoutUpdated(this, null);
+
             // As soon as the camera is opened, we start scanning
             if (AnylineScanView != null)
                 AnylineScanView.StartScanning();

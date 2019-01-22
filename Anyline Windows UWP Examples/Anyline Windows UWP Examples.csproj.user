@@ -6,9 +6,9 @@
     </DebugEngines>
     <BackgroundTaskDebugEngines>
     </BackgroundTaskDebugEngines>
-    <RemoteDebugMachine>192.168.100.75:4020 (DESKTOP-P597JTR)</RemoteDebugMachine>
+    <RemoteDebugMachine>192.168.100.138:4020 (DESKTOP-4E978BE)</RemoteDebugMachine>
     <AuthenticationMode>Windows</AuthenticationMode>
-    <RemoteDebugEnabled>true</RemoteDebugEnabled>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
     <CreateCleanLayout>false</CreateCleanLayout>
     <UseEmulator>false</UseEmulator>
     <DeviceId>6C3DD314-EF85-06D2-68DF-7734EA48770B</DeviceId>
@@ -16,9 +16,14 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <RemoteDebugMachine>DESKTOP-4E978BE</RemoteDebugMachine>
+    <RemoteDebugMachine>DESKTOP-P597JTR</RemoteDebugMachine>
     <AuthenticationMode>Windows</AuthenticationMode>
     <RemoteDebugEnabled>true</RemoteDebugEnabled>
     <CreateCleanLayout>true</CreateCleanLayout>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxShowAllApps>True</AppxShowAllApps>
+    <AppxBuildConfigurationSelection>x86</AppxBuildConfigurationSelection>
   </PropertyGroup>
 </Project>

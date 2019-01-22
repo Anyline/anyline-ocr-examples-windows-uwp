@@ -19,7 +19,7 @@ namespace AnylineExamplesApp.Model
             Entries = new List<Entry>
             {
                 // MRZ
-                new Entry { Name="MRZ" },
+                new Entry { Name="ID" },
 
                 new Entry
                 {
@@ -29,9 +29,54 @@ namespace AnylineExamplesApp.Model
                     IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
                     UseCase = UseCase.MRZScan
                 },
+                
+                new Entry
+                {
+                    Name ="Driving License",
+                    Description ="Scan austrian driving licenses",
+                    BackgroundSource = "ms-appx:///Assets/Images/barcode.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
+                    UseCase = UseCase.DrivingLicense
+                },
+                
+                // Vehicle
+                new Entry { Name="Vehicle" },
+
+                new Entry
+                {
+                    Name ="License Plates",
+                    Description ="Scan license plates",
+                    BackgroundSource = "ms-appx:///Assets/Images/barcode.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
+                    UseCase = UseCase.LicensePlate
+                },
+
+                // USNR
+                new Entry { Name = "Universal Serial Number" },
+
+                new Entry
+                {
+                    Name = "Serial Numbers",
+                    Description ="Scan serial numbers",
+                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
+                    UseCase = UseCase.UniversalSerialNumber
+                },
+
+                // Barcode
+                new Entry { Name="Barcode" },
+
+                new Entry
+                {
+                    Name ="Barcodes",
+                    Description ="Scan barcodes & QR codes",
+                    BackgroundSource = "ms-appx:///Assets/Images/barcode.png",
+                    IconSource = "ms-appx:///Assets/Images/icon_barcode.png",
+                    UseCase = UseCase.BarcodeScan
+                },
 
                 // Energy
-                new Entry { Name="Energy" },
+                new Entry { Name="Meter Scanning" },
 
                 new Entry
                 {
@@ -73,16 +118,7 @@ namespace AnylineExamplesApp.Model
                     IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
                     UseCase = UseCase.PhotoMode
                 },
-
-                new Entry
-                {
-                    Name ="Serial Numbers",
-                    Description ="Scan serial numbers",
-                    BackgroundSource = "ms-appx:///Assets/Images/digital.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_mrz.png",
-                    UseCase = UseCase.SerialNumbers
-                },
-
+                
                 new Entry
                 {
                     Name ="Double Tariff Meters",
@@ -91,19 +127,7 @@ namespace AnylineExamplesApp.Model
                     IconSource = "ms-appx:///Assets/Images/icon_analog.png",
                     UseCase = UseCase.DoubleTariff
                 },
-
-                // Barcode
-                new Entry { Name="Barcode" },
-
-                new Entry
-                {
-                    Name ="Barcodes",
-                    Description ="Scan barcodes & QR codes",
-                    BackgroundSource = "ms-appx:///Assets/Images/barcode.png",
-                    IconSource = "ms-appx:///Assets/Images/icon_barcode.png",
-                    UseCase = UseCase.BarcodeScan
-                },
-
+                
                 new Entry {
                     Name = GetAssemblyVersion()
                 }
@@ -112,7 +136,7 @@ namespace AnylineExamplesApp.Model
 
         private string GetAssemblyVersion()
         {
-            var assembly = typeof(Anyline.SDK.Core.AnylineController).GetTypeInfo().Assembly;
+            var assembly = typeof(Anyline.SDK.Core.IAnylineListener).GetTypeInfo().Assembly;
             if (assembly != null)
             {
                 Version ver = assembly.GetName().Version;

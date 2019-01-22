@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['anylinecontroller',['AnylineController',['../class_anyline_1_1_s_d_k_1_1_core_1_1_anyline_controller.html#af88ee0bae548bafa66e38708b72989b4',1,'Anyline::SDK::Core::AnylineController']]],
-  ['anylineexception',['AnylineException',['../class_anyline_1_1_s_d_k_1_1_core_1_1_anyline_exception.html#a69a5206a9937ea55e8354ffd7257f8e8',1,'Anyline::SDK::Core::AnylineException']]],
+  ['anylineexception',['AnylineException',['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_anyline_exception.html#a2f2ed94a25bf8627e3ef8cda11f83902',1,'Anyline::SDK::Core::Exceptions::AnylineException']]],
   ['anylineimage',['AnylineImage',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#aaa4e9fc25ad413cfa6ab75654f8e7d80',1,'Anyline.SDK.Models.AnylineImage.AnylineImage(ref byte[] buffer, int width, int height)'],['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#aac8fc8e8e3d6129f5fa6871cc1cb4e39',1,'Anyline.SDK.Models.AnylineImage.AnylineImage(WriteableBitmap bitmap)']]],
-  ['anylinemoduleview',['AnylineModuleView',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a030c7ac6fa5a804dd28e27b7fdcd3ae4',1,'Anyline::SDK::Modules::AnylineModuleView']]],
+  ['anylineocrconfig',['AnylineOcrConfig',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a310ee5fcc4957238c6a3e86bc7e91051',1,'Anyline.SDK.Modules.Ocr.AnylineOcrConfig.AnylineOcrConfig()'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a950cd82bd14c74b50574b57e513d8468',1,'Anyline.SDK.Modules.Ocr.AnylineOcrConfig.AnylineOcrConfig(string fileName)'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a55f0ce116d5d57a193139e965f19e2ce',1,'Anyline.SDK.Modules.Ocr.AnylineOcrConfig.AnylineOcrConfig(JsonObject jsonObject)']]],
+  ['anylineocrlanguage',['AnylineOcrLanguage',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_language.html#a0f841af4105d880d491d7c7dd23b4586',1,'Anyline::SDK::Modules::Ocr::AnylineOcrLanguage']]],
+  ['anylineocrregex',['AnylineOcrRegex',['../struct_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_regex.html#a70e8c4aed4cea2cb63e35d0530eb3403',1,'Anyline::SDK::Modules::Ocr::AnylineOcrRegex']]],
+  ['anylineocrresult',['AnylineOcrResult',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_result.html#abb3497acd71bc6c21ddcb78458210e72',1,'Anyline::SDK::Modules::Ocr::AnylineOcrResult']]],
   ['anylinescanresult',['AnylineScanResult',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a685b03519f5a49fefd19c9b3b9392e2b',1,'Anyline::SDK::Models::AnylineScanResult']]],
-  ['argumentexception',['ArgumentException',['../class_anyline_1_1_s_d_k_1_1_core_1_1_argument_exception.html#af825bad58d021084187d973f52abc581',1,'Anyline::SDK::Core::ArgumentException']]]
+  ['arealllanguagesanyfiles',['AreAllLanguagesAnyFiles',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#abf97c91855a36ed0e3cb0bfda45c69b2',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],
+  ['argumentexception',['ArgumentException',['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_argument_exception.html#acf1c17f1d9ece20e9f1524858b13de0f',1,'Anyline::SDK::Core::Exceptions::ArgumentException']]]
 ];

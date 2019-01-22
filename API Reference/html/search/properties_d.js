@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['scanmode',['ScanMode',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html#ad9722bc6eb8e4c826041daad23f2010b',1,'Anyline::SDK::Modules::Energy::EnergyResult']]],
-  ['sex',['Sex',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#aefa64429503a821c1988958a63df654b',1,'Anyline::SDK::Modules::Mrz::Identification']]],
-  ['strokecolor',['StrokeColor',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a3e69ef160b35c9f07cb73c45381bd2dc',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
-  ['strokewidth',['StrokeWidth',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a8259fea533d78eac40a33014de3dc692',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
-  ['surnames',['SurNames',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#adb9629b22d8fe1067a016632d0934293',1,'Anyline::SDK::Modules::Mrz::Identification']]]
+  ['parametername',['ParameterName',['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_argument_exception.html#a56fcbd676aaf342ad8a10f54d24226c8',1,'Anyline.SDK.Core.Exceptions.ArgumentException.ParameterName()'],['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_syntax_exception.html#af578c9669a43e4e5bff60f586aaa1c76',1,'Anyline.SDK.Core.Exceptions.SyntaxException.ParameterName()']]],
+  ['path',['Path',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_language.html#ac2412b1dfc2ccd0dea413a11df5d375d',1,'Anyline::SDK::Modules::Ocr::AnylineOcrLanguage']]],
+  ['personalnumber',['PersonalNumber',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a951ed1bcd1f00fdd6f9d112f80aad67f',1,'Anyline::SDK::Plugins::ID::MrzIdentification']]],
+  ['personalnumber2',['PersonalNumber2',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a20c46bdf8ffa7308bbf1618168ef60e4',1,'Anyline::SDK::Plugins::ID::MrzIdentification']]],
+  ['photocapturelistener',['PhotoCaptureListener',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#afcc0e565f83232da89c2f0e42082f501',1,'Anyline.SDK.Modules.Energy.EnergyScanView.PhotoCaptureListener()'],['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_meter_scan_view_plugin.html#a0c54252adfc39730fb82d88ec6c235f3',1,'Anyline.SDK.Plugins.Meter.MeterScanViewPlugin.PhotoCaptureListener()']]],
+  ['photocapturetarget',['PhotoCaptureTarget',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#aa26129b1ebd1d898a36c797857c11f0a',1,'Anyline.SDK.Modules.Energy.EnergyScanView.PhotoCaptureTarget()'],['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_meter_scan_view_plugin.html#aeeede4fd4c9bb40184348f278fa536ea',1,'Anyline.SDK.Plugins.Meter.MeterScanViewPlugin.PhotoCaptureTarget()']]],
+  ['preferredcameradevice',['PreferredCameraDevice',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fd7253358116fa3a2646727d49a4c37',1,'Anyline::SDK::Modules::AnylineModuleView']]]
 ];

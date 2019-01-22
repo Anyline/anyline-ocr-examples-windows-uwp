@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['manual',['Manual',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#a74841198438c883468cf79cdb2ca40d2ae1ba155a9f2e8c3be94020eef32a0301',1,'Anyline::SDK::Camera']]],
-  ['message',['Message',['../class_anyline_1_1_s_d_k_1_1_core_1_1_anyline_exception.html#a7878125d5ae149085af7b10a41817835',1,'Anyline::SDK::Core::AnylineException']]],
-  ['moduleresultlistener',['ModuleResultListener',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a7c021e02f2160a21565961b9f5344c74',1,'Anyline::SDK::Modules::AnylineModuleView']]],
-  ['mrzresult',['MrzResult',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_result.html',1,'Anyline.SDK.Modules.Mrz.MrzResult'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_result.html#a64c07b733fd7f014771339d1b631cebf',1,'Anyline.SDK.Modules.Mrz.MrzResult.MrzResult()']]],
-  ['mrzscanview',['MrzScanView',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_scan_view.html',1,'Anyline.SDK.Modules.Mrz.MrzScanView'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_scan_view.html#a9b842f05d92526c5ff43b0112d80d458',1,'Anyline.SDK.Modules.Mrz.MrzScanView.MrzScanView()']]]
+  ['name',['Name',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_language.html#a3cca6753f46eb7799d5d3ea233dbd6a2',1,'Anyline::SDK::Modules::Ocr::AnylineOcrLanguage']]],
+  ['nationalitycountrycode',['NationalityCountryCode',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a2b472e83f7a7a72b745e10b2b48fd6ad',1,'Anyline::SDK::Plugins::ID::MrzIdentification']]],
+  ['numerator',['Numerator',['../struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html#aec138faa3c1131f93b106646afc1bdeb',1,'Anyline::SDK::Util::ResolutionRatio']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['devicetype',['DeviceType',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#abd869d2a27c8e4efdb9073ad17d0223f',1,'Anyline::SDK::Camera']]]
+  ['flashstate',['FlashState',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#a61a3aea8a5747e496b043c6bce5311ca',1,'Anyline::SDK::Camera::FlashView']]]
 ];

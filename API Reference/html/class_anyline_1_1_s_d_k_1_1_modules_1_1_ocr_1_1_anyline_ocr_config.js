@@ -1,0 +1,37 @@
+var class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config =
+[
+    [ "OcrScanMode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a1dd89cf46388009dbf8d6d3b3bff45c7", [
+      [ "Line", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a1dd89cf46388009dbf8d6d3b3bff45c7a4803e6b9e63dabf04de980788d6a13c4", null ],
+      [ "Grid", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a1dd89cf46388009dbf8d6d3b3bff45c7a5174d1309f275ba6f275db3af9eb3e18", null ],
+      [ "Auto", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a1dd89cf46388009dbf8d6d3b3bff45c7a06b9281e396db002010bde1de57262eb", null ]
+    ] ],
+    [ "AnylineOcrConfig", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a310ee5fcc4957238c6a3e86bc7e91051", null ],
+    [ "AnylineOcrConfig", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a950cd82bd14c74b50574b57e513d8468", null ],
+    [ "AnylineOcrConfig", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a55f0ce116d5d57a193139e965f19e2ce", null ],
+    [ "AreAllLanguagesAnyFiles", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#abf97c91855a36ed0e3cb0bfda45c69b2", null ],
+    [ "GetLanguageParametersAsJsonString", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a4f9c484e225ae9ec65bb2375d5047c97", null ],
+    [ "GetLanguagesAsJsonString", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a0c4c0ae52841357f14cf84912b670604", null ],
+    [ "GetTesseractLanguagesAsJsonString", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a911013606902d2ca6da43b8e30ec6a67", null ],
+    [ "GetTesseractParametersAsJsonString", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a9694e7cea642c661a945dfafee043858", null ],
+    [ "SetLanguages", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a5603c05565cfddaf130eaf44e406ea18", null ],
+    [ "SetTesseractLanguages", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a3ca86790995e0fb6181eafb7f5579b83", null ],
+    [ "ToString", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a8303960eb8a8ed3d5c1bddbe7a4605b6", null ],
+    [ "AllowLowerCase", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#abe385b7f2aafa3eefd057e4d14e5fecb", null ],
+    [ "CharacterWhitelist", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a1b38d5ae7197370deb9029f0b69df1c5", null ],
+    [ "CharCountX", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a036b56c4787d63ae28cd4ef5a64ad8f0", null ],
+    [ "CharCountY", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a418e82d76d48b79780e9996ab98f07dd", null ],
+    [ "CharPaddingXFactor", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a585c3bbe715657224c1306b69c59a8a7", null ],
+    [ "CharPaddingYFactor", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a65f943a9ef1186e0378b92008c755139", null ],
+    [ "CustomCmdFile", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a36b87bbce606df857d517059a73f6389", null ],
+    [ "CustomScript", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a37830c085700b9d07f44d768e48c14d5", null ],
+    [ "IsBrightTextOnDark", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#af5b7d9d685db74c3f5f1cfe1bbff48c8", null ],
+    [ "Languages", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#aa769fe38706dfd01f8206c777fce8040", null ],
+    [ "MaxCharHeight", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a536959b95283d905f2cd8b6681b8dfda", null ],
+    [ "MinCharHeight", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a2eff9915e7b2addf949f3d164ead8178", null ],
+    [ "MinConfidence", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a98027be8873a1738cb73c6ccd6dddc69", null ],
+    [ "MinSharpness", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#ad460988448e717ac2c603ea810ea9650", null ],
+    [ "RemoveSmallContours", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a8489331880d6ddacfc9fed5864f11969", null ],
+    [ "RemoveWhiteSpaces", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a2b4c719dda836aa322f376f8be6a9224", null ],
+    [ "ScanMode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#ae30e098d4bbe52540b1c4428ec94d496", null ],
+    [ "ValidationRegex", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a5e882f14852934876fdc3e6c9412369a", null ]
+];

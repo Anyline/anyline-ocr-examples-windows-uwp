@@ -1,0 +1,6 @@
+var namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate =
+[
+    [ "LicensePlateScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_plugin.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_plugin" ],
+    [ "LicensePlateScanResult", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_result.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_result" ],
+    [ "LicensePlateScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_view_plugin.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_view_plugin" ]
+];

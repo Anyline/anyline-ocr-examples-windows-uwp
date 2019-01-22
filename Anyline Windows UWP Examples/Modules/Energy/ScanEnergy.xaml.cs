@@ -18,6 +18,7 @@ using Windows.Storage.Pickers;
 using Windows.Graphics.Imaging;
 using System.Threading.Tasks;
 using Windows.Foundation;
+using Anyline.SDK.Util;
 
 namespace AnylineExamplesApp.Modules.Energy
 {
@@ -37,7 +38,7 @@ namespace AnylineExamplesApp.Modules.Energy
             ((Frame)Window.Current.Content).CacheSize = 0;
             
             InitializeComponent();
-
+            
             TxtBarcodeResult = new TextBlock
             {
                 HorizontalAlignment = HorizontalAlignment.Center,
@@ -46,37 +47,44 @@ namespace AnylineExamplesApp.Modules.Energy
                 TextWrapping = TextWrapping.Wrap
             };
             AnylineScanView.Children.Add(TxtBarcodeResult);
-
+            
             // to display full frame results / photos
             FullFrameImage = new Image
             {
-                HorizontalAlignment = HorizontalAlignment.Stretch,
-                VerticalAlignment = VerticalAlignment.Stretch
+                HorizontalAlignment = HorizontalAlignment.Center,
+                VerticalAlignment = VerticalAlignment.Center
             };
             FullFrameImage.Tapped += (s, args) =>
             {
                 FullFrameImage.Visibility = Visibility.Collapsed;
             };
-            AnylineScanView.Children.Add(FullFrameImage);
+            RootGrid.Children.Add(FullFrameImage);
             
             try
             {
                 // set viewconfig for analog meter here, because module is initialized with it
-                AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                AnylineScanView.InitAnyline(MainPage.LicenseKey, this);            
+                AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
+                AnylineScanView.InitAnyline(MainPage.LicenseKey, this);
+
+                // to handle camera callbacks
+                AnylineScanView.CameraListener = this;
+
+                // to handle photo capture callbacks
+                AnylineScanView.PhotoCaptureListener = this;
+                AnylineScanView.PhotoCaptureTarget = PhotoCaptureTarget.File;
+
+                ResultView.OkButton.Tapped += ResultView_Tapped;
+
+                Window.Current.VisibilityChanged += Current_VisibilityChanged;
+
+                if (!AnylineScanView.IsCameraOpen())
+                    AnylineScanView.OpenCameraInBackground();
+
             }
             catch (Exception e)
             {
                 new MessageDialog(e.Message, "Exception").ShowAsync().AsTask().ConfigureAwait(false);
             }
-
-            // to handle camera callbacks
-            AnylineScanView.CameraListener = this;
-
-            // to handle photo capture callbacks
-            AnylineScanView.PhotoCaptureListener = this;
-
-            ResultView.OkButton.Tapped += ResultView_Tapped;            
         }
 
         private void ResultView_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
@@ -103,62 +111,71 @@ namespace AnylineExamplesApp.Modules.Energy
             if (args.Parameter == null) return;
 
             var modeSelection = args.Parameter.ToString();
-            
-            switch (modeSelection)
+
+            try
             {
-                case "analog":
-                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.AnalogMeter);
-                    RegisterRadioButtons(new Dictionary<string, EnergyScanView.ScanMode>
+
+                switch (modeSelection)
+                {
+                    case "analog":
+                        AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
+                        AnylineScanView.SetScanMode(EnergyScanView.ScanMode.AnalogMeter);
+                        RegisterRadioButtons(new Dictionary<string, EnergyScanView.ScanMode>
                     {
                         {"Analog Meter", EnergyScanView.ScanMode.AnalogMeter},
-                        {"Analog/Digital Auto Mode", EnergyScanView.ScanMode.AutoAnalogDigitalMeter}                        
+                        {"Analog/Digital Auto Mode", EnergyScanView.ScanMode.AutoAnalogDigitalMeter}
                     });
-                    break;
-                case "digital":
-                    RegisterRadioButtons(new Dictionary<string, EnergyScanView.ScanMode>
+                        break;
+                    case "digital":
+                        RegisterRadioButtons(new Dictionary<string, EnergyScanView.ScanMode>
                     {
                         {"Digital Meter", EnergyScanView.ScanMode.DigitalMeter},
                         {"Heat Meter 4 digits (up to 3 dec.)", EnergyScanView.ScanMode.HeatMeter4},
                         {"Heat Meter 5 digits (up to 3 dec.)", EnergyScanView.ScanMode.HeatMeter5},
                         {"Heat Meter 6 digits (up to 3 dec.)", EnergyScanView.ScanMode.HeatMeter6}
                     });
-                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DigitalMeter);
-                    break;
-                case "barcode":
-                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.Barcode);
-                    AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = FeedbackStyle.Rect;
-                    break;
-                case "photo":
-                    AnylineScanView.SetConfigFromAsset("Modules/Energy/PhotoCaptureConfig.json");
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.PhotoCapture);
-                    break;
-                case "serialnumber":
-                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumber);
+                        AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
+                        AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DigitalMeter);
+                        break;
+                    case "barcode":
+                        AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
+                        AnylineScanView.SetScanMode(EnergyScanView.ScanMode.Barcode);
+                        AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = Anyline.SDK.Views.ScanFeedbackConfig.ScanFeedbackStyle.Rect;
+                        break;
+                    case "photo":
+                        AnylineScanView.SetConfigFromAsset("Modules/Energy/photocapture_view_config.json");
+                        AnylineScanView.SetScanMode(EnergyScanView.ScanMode.PhotoCapture);
+                        break;
+                    case "serialnumber":
+                        AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
+                        AnylineScanView.SetScanMode(EnergyScanView.ScanMode.SerialNumber);
 
-                    // after setting the SerialNumber scan mode, you can optionally set the character whitelist and regex
-                    AnylineScanView.SetSerialNumberCharWhitelist("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");
-                    AnylineScanView.SetSerialNumberValidationRegex("^[A-Z]{1}[A-Z0-9]{1,}$");
-                    
-                    break;
-                case "dial":
-                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DialMeter);
-                    break;
-                case "dotmatrix":
-                    AnylineScanView.SetConfigFromAsset("Modules/Energy/EnergyConfig.json");
-                    AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DotMatrixMeter);
-                    break;
-            }           
+                        // after setting the SerialNumber scan mode, you can optionally set the character whitelist and regex
+                        AnylineScanView.SetSerialNumberCharWhitelist("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+                        AnylineScanView.SetSerialNumberValidationRegex("^[0-9A-Z]{5,}$");
+                        break;
+                    case "dial":
+                        AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
+                        AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DialMeter);
+                        break;
+                    case "dotmatrix":
+                        AnylineScanView.SetConfigFromAsset("Modules/Energy/energy_view_config.json");
+                        AnylineScanView.SetScanMode(EnergyScanView.ScanMode.DotMatrixMeter);
+                        break;
+                }
+            }
+            catch(Exception e)
+            {
+                Debug.WriteLine(e.Message);
+            }
         }
 
         // we make sure to free all resources when leaving the page
         protected override void OnNavigatedFrom(NavigationEventArgs args)
         {
             base.OnNavigatedFrom(args);
+
+            Window.Current.VisibilityChanged -= Current_VisibilityChanged;
 
             UnregisterRadioButtons();
             ResultView.OkButton.Tapped -= ResultView_Tapped;
@@ -169,6 +186,21 @@ namespace AnylineExamplesApp.Modules.Energy
                 AnylineScanView.ReleaseCameraInBackground();
             }
             AnylineScanView = null;            
+        }
+
+        // we do this because the UWP camera stream automatically shuts down when a window is minimized
+        private void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
+        {
+            if (args.Visible == false)
+            {
+                if (AnylineScanView.IsCameraOpen())
+                    AnylineScanView.ReleaseCameraInBackground();
+            }
+            if (args.Visible == true)
+            {
+                if (!AnylineScanView.IsCameraOpen())
+                    AnylineScanView.OpenCameraInBackground();
+            }
         }
         #endregion
 
@@ -226,11 +258,11 @@ namespace AnylineExamplesApp.Modules.Energy
 
             // we override the visual feedback with another style for heat meters for cosmetic purposes
             if (selected.Value == EnergyScanView.ScanMode.DigitalMeter)
-                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = FeedbackStyle.ContourRect;
+                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = Anyline.SDK.Views.ScanFeedbackConfig.ScanFeedbackStyle.ContourRect;
             if (selected.Value == EnergyScanView.ScanMode.HeatMeter4
                 || selected.Value == EnergyScanView.ScanMode.HeatMeter5
                 || selected.Value == EnergyScanView.ScanMode.HeatMeter6)
-                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = FeedbackStyle.Rect;
+                AnylineViewConfig.VisualFeedbackConfig.FeedbackStyle = Anyline.SDK.Views.ScanFeedbackConfig.ScanFeedbackStyle.Rect;
             
             lock (_lock)
                 _isBusy = false;
@@ -327,15 +359,38 @@ public async Task SaveAnylineImageAsync(AnylineImage image, string suggestedName
         public async void OnPhotoCaptured(AnylineImage anylineImage)
         {
             WriteableBitmap bitmap = await anylineImage.GetBitmapAsync();
-                        
+
             if (bitmap != null)
             {
+                var scale = Math.Min(RootGrid.Width, RootGrid.Height) / Math.Max(bitmap.PixelWidth, bitmap.PixelHeight);
+
                 FullFrameImage.Source = bitmap;
-                FullFrameImage.Width = bitmap.PixelWidth / 3;
-                FullFrameImage.Height = bitmap.PixelHeight / 3;
+                FullFrameImage.Width = bitmap.PixelWidth / scale;
+                FullFrameImage.Height = bitmap.PixelHeight / scale;
                 FullFrameImage.Visibility = Visibility.Visible;
             }
-        }        
+            else
+                AnylineScanView.ReleaseCameraInBackground();
+        }
+
+        public async void OnPhotoToFile(StorageFile file)
+        {
+            BitmapImage bitmapImage = new BitmapImage();
+            FileRandomAccessStream stream = (FileRandomAccessStream)await file.OpenAsync(FileAccessMode.Read);
+            bitmapImage.SetSource(stream);
+            
+            if (bitmapImage != null)
+            {
+                var scale = Math.Min(RootGrid.Width, RootGrid.Height) / Math.Max(bitmapImage.PixelWidth, bitmapImage.PixelHeight);
+
+                FullFrameImage.Source = bitmapImage;
+                FullFrameImage.Width = bitmapImage.PixelWidth / scale;
+                FullFrameImage.Height = bitmapImage.PixelHeight / scale;
+                FullFrameImage.Visibility = Visibility.Visible;
+            }
+            else
+                AnylineScanView.ReleaseCameraInBackground();
+        }
         #endregion
     }
 }

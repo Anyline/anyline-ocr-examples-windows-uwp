@@ -9,6 +9,7 @@ using System.Diagnostics;
 using Windows.UI.Popups;
 using Anyline.SDK.Camera;
 using AnylineExamplesApp.Util;
+using Windows.Data.Json;
 
 namespace AnylineExamplesApp.Modules.Mrz
 {
@@ -24,7 +25,7 @@ namespace AnylineExamplesApp.Modules.Mrz
                         
             try
             {
-                AnylineScanView.SetConfigFromAsset("Modules/Mrz/MrzConfig.json");
+                AnylineScanView.SetConfigFromAsset("Modules/Mrz/mrz_view_config.json");
                 AnylineScanView.InitAnyline(MainPage.LicenseKey, this);
 
                 AnylineScanView.CameraListener = this;
@@ -33,10 +34,29 @@ namespace AnylineExamplesApp.Modules.Mrz
             {
                 new MessageDialog(e.Message, "Exception").ShowAsync().AsTask().ConfigureAwait(false);
             }
-            
-            ResultView.Tapped += ResultView_Tapped;            
+
+            ResultView.Tapped += ResultView_Tapped;
+            Window.Current.VisibilityChanged += Current_VisibilityChanged;
+
+            if (!AnylineScanView.IsCameraOpen())
+                AnylineScanView.OpenCameraInBackground();
         }
-        
+
+        // we do this because the UWP camera stream automatically shuts down when a window is minimized
+        private void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
+        {
+            if (args.Visible == false)
+            {
+                if (AnylineScanView.IsCameraOpen())
+                    AnylineScanView.ReleaseCameraInBackground();
+            }
+            if (args.Visible == true)
+            {
+                if (!AnylineScanView.IsCameraOpen())
+                    AnylineScanView.OpenCameraInBackground();
+            }
+        }
+
         private void ResultView_Tapped(object sender, TappedRoutedEventArgs e)
         {
             ResultView.FadeOut();
@@ -50,6 +70,7 @@ namespace AnylineExamplesApp.Modules.Mrz
         {
             base.OnNavigatedFrom(args);
 
+            Window.Current.VisibilityChanged -= Current_VisibilityChanged;
             ResultView.Tapped -= ResultView_Tapped;
 
             ResultView?.Dispose();
@@ -86,7 +107,7 @@ namespace AnylineExamplesApp.Modules.Mrz
 
             if (ResultView != null)
                 ResultView.Visibility = Visibility.Collapsed;
-
+            
             // As soon as the camera is opened, we start scanning
             if (AnylineScanView != null)
                 AnylineScanView.StartScanning();
@@ -97,7 +118,7 @@ namespace AnylineExamplesApp.Modules.Mrz
         public void OnResult(MrzResult scanResult)
         {
             Debug.WriteLine("Result: " + scanResult.Result);
-
+            
             ResultView.UpdateResult(scanResult.Result);
             ResultView.FadeIn();
         }

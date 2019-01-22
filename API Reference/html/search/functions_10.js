@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['visualfeedbackconfig',['VisualFeedbackConfig',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#af9011f5a57bee00f344246919ef82d9d',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]]
+  ['vin',['VIN',['../struct_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_regex.html#aa16662b27665a59546388d57c646c852',1,'Anyline::SDK::Modules::Ocr::AnylineOcrRegex']]]
 ];

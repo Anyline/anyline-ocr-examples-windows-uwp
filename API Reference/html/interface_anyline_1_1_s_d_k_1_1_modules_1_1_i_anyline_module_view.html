@@ -5,10 +5,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Anyline Windows SDK: Anyline.SDK.Modules.IAnylineModuleView&lt; T &gt; Interface Template Reference</title>
+<title>Anyline SDK: Anyline.SDK.Modules.IAnylineModuleView&lt; T &gt; Interface Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+  $(document).ready(initResizable);
+/* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -21,8 +29,8 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Anyline Windows SDK
-   &#160;<span id="projectnumber">3.21</span>
+   <div id="projectname">Anyline SDK
+   &#160;<span id="projectnumber">7.0</span>
    </div>
   </td>
  </tr>
@@ -46,6 +54,23 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html','');});
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +85,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="namespace_anyline.html">Anyline</a></li><li class="navelem"><a class="el" href="namespace_anyline_1_1_s_d_k.html">SDK</a></li><li class="navelem"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules.html">Modules</a></li><li class="navelem"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html">IAnylineModuleView</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -92,15 +112,38 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a102d2aeb3ef27e5958f56edd4b5ea23b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html#a102d2aeb3ef27e5958f56edd4b5ea23b">SetConfigFromAsset</a> (string filename)</td></tr>
 <tr class="memdesc:a102d2aeb3ef27e5958f56edd4b5ea23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the config from a json asset file.  <a href="#a102d2aeb3ef27e5958f56edd4b5ea23b">More...</a><br /></td></tr>
 <tr class="separator:a102d2aeb3ef27e5958f56edd4b5ea23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c35d25739b81764f4cf85f3d4929bca"><td class="memItemLeft" align="right" valign="top"><a id="a0c35d25739b81764f4cf85f3d4929bca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeScanViewUpdate</b> ()</td></tr>
+<tr class="separator:a0c35d25739b81764f4cf85f3d4929bca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae41aaf22d53efe0a2ff88bb94c6d2f3a"><td class="memItemLeft" align="right" valign="top"><a id="ae41aaf22d53efe0a2ff88bb94c6d2f3a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCancelOnResult</b> (bool b)</td></tr>
+<tr class="separator:ae41aaf22d53efe0a2ff88bb94c6d2f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af22ba93a0f1d82d2f2f8c35c2c55068b"><td class="memItemLeft" align="right" valign="top"><a id="af22ba93a0f1d82d2f2f8c35c2c55068b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDebugReportingEnabled</b> (bool isReportingEnabled)</td></tr>
+<tr class="separator:af22ba93a0f1d82d2f2f8c35c2c55068b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ae2197e40f27f03147bdc5c6a01720519"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html#ae2197e40f27f03147bdc5c6a01720519">IsScanning</a><code> [get]</code></td></tr>
 <tr class="memdesc:ae2197e40f27f03147bdc5c6a01720519"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets whether the module is currently scanning.  <a href="#ae2197e40f27f03147bdc5c6a01720519">More...</a><br /></td></tr>
 <tr class="separator:ae2197e40f27f03147bdc5c6a01720519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9ae1bd4a3e8141682ca0f82b0a7d14d"><td class="memItemLeft" align="right" valign="top"><a id="ab9ae1bd4a3e8141682ca0f82b0a7d14d"></a>
+<a class="el" href="interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html">ICameraListener</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CameraListener</b><code> [get, set]</code></td></tr>
+<tr class="separator:ab9ae1bd4a3e8141682ca0f82b0a7d14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8e9f914bdfa6fb545320fe9d3d30cf"><td class="memItemLeft" align="right" valign="top"><a id="a6e8e9f914bdfa6fb545320fe9d3d30cf"></a>
+<a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html">CutoutView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CutoutView</b><code> [get]</code></td></tr>
+<tr class="separator:a6e8e9f914bdfa6fb545320fe9d3d30cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the interface for the <a class="el" href="namespace_anyline.html">Anyline</a> module view. </p>
+<div class="typeconstraint">
+<dl><dt><b>Type Constraints</b></dt><dd>
+<table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em>T</em></td><td>&#160;:</td><td valign="top"><em><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html">IAnylineModuleResultListener</a></em></td><td>&#160;</td></tr>
+</table>
+</dd>
+</dl>
+</div>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a748d8c02b215d277d030bf184b2c7c0a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a748d8c02b215d277d030bf184b2c7c0a">&#9670;&nbsp;</a></span>CancelScanning()</h2>
@@ -232,11 +275,15 @@ Properties</h2></td></tr>
 <li>IAnylineModuleView.cs</li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by &#160;<a href="http://www.doxygen.org/index.html">
-<img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.8.14
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="namespace_anyline.html">Anyline</a></li><li class="navelem"><a class="el" href="namespace_anyline_1_1_s_d_k.html">SDK</a></li><li class="navelem"><a class="el" href="namespace_anyline_1_1_s_d_k_1_1_modules.html">Modules</a></li><li class="navelem"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html">IAnylineModuleView</a></li>
+    <li class="footer">Generated by
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
+  </ul>
+</div>
 </body>
 </html>

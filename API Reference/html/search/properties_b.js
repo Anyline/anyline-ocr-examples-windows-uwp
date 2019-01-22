@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['personalnumber',['PersonalNumber',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#a49baac83289b89195f3af214b54f5e95',1,'Anyline::SDK::Modules::Mrz::Identification']]],
-  ['personalnumber2',['PersonalNumber2',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html#ad62c66bdf7cc1095eb87deab63586fdb',1,'Anyline::SDK::Modules::Mrz::Identification']]],
-  ['photocapturelistener',['PhotoCaptureListener',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#afcc0e565f83232da89c2f0e42082f501',1,'Anyline::SDK::Modules::Energy::EnergyScanView']]],
-  ['preferredcameradevice',['PreferredCameraDevice',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#acbef44564c0dcabd1b0e3b8ea67b070e',1,'Anyline::SDK::Camera::CameraView']]]
+  ['name',['Name',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_language.html#a3cca6753f46eb7799d5d3ea233dbd6a2',1,'Anyline::SDK::Modules::Ocr::AnylineOcrLanguage']]],
+  ['nationalitycountrycode',['NationalityCountryCode',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a2b472e83f7a7a72b745e10b2b48fd6ad',1,'Anyline::SDK::Plugins::ID::MrzIdentification']]],
+  ['numerator',['Numerator',['../struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html#aec138faa3c1131f93b106646afc1bdeb',1,'Anyline::SDK::Util::ResolutionRatio']]]
 ];

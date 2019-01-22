@@ -8,10 +8,12 @@
         BarcodeScan,
         MRZScan,
         PhotoMode,
-        SerialNumbers,
+        UniversalSerialNumber,
         DialMeter,
         DotMatrixMeter,
-        DoubleTariff
+        DoubleTariff,
+        LicensePlate,
+        DrivingLicense
     }
 
     /// <summary>

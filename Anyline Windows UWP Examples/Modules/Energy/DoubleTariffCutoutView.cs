@@ -75,8 +75,6 @@ namespace AnylineExamplesApp.Modules.Energy
             
             _cutoutRect = new Rectangle
             {
-                /*Stroke = new SolidColorBrush(_strokeColor),
-                StrokeThickness = StrokeWidth,*/
                 HorizontalAlignment = Windows.UI.Xaml.HorizontalAlignment.Stretch,
                 VerticalAlignment = Windows.UI.Xaml.VerticalAlignment.Stretch
             };
@@ -104,7 +102,6 @@ namespace AnylineExamplesApp.Modules.Energy
             _cutoutRect.Margin = margin;
             Canvas.SetLeft(_textBlock, rect.Left + rect.Width / 2 - _textBlock.ActualWidth / 2);
             Canvas.SetTop(_textBlock, rect.Top + rect.Height / 2 - _textBlock.ActualHeight / 2);
-
         }
     }
 }
