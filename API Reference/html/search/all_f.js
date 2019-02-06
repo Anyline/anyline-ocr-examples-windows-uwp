@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['save',['Save',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#af29d24f17cc247185bca499029088cae',1,'Anyline::SDK::Models::AnylineImage']]],
   ['saveasync',['SaveAsync',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a76af1be39c697a8df218e8a0565e0b67',1,'Anyline::SDK::Models::AnylineImage']]],
   ['scanfeedbackconfig',['ScanFeedbackConfig',['../class_anyline_1_1_s_d_k_1_1_views_1_1_scan_feedback_config.html',1,'Anyline::SDK::Views']]],
   ['scaninfo',['ScanInfo',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_scan_info.html',1,'Anyline::SDK::Plugins']]],

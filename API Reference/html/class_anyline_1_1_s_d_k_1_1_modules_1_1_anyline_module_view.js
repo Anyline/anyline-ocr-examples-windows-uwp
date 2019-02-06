@@ -2,6 +2,7 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view =
 [
     [ "AnylineModuleView", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2cc3cfea8070e8991bf802602fa6e2fd", null ],
     [ "CancelScanning", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a4305f083abc7f11256b0890bad312972", null ],
+    [ "Dispose", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a89d59d96e5b62bf446105792b909031a", null ],
     [ "InitAnyline", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a6e4cf366c15fa2f6517dd9c8bf1a7957", null ],
     [ "InvokeScanViewUpdate", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a441d5ea4502011fdecb54d389001d4a2", null ],
     [ "IsCameraOpen", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fb4e2ec6f16ee0624f39d3a9bb54371", null ],
@@ -14,6 +15,7 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view =
     [ "StartScanning", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a3898a41b00cb5d5884768c070f9a768e", null ],
     [ "CameraListener", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aebb527defde44230cbd8dca9de22878d", null ],
     [ "CutoutView", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a4740bd420ada42f15958234bf95a001c", null ],
+    [ "ExceptionListener", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a79f86c3fe71950bfee5d67852ac8af99", null ],
     [ "IsScanning", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a6407158d47eddb94df2b4e367286b324", null ],
     [ "PreferredCameraDevice", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fd7253358116fa3a2646727d49a4c37", null ],
     [ "ScanPlugin", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a075a007da3b985744e7178ebaa59ca84", null ],

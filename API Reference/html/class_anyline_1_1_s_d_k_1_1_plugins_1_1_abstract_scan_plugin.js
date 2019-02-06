@@ -1,6 +1,7 @@
 var class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin =
 [
     [ "AbstractScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a3cbae98d66bfe572c63ebaecfc486fa9", null ],
+    [ "Dispose", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#aa422366f0296fba300fd53725447abaf", null ],
     [ "InvokeScanInfoReceived", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a4b9b94924ded44a93071554726067300", null ],
     [ "IsScanning", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#abf2738f4de50e4f8480b9b56c4301e37", null ],
     [ "OnAbortRun", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a032699996f96f57c516655be48797d2f", null ],

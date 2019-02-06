@@ -2,6 +2,7 @@ var class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view =
 [
     [ "ScanView", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#accd7c04c78ba22d91281671fdd6b62f0", null ],
     [ "ClearVisualFeedback", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#aa7f18735ded969f30229d4a876887cfc", null ],
+    [ "Dispose", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#ae8af6b15dc2e78454bbcc7ca5b24ecbf", null ],
     [ "Init", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#add272f42830425cb1c0e5dd7e7e19621", null ],
     [ "Init", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a1ca1ea3c7d5a15cff492431c312269a3", null ],
     [ "InvokeVisualResultFeedback", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#adb5d5c336a8aa2096dc8fcef113e2bb7", null ],

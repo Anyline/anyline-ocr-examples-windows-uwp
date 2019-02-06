@@ -1,5 +1,6 @@
 var interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin =
 [
+    [ "IsScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a07d5410c9877b2d293935eb32fccff8e", null ],
     [ "SetScanView", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a5c7876979d23335d462a88cd68c430c2", null ],
     [ "StartScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#ac80e8915bce021007c94f32ae03af72d", null ],
     [ "StopScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a64c3e57b41867065578f7f65f5a29477", null ],

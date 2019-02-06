@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Anyline SDK
-   &#160;<span id="projectnumber">7.0</span>
+   &#160;<span id="projectnumber">7.1</span>
    </div>
   </td>
  </tr>
@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('class_anyline_1_1_s_d_k_1_1_camera_1_1
 <p>Represents the <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html" title="Represents the FlashView. ">FlashView</a>.  
  <a href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#details">More...</a></p>
 
-<p>Inherits Canvas.</p>
+<p>Inherits Canvas, and IDisposable.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -119,9 +119,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff92b5aee16ed4f6d29f00f0d6cae136"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#aff92b5aee16ed4f6d29f00f0d6cae136">SetFlashConfig</a> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_flash_config.html">FlashConfig</a> flashConfig)</td></tr>
 <tr class="memdesc:aff92b5aee16ed4f6d29f00f0d6cae136"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the FlashConfig to the <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html" title="Represents the FlashView. ">FlashView</a>.  <a href="#aff92b5aee16ed4f6d29f00f0d6cae136">More...</a><br /></td></tr>
 <tr class="separator:aff92b5aee16ed4f6d29f00f0d6cae136"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf0934424b80e80ca622feba39d9313"><td class="memItemLeft" align="right" valign="top"><a id="a4bf0934424b80e80ca622feba39d9313"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
+<tr class="separator:a4bf0934424b80e80ca622feba39d9313"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:a70f9762ab464a1142483da45d327c1bb"><td class="memItemLeft" align="right" valign="top"><a id="a70f9762ab464a1142483da45d327c1bb"></a>
+<a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#a61a3aea8a5747e496b043c6bce5311ca">FlashState</a>&#160;</td><td class="memItemRight" valign="bottom"><b>State</b><code> [get]</code></td></tr>
+<tr class="separator:a70f9762ab464a1142483da45d327c1bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac6c9e545e178ed86de3e6aa235eb2a"><td class="memItemLeft" align="right" valign="top"><a id="aaac6c9e545e178ed86de3e6aa235eb2a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsEnabled</b> = false<code> [get]</code></td></tr>
+<tr class="separator:aaac6c9e545e178ed86de3e6aa235eb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82341bb8e96423e558f9857af649c7a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_flash_config.html">FlashConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#a82341bb8e96423e558f9857af649c7a1">FlashConfig</a><code> [get]</code></td></tr>
 <tr class="memdesc:a82341bb8e96423e558f9857af649c7a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the FlashConfig.  <a href="#a82341bb8e96423e558f9857af649c7a1">More...</a><br /></td></tr>
 <tr class="separator:a82341bb8e96423e558f9857af649c7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +140,9 @@ Events</h2></td></tr>
 <tr class="memitem:aa5daf1c37f6d38fc66a3b62808981481"><td class="memItemLeft" align="right" valign="top"><a id="aa5daf1c37f6d38fc66a3b62808981481"></a>
 EventHandler&lt; <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#a61a3aea8a5747e496b043c6bce5311ca">FlashState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>StateChanged</b></td></tr>
 <tr class="separator:aa5daf1c37f6d38fc66a3b62808981481"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7728b3394c05c32294ac7f9a0c303d6f"><td class="memItemLeft" align="right" valign="top"><a id="a7728b3394c05c32294ac7f9a0c303d6f"></a>
+EventHandler&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>EnabledChanged</b></td></tr>
+<tr class="separator:a7728b3394c05c32294ac7f9a0c303d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html" title="Represents the FlashView. ">FlashView</a>. </p>

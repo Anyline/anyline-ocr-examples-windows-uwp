@@ -2,6 +2,7 @@ var class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager =
 [
     [ "CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#aa4f401ced01de3f9538312fad472754c", null ],
     [ "CapturePhotoAsync", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#ad325d77f21bf71e4d4cc75f46ab3611f", null ],
+    [ "Dispose", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a470be5dcf17f1de4b26ea8437112ed9b", null ],
     [ "GetCameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a7802ea452d361e6e5e3aa09579888899", null ],
     [ "SetCameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#afedc34fe89782e83e6cd2281fe20a93e", null ],
     [ "StartPreviewAsync", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#ac6787f681af245e9285daffdde1cc969", null ],

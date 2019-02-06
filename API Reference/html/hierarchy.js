@@ -78,7 +78,6 @@ var hierarchy =
       [ "Anyline.SDK.Camera.FlashView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html", null ],
       [ "Anyline.SDK.Modules.AnylineModuleView< TScanViewPluginType, TScanPluginType, TModuleResultListenerType, TPluginScanResultType, TModuleScanResultType, TPluginResult, TModuleResult >", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html", null ]
     ] ],
-    [ "Anyline.SDK.Camera.CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html", null ],
     [ "Anyline.SDK.Views.CutoutConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html", null ],
     [ "Exception", null, [
       [ "Anyline.SDK.Core.Exceptions.AnylineException", "class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_anyline_exception.html", [
@@ -135,6 +134,18 @@ var hierarchy =
       [ "Anyline.SDK.Plugins.ID.DrivingLicenseConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_config.html", null ],
       [ "Anyline.SDK.Plugins.ID.MrzConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_config.html", null ]
     ] ],
+    [ "IDisposable", null, [
+      [ "Anyline.SDK.Camera.CameraView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html", null ],
+      [ "Anyline.SDK.Camera.CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html", null ],
+      [ "Anyline.SDK.Camera.CutoutView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html", null ],
+      [ "Anyline.SDK.Camera.FlashView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html", null ],
+      [ "Anyline.SDK.Modules.AnylineModuleView< TScanViewPluginType, TScanPluginType, TModuleResultListenerType, TPluginScanResultType, TModuleScanResultType, TPluginResult, TModuleResult >", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html", null ],
+      [ "Anyline.SDK.Plugins.IScanPlugin< TScanPluginResultType >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", null ],
+      [ "Anyline.SDK.Views.IScanViewPlugin", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html", [
+        [ "Anyline.SDK.Views.AbstractScanViewPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", null ]
+      ] ],
+      [ "Anyline.SDK.Views.ScanView", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html", null ]
+    ] ],
     [ "Anyline.SDK.Core.Exceptions.IExceptionListener", "interface_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_i_exception_listener.html", null ],
     [ "Anyline.SDK.Camera.IHighResolutionImageListener", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_high_resolution_image_listener.html", [
       [ "Anyline.SDK.Plugins.Document.DocumentScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_document_1_1_document_scan_plugin.html", null ]
@@ -162,9 +173,6 @@ var hierarchy =
     [ "Anyline.SDK.Plugins.IScanRunSkippedListener", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_run_skipped_listener.html", null ],
     [ "Anyline.SDK.Views.IScanView", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html", [
       [ "Anyline.SDK.Views.ScanView", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html", null ]
-    ] ],
-    [ "Anyline.SDK.Views.IScanViewPlugin", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html", [
-      [ "Anyline.SDK.Views.AbstractScanViewPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", null ]
     ] ],
     [ "Anyline.SDK.Util.ResolutionRatio", "struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html", null ],
     [ "Anyline.SDK.Views.ScanFeedbackConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_feedback_config.html", null ],

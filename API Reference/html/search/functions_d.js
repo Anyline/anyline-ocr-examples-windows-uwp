@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['save',['Save',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#af29d24f17cc247185bca499029088cae',1,'Anyline::SDK::Models::AnylineImage']]],
   ['saveasync',['SaveAsync',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html#a76af1be39c697a8df218e8a0565e0b67',1,'Anyline::SDK::Models::AnylineImage']]],
   ['setanylineocrconfig',['SetAnylineOcrConfig',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_scan_view.html#ab633f454f2eb1decda69f28227b691d9',1,'Anyline::SDK::Modules::Ocr::AnylineOcrScanView']]],
   ['setbarcodeformats',['SetBarcodeFormats',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_barcode_1_1_barcode_scan_view.html#aec485fcbb98108cd1042f292144497e7',1,'Anyline::SDK::Modules::Barcode::BarcodeScanView']]],
