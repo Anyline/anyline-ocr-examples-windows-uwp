@@ -4,6 +4,7 @@ var class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view =
     [ "Dispose", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#acb26d06aa0fce84c43f9cc2e514c09dc", null ],
     [ "IsCameraOpen", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#adbdde05e978642206b470efdb65f02ce", null ],
     [ "OpenCameraInBackground", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#ab762fd0e63a09060cac90a2ef29ae146", null ],
+    [ "ReleaseCameraAsync", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a4050e466a2120675e98a454ae9c7c6e5", null ],
     [ "ReleaseCameraInBackground", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#abd31a6384fb3623e63e6441d7bbb709c", null ],
     [ "SetCameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a50437b52bc6b8ed4131bc7a7bbddf2d8", null ],
     [ "CameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a44ea4758b9101dd8ce200625ac33ed42", null ],

@@ -11,6 +11,7 @@ var class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view =
     [ "StartCamera", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a1b2831991ca3b6465a0b80cf4c8e50d2", null ],
     [ "StartScanning", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a6299470024c47a015334df591d413d2c", null ],
     [ "StopCamera", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a7a1a24f96345590b6f2ad29cdd1ca5bd", null ],
+    [ "StopCameraAsync", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a8622afe3f20b9bf131b4b4fb3ac668a8", null ],
     [ "StopScanning", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a877901bad06887cbe344dc8f0b8f0515", null ],
     [ "UpdateBrightness", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a393eee35de8af1b4a52a7e5ad66aaff7", null ],
     [ "UpdateForSize", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a62176090345751fbb98e7660c2f5b3b3", null ],

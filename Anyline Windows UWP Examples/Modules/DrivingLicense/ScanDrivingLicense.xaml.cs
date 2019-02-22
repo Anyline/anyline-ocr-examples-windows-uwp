@@ -99,12 +99,12 @@ namespace AnylineExamplesApp.Modules.DrivingLicense
         }
 
         // we make sure to free all resources when leaving the page        
-        protected override void OnNavigatedFrom(NavigationEventArgs args)
+        protected override async void OnNavigatedFrom(NavigationEventArgs args)
         {
             base.OnNavigatedFrom(args);
 
             Window.Current.VisibilityChanged -= Current_VisibilityChanged;
-            AnylineScanView?.StopCamera();
+            await AnylineScanView?.StopCameraAsync();
             _scanViewPlugin?.StopScanning();
 
             AnylineScanView = null;
@@ -113,11 +113,11 @@ namespace AnylineExamplesApp.Modules.DrivingLicense
 
         #region camera handling
         // important because the UWP camera stream automatically shuts down when a window is minimized or the computer is locked for example
-        private void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
+        private async void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
         {
             if (args.Visible == false)
             {
-                AnylineScanView.StopCamera();
+                await AnylineScanView.StopCameraAsync();
             }
             if (args.Visible == true)
             {

@@ -7,6 +7,7 @@ var searchData=
   ['denominator',['Denominator',['../struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html#aacd8493bb5fcfa885469c650e5409275',1,'Anyline::SDK::Util::ResolutionRatio']]],
   ['devicetype',['DeviceType',['../namespace_anyline_1_1_s_d_k_1_1_camera.html#abd869d2a27c8e4efdb9073ad17d0223f',1,'Anyline::SDK::Camera']]],
   ['diagnostic',['Diagnostic',['../namespace_anyline_1_1_s_d_k_1_1_util.html#a44753ef31f217f72f7825f856ba71715a7f84beab04579bef70043ca0cc72fb85',1,'Anyline::SDK::Util']]],
+  ['dispose',['Dispose',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a89d59d96e5b62bf446105792b909031a',1,'Anyline::SDK::Modules::AnylineModuleView']]],
   ['documentnumber',['DocumentNumber',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a8a9aa0d54d8c9c9fa4af04415bf299cd',1,'Anyline::SDK::Plugins::ID::MrzIdentification']]],
   ['documentscanplugin',['DocumentScanPlugin',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_document_1_1_document_scan_plugin.html',1,'Anyline::SDK::Plugins::Document']]],
   ['documentscanviewplugin',['DocumentScanViewPlugin',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_document_1_1_document_scan_view_plugin.html',1,'Anyline::SDK::Plugins::Document']]],

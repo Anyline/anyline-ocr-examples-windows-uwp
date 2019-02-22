@@ -8,6 +8,7 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view =
     [ "IsCameraOpen", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a2fb4e2ec6f16ee0624f39d3a9bb54371", null ],
     [ "OnResult", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aed53326bccce74d09b60bde7339e9f5b", null ],
     [ "OpenCameraInBackground", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a5868f9f4699dcee025464116da78bb96", null ],
+    [ "ReleaseCameraAsync", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a31652b1429c9575a78c73a1ab0b95c45", null ],
     [ "ReleaseCameraInBackground", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a87a48aba285c0101199206ae65d5d1c6", null ],
     [ "SetCancelOnResult", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a361bf9f8815e0eae16f7bbe069c01de9", null ],
     [ "SetConfigFromAsset", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#af21f7212ff7e369e9b644490df48d971", null ],

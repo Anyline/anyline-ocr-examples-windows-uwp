@@ -8,7 +8,7 @@
     xmlns:anyline="using:Anyline.SDK.Views"
     xmlns:util="using:AnylineExamplesApp.Util">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" BorderBrush="White" BorderThickness="2">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <anyline:ScanView x:Name="AnylineScanView" />
         <util:ResultView x:Name="ResultView" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="Collapsed"/>
     </Grid>

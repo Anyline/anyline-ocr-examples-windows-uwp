@@ -43,12 +43,12 @@ namespace AnylineExamplesApp.Modules.Mrz
         }
 
         // we do this because the UWP camera stream automatically shuts down when a window is minimized
-        private void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
+        private async void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
         {
             if (args.Visible == false)
             {
                 if (AnylineScanView.IsCameraOpen())
-                    AnylineScanView.ReleaseCameraInBackground();
+                    await AnylineScanView.ReleaseCameraAsync();
             }
             if (args.Visible == true)
             {

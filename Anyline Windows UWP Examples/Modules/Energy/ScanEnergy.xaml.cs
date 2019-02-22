@@ -171,7 +171,7 @@ namespace AnylineExamplesApp.Modules.Energy
         }
 
         // we make sure to free all resources when leaving the page
-        protected override void OnNavigatedFrom(NavigationEventArgs args)
+        protected override async void OnNavigatedFrom(NavigationEventArgs args)
         {
             base.OnNavigatedFrom(args);
 
@@ -183,18 +183,18 @@ namespace AnylineExamplesApp.Modules.Energy
             if (AnylineScanView != null)
             {
                 AnylineScanView.CancelScanning();
-                AnylineScanView.ReleaseCameraInBackground();
+                await AnylineScanView.ReleaseCameraAsync();
             }
             AnylineScanView = null;            
         }
 
         // we do this because the UWP camera stream automatically shuts down when a window is minimized
-        private void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
+        private async void Current_VisibilityChanged(object sender, Windows.UI.Core.VisibilityChangedEventArgs args)
         {
             if (args.Visible == false)
             {
                 if (AnylineScanView.IsCameraOpen())
-                    AnylineScanView.ReleaseCameraInBackground();
+                    await AnylineScanView.ReleaseCameraAsync();
             }
             if (args.Visible == true)
             {
@@ -370,7 +370,7 @@ public async Task SaveAnylineImageAsync(AnylineImage image, string suggestedName
                 FullFrameImage.Visibility = Visibility.Visible;
             }
             else
-                AnylineScanView.ReleaseCameraInBackground();
+                await AnylineScanView.ReleaseCameraAsync();
         }
 
         public async void OnPhotoToFile(StorageFile file)
@@ -389,7 +389,7 @@ public async Task SaveAnylineImageAsync(AnylineImage image, string suggestedName
                 FullFrameImage.Visibility = Visibility.Visible;
             }
             else
-                AnylineScanView.ReleaseCameraInBackground();
+                await AnylineScanView.ReleaseCameraAsync();
         }
         #endregion
     }
