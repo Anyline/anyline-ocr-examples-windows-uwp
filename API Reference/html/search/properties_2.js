@@ -2,6 +2,8 @@ var searchData=
 [
   ['cameraconfig',['CameraConfig',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a44ea4758b9101dd8ce200625ac33ed42',1,'Anyline::SDK::Camera::CameraView']]],
   ['cameralistener',['CameraListener',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aa2208d0e789dfa5add19ae4114b764a8',1,'Anyline.SDK.Camera.CameraView.CameraListener()'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#aebb527defde44230cbd8dca9de22878d',1,'Anyline.SDK.Modules.AnylineModuleView.CameraListener()']]],
+  ['cardaccessnumber',['CardAccessNumber',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_identification.html#adbf96ed89a9321cd771aab48a2c21903',1,'Anyline::SDK::Plugins::ID::GermanIDFrontIdentification']]],
+  ['categories',['Categories',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_identification.html#ab5b775821ffdfca3930e00524cd08d45',1,'Anyline::SDK::Plugins::ID::DrivingLicenseIdentification']]],
   ['characterwhitelist',['CharacterWhitelist',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a1b38d5ae7197370deb9029f0b69df1c5',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],
   ['charcountx',['CharCountX',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a036b56c4787d63ae28cd4ef5a64ad8f0',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],
   ['charcounty',['CharCountY',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a418e82d76d48b79780e9996ab98f07dd',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],

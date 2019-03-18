@@ -1,7 +1,6 @@
 var class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification =
 [
     [ "MrzIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#aa20f9f4b3d37625d46f8a06a7563943c", null ],
-    [ "MrzIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#ab572b065f971931d85420e5f368f3718", null ],
     [ "GetDayOfBirthObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#aea3ad3ceb821c6b635c98e9707b9ec91", null ],
     [ "GetExpirationDateObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a47a9ee98bdca326de17fedee9bc16c2e", null ],
     [ "GetIssuingDateObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#aa5c493feeddfb4b992fac4ce3f436f63", null ],

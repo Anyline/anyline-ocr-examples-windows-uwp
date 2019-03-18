@@ -9,6 +9,7 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin =
     [ "OnReportsVariable", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a5db88f7f00f523e865f8b1fa4285d254", null ],
     [ "OnScanResultReceived", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#aa9a55de78f508091c414502bc0e44faf", null ],
     [ "SetCancelOnResult", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#ac0f45ffc35549bc302879dd2b0c746a3", null ],
+    [ "SetDelayStartScanTime", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a688b3a8f30972c1b095e827ca528113b", null ],
     [ "SetReportingEnabled", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a45940b55b80219e321b3a5842a292f96", null ],
     [ "Start", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a7770de06174593a9c23723006e854610", null ],
     [ "Stop", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a544dce46586df28911e78adef82d4c6f", null ],

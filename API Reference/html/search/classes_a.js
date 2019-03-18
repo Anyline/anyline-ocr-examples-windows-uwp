@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['resolutionratio',['ResolutionRatio',['../struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html',1,'Anyline::SDK::Util']]],
-  ['runfailure',['RunFailure',['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_run_failure.html',1,'Anyline::SDK::Core::Exceptions']]]
+  ['ocrscanplugin',['OcrScanPlugin',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_ocr_scan_plugin.html',1,'Anyline::SDK::Plugins::Ocr']]],
+  ['ocrscanresult',['OcrScanResult',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_ocr_scan_result.html',1,'Anyline::SDK::Plugins::Ocr']]],
+  ['ocrscanviewplugin',['OcrScanViewPlugin',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_ocr_scan_view_plugin.html',1,'Anyline::SDK::Plugins::Ocr']]]
 ];

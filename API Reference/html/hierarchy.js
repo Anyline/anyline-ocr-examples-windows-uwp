@@ -126,12 +126,14 @@ var hierarchy =
     [ "Anyline.SDK.Camera.ICameraListener", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html", null ],
     [ "Anyline.SDK.Plugins.ID.ID", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html", [
       [ "Anyline.SDK.Plugins.ID.DrivingLicenseIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_identification.html", null ],
+      [ "Anyline.SDK.Plugins.ID.GermanIDFrontIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_identification.html", null ],
       [ "Anyline.SDK.Plugins.ID.MrzIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html", [
         [ "Anyline.SDK.Modules.Mrz.Identification", "class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_identification.html", null ]
       ] ]
     ] ],
     [ "Anyline.SDK.Plugins.ID.IDConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_config.html", [
       [ "Anyline.SDK.Plugins.ID.DrivingLicenseConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_config.html", null ],
+      [ "Anyline.SDK.Plugins.ID.GermanIDFrontConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_config.html", null ],
       [ "Anyline.SDK.Plugins.ID.MrzConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_config.html", null ]
     ] ],
     [ "IDisposable", null, [
