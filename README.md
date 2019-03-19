@@ -101,7 +101,7 @@ Example for **config** for MRZ:
 
 ### 5. Follow the implementation below and enjoy scanning! :)
 
-For a detailed implementation guide, follow the Windows implementation guide on the [Anyline documentation](https://documentation.anyline.io) website.
+For a detailed implementation guide, follow the Windows implementation guide on the [Anyline documentation](https://documentation.anyline.com) website.
 
 
 ## License
