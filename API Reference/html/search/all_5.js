@@ -1,6 +1,7 @@
 var searchData=
 [
   ['feedbackstyle',['FeedbackStyle',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a651e0287f61583d2a2dc1271316ab13b',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
+  ['fieldscanoption',['FieldScanOption',['../namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d.html#aab576768a7567fac796526feb90f4502',1,'Anyline::SDK::Plugins::ID']]],
   ['file',['File',['../namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087a0b27918290ff5323bea1e3b78a9cf04e',1,'Anyline::SDK::Modules::Energy']]],
   ['filetype',['FileType',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_language.html#abefc48b4f744e1cd3e9e46963fa36ddf',1,'Anyline::SDK::Modules::Ocr::AnylineOcrLanguage']]],
   ['fillcolor',['FillColor',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a2e8869931befb2c7512e75d6c65f7eaf',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],

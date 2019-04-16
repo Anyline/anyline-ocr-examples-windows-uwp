@@ -1,6 +1,6 @@
 var namespace_anyline_1_1_s_d_k_1_1_views =
 [
-    [ "AbstractScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", null ],
+    [ "AbstractScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin" ],
     [ "AnylineBaseConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html", "class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config" ],
     [ "CameraConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_camera_config.html", "class_anyline_1_1_s_d_k_1_1_views_1_1_camera_config" ],
     [ "CutoutConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config" ],

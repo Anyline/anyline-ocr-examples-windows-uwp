@@ -18,27 +18,23 @@ var hierarchy =
     [ "AbstractScanPlugin< ScanResult< Models.AnylineImage >>", null, [
       [ "Anyline.SDK.Plugins.Document.DocumentScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_document_1_1_document_scan_plugin.html", null ]
     ] ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< TScanPluginResultType, TScanPlugin >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", null ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< BarcodeScanResult, BarcodeScanPlugin >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
+    [ "Anyline.SDK.Views.AbstractScanViewPlugin< BarcodeScanPlugin, BarcodeScanResult >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
       [ "Anyline.SDK.Plugins.Barcode.BarcodeScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_barcode_1_1_barcode_scan_view_plugin.html", null ]
     ] ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< LicensePlateScanResult, LicensePlateScanPlugin >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
-      [ "Anyline.SDK.Plugins.LicensePlate.LicensePlateScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_view_plugin.html", null ]
-    ] ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< MeterScanResult, MeterScanPlugin >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
-      [ "Anyline.SDK.Plugins.Meter.MeterScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_meter_scan_view_plugin.html", null ]
-    ] ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< OcrScanResult, OcrScanPlugin >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
-      [ "Anyline.SDK.Plugins.Ocr.OcrScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_ocr_scan_view_plugin.html", null ]
-    ] ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< ScanResult< AnylineImage >, DocumentScanPlugin >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
+    [ "AbstractScanViewPlugin< DocumentScanPlugin, ScanResult< AnylineImage >>", null, [
       [ "Anyline.SDK.Plugins.Document.DocumentScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_document_1_1_document_scan_view_plugin.html", null ]
     ] ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< ScanResult< ID >, IDScanPlugin >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
+    [ "AbstractScanViewPlugin< IDScanPlugin, ScanResult< ID >>", null, [
       [ "Anyline.SDK.Plugins.ID.IDScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_scan_view_plugin.html", null ]
     ] ],
-    [ "Anyline.SDK.Views.AbstractScanViewPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
-      [ "Anyline.SDK.Views.AbstractScanViewPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", null ]
+    [ "Anyline.SDK.Views.AbstractScanViewPlugin< LicensePlateScanPlugin, LicensePlateScanResult >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
+      [ "Anyline.SDK.Plugins.LicensePlate.LicensePlateScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_license_plate_1_1_license_plate_scan_view_plugin.html", null ]
+    ] ],
+    [ "Anyline.SDK.Views.AbstractScanViewPlugin< MeterScanPlugin, MeterScanResult >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
+      [ "Anyline.SDK.Plugins.Meter.MeterScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_meter_scan_view_plugin.html", null ]
+    ] ],
+    [ "Anyline.SDK.Views.AbstractScanViewPlugin< OcrScanPlugin, OcrScanResult >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", [
+      [ "Anyline.SDK.Plugins.Ocr.OcrScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_ocr_scan_view_plugin.html", null ]
     ] ],
     [ "Anyline.SDK.Views.AnylineBaseConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html", null ],
     [ "Anyline.SDK.Models.AnylineImage", "class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html", null ],
@@ -136,6 +132,11 @@ var hierarchy =
       [ "Anyline.SDK.Plugins.ID.GermanIDFrontConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_config.html", null ],
       [ "Anyline.SDK.Plugins.ID.MrzConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_config.html", null ]
     ] ],
+    [ "Anyline.SDK.Plugins.ID.IDFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_field_scan_options.html", [
+      [ "Anyline.SDK.Plugins.ID.DrivingLicenseFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_scan_options.html", null ],
+      [ "Anyline.SDK.Plugins.ID.GermanIDFrontFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_scan_options.html", null ],
+      [ "Anyline.SDK.Plugins.ID.MrzFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html", null ]
+    ] ],
     [ "IDisposable", null, [
       [ "Anyline.SDK.Camera.CameraView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html", null ],
       [ "Anyline.SDK.Camera.CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html", null ],
@@ -143,20 +144,48 @@ var hierarchy =
       [ "Anyline.SDK.Camera.FlashView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html", null ],
       [ "Anyline.SDK.Modules.AnylineModuleView< TScanViewPluginType, TScanPluginType, TModuleResultListenerType, TPluginScanResultType, TModuleScanResultType, TPluginResult, TModuleResult >", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html", null ],
       [ "Anyline.SDK.Plugins.IScanPlugin< TScanPluginResultType >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", null ],
-      [ "Anyline.SDK.Views.IScanViewPlugin", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html", [
-        [ "Anyline.SDK.Views.AbstractScanViewPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", null ]
+      [ "Anyline.SDK.Plugins.IScanPlugin< TScanPluginResultType >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", null ],
+      [ "Anyline.SDK.Views.IScanViewPlugin< TScanPlugin >", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html", [
+        [ "Anyline.SDK.Views.AbstractScanViewPlugin< TScanPlugin, TScanResult >", "class_anyline_1_1_s_d_k_1_1_views_1_1_abstract_scan_view_plugin.html", null ]
       ] ],
       [ "Anyline.SDK.Views.ScanView", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html", null ]
     ] ],
+    [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentification< FieldScanOption >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.DrivingLicenseFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_scan_options.html", null ]
+    ] ],
+    [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentification< string >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.DrivingLicenseIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_identification.html", null ]
+    ] ],
     [ "Anyline.SDK.Core.Exceptions.IExceptionListener", "interface_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_i_exception_listener.html", null ],
+    [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentification< FieldScanOption >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.GermanIDFrontFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_scan_options.html", null ]
+    ] ],
+    [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentification< string >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.GermanIDFrontIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_identification.html", null ]
+    ] ],
     [ "Anyline.SDK.Camera.IHighResolutionImageListener", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_high_resolution_image_listener.html", [
       [ "Anyline.SDK.Plugins.Document.DocumentScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_document_1_1_document_scan_plugin.html", null ]
     ] ],
     [ "Anyline.SDK.Camera.IHighResolutionImageProvider", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_high_resolution_image_provider.html", [
       [ "Anyline.SDK.Camera.ICombinedImageProvider", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_combined_image_provider.html", null ]
     ] ],
+    [ "Anyline.SDK.Plugins.ID.IIdentification< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentification< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification.html", null ],
+      [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentification< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification.html", null ],
+      [ "Anyline.SDK.Plugins.ID.IMrzIdentification< T, V >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification.html", null ]
+    ] ],
     [ "Anyline.SDK.Core.IImageProvider", "interface_anyline_1_1_s_d_k_1_1_core_1_1_i_image_provider.html", [
       [ "Anyline.SDK.Camera.ICombinedImageProvider", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_combined_image_provider.html", null ]
+    ] ],
+    [ "Anyline.SDK.Plugins.ID.IMrzIdentification< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification.html", null ],
+    [ "Anyline.SDK.Plugins.ID.IMrzIdentification< FieldScanOption >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.MrzFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html", null ]
+    ] ],
+    [ "Anyline.SDK.Plugins.ID.IMrzIdentification< string >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.MrzIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html", null ]
+    ] ],
+    [ "Anyline.SDK.Plugins.ID.IMrzIdentification< T, bool >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification.html", [
+      [ "Anyline.SDK.Plugins.ID.IMrzIdentification< T, V >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification.html", null ]
     ] ],
     [ "Anyline.SDK.Modules.Energy.IPhotoCaptureListener", "interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html", null ],
     [ "Anyline.SDK.Plugins.IScanInfoListener", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_info_listener.html", null ],
@@ -166,6 +195,7 @@ var hierarchy =
     [ "Anyline.SDK.Plugins.IScanPlugin< TScanPluginResultType >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", [
       [ "Anyline.SDK.Plugins.AbstractScanPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html", null ]
     ] ],
+    [ "Anyline.SDK.Plugins.IScanPlugin< TScanResult >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", null ],
     [ "Anyline.SDK.Plugins.IScanResultListener", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_result_listener.html", [
       [ "Anyline.SDK.Plugins.IScanResultListener< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_result_listener.html", null ]
     ] ],
@@ -175,6 +205,9 @@ var hierarchy =
     [ "Anyline.SDK.Plugins.IScanRunSkippedListener", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_run_skipped_listener.html", null ],
     [ "Anyline.SDK.Views.IScanView", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html", [
       [ "Anyline.SDK.Views.ScanView", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html", null ]
+    ] ],
+    [ "IScanViewPlugin", null, [
+      [ "Anyline.SDK.Views.IScanViewPlugin< TScanPlugin >", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html", null ]
     ] ],
     [ "Anyline.SDK.Util.ResolutionRatio", "struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html", null ],
     [ "Anyline.SDK.Views.ScanFeedbackConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_feedback_config.html", null ],

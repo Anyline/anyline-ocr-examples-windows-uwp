@@ -249,5 +249,5 @@ var NAVTREEINDEX0 =
 "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_scan_view.html#aa9bc70a8ae0f687500d0e8406562722c":[1,0,0,0,3,4,4,0],
 "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_scan_view.html#ab633f454f2eb1decda69f28227b691d9":[1,0,0,0,3,4,4,1],
 "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html":[1,0,0,0,4,6],
-"class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a002202e71499b0037082ac98fe6b44ea":[1,0,0,0,4,6,19]
+"class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a002202e71499b0037082ac98fe6b44ea":[1,0,0,0,4,6,20]
 };

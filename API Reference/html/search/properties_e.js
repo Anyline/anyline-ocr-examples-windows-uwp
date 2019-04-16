@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['redrawtimeout',['RedrawTimeout',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a7b69c5acb6877e34e9ae18d2ed02ceeb',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
-  ['regex',['Regex',['../struct_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_regex.html#a5378793a100fc9bef03862fac312f81a',1,'Anyline::SDK::Modules::Ocr::AnylineOcrRegex']]],
-  ['removesmallcontours',['RemoveSmallContours',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a8489331880d6ddacfc9fed5864f11969',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],
-  ['removewhitespaces',['RemoveWhiteSpaces',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a2b4c719dda836aa322f376f8be6a9224',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],
-  ['result',['Result',['../interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html#ab6a99bd84623356c083fd15c8f9a2145',1,'Anyline.SDK.Models.IAnylineScanResult.Result()'],['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html#a8ba4b2ea5991dfcc151908b88416a058',1,'Anyline.SDK.Models.AnylineScanResult.Result()']]]
+  ['scanmode',['ScanMode',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_result.html#ad9722bc6eb8e4c826041daad23f2010b',1,'Anyline.SDK.Modules.Energy.EnergyResult.ScanMode()'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#ae30e098d4bbe52540b1c4428ec94d496',1,'Anyline.SDK.Modules.Ocr.AnylineOcrConfig.ScanMode()']]],
+  ['strokecolor',['StrokeColor',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a3e69ef160b35c9f07cb73c45381bd2dc',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
+  ['strokewidth',['StrokeWidth',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a8259fea533d78eac40a33014de3dc692',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]]
 ];

@@ -1,12 +1,13 @@
 var interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin =
 [
-    [ "IsScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a07d5410c9877b2d293935eb32fccff8e", null ],
-    [ "SetScanView", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a5c7876979d23335d462a88cd68c430c2", null ],
-    [ "StartScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#ac80e8915bce021007c94f32ae03af72d", null ],
-    [ "StopScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a64c3e57b41867065578f7f65f5a29477", null ],
-    [ "CropRect", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a947a1d59e0425f7b252ae2c59995f645", null ],
-    [ "CutoutRect", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a396612141cba68c5e528f583fcb09180", null ],
-    [ "ResizeScale", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#aa70cf7d78885fcd8e108cd78774e5d16", null ],
-    [ "ScanPlugin", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#ae2e9e4e54d489b052e337bec15d2fa58", null ],
-    [ "ScanViewPluginConfig", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#afee0e633e37e56cb10907adf4bfa98c5", null ]
+    [ "IsScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#af9c721088fed0acc6160e2c514a5f9c3", null ],
+    [ "SetScanView", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a53e3a3e536818afddc43f959e3e9cfd6", null ],
+    [ "StartScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a7400c320273186704dbe0b5d0b5fdbdd", null ],
+    [ "StopScanning", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a5ca0ef67dc568ca6d70973e37d5e2a5c", null ],
+    [ "CropRect", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#aacb6cd8f0e91810cdcaf549d5f1e6a53", null ],
+    [ "CutoutRect", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#adce3810214985d6affc5dd7621ea8f72", null ],
+    [ "ResizeScale", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a82adb805cbfe314c01d7ad97c650ae89", null ],
+    [ "ScanPlugin", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#a4bc702fa11bee127eff47131a8b03835", null ],
+    [ "ScanPlugin", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#aa22c3f7d9a3cb1e2c3b83872eddfeced", null ],
+    [ "ScanViewPluginConfig", "interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html#ac17e6da1464ce5dd85beadee67ca5854", null ]
 ];

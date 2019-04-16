@@ -11,8 +11,8 @@ var searchData=
   ['minconfidence',['MinConfidence',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a98027be8873a1738cb73c6ccd6dddc69',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],
   ['minsharpness',['MinSharpness',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#ad460988448e717ac2c603ea810ea9650',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]],
   ['mrzconfig',['MrzConfig',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_config.html',1,'Anyline::SDK::Plugins::ID']]],
-  ['mrzidentification',['MrzIdentification',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html',1,'Anyline.SDK.Plugins.ID.MrzIdentification'],['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#aa20f9f4b3d37625d46f8a06a7563943c',1,'Anyline.SDK.Plugins.ID.MrzIdentification.MrzIdentification()']]],
+  ['mrzfieldscanoptions',['MrzFieldScanOptions',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html',1,'Anyline::SDK::Plugins::ID']]],
+  ['mrzidentification',['MrzIdentification',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html',1,'Anyline::SDK::Plugins::ID']]],
   ['mrzresult',['MrzResult',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_result.html',1,'Anyline.SDK.Modules.Mrz.MrzResult'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_result.html#ad805ba3239063620844fc42cb5e7baf2',1,'Anyline.SDK.Modules.Mrz.MrzResult.MrzResult()']]],
-  ['mrzscanview',['MrzScanView',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_scan_view.html',1,'Anyline::SDK::Modules::Mrz']]],
-  ['mrzstring',['MrzString',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a8cf3bd469f47b14a1e9ab6edccbd1c9b',1,'Anyline::SDK::Plugins::ID::MrzIdentification']]]
+  ['mrzscanview',['MrzScanView',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_mrz_scan_view.html',1,'Anyline::SDK::Modules::Mrz']]]
 ];
