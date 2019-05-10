@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ocrscanmode',['OcrScanMode',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html#a1dd89cf46388009dbf8d6d3b3bff45c7',1,'Anyline::SDK::Modules::Ocr::AnylineOcrConfig']]]
+  ['ocrscanmode',['OcrScanMode',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a1ef20a06274d4a48327432e9f5a86cec',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrConfig']]]
 ];

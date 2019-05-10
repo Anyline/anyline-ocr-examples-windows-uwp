@@ -1,7 +1,7 @@
 var searchData=
 [
   ['feedbackstyle',['FeedbackStyle',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a651e0287f61583d2a2dc1271316ab13b',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
-  ['filetype',['FileType',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_language.html#abefc48b4f744e1cd3e9e46963fa36ddf',1,'Anyline::SDK::Modules::Ocr::AnylineOcrLanguage']]],
+  ['filetype',['FileType',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_language.html#aac81a75a57a455517c8f57b81be775c0',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrLanguage']]],
   ['fillcolor',['FillColor',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a2e8869931befb2c7512e75d6c65f7eaf',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
   ['flashconfig',['FlashConfig',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#a82341bb8e96423e558f9857af649c7a1',1,'Anyline::SDK::Camera::FlashView']]],
   ['flashimageauto',['FlashImageAuto',['../class_anyline_1_1_s_d_k_1_1_views_1_1_flash_config.html#ad7d7420d1a913227594c2603f4730c81',1,'Anyline::SDK::Views::FlashConfig']]],

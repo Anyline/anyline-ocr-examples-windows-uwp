@@ -9,7 +9,6 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view =
       [ "HeatMeter6", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a5918efafc1b79212a1cb829cb7a11cdb", null ],
       [ "Barcode", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9ab93eaef026c32ad9b73e53ba24a5875e", null ],
       [ "SerialNumber", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aa54372ef430f726c8343fc5550fade42", null ],
-      [ "SerialNumberAlphaNumeric3Letters", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9aadc72df240df56328e4f9c559caf3a09", null ],
       [ "PhotoCapture", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a011221aecbea1fb88f44757d8cbf07df", null ],
       [ "DialMeter", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9abe5fdb0262396a66e7462ae4399edcff", null ],
       [ "DotMatrixMeter", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#af2732b13b20a316d74457330495486b9a598909552ea3ab4f1efd1d3fa6ecf980", null ]
@@ -19,5 +18,5 @@ var class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view =
     [ "SetSerialNumberCharWhitelist", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#abb14a2ea891d1a341f054e186164d982", null ],
     [ "SetSerialNumberValidationRegex", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a2da0591673640b683f1422323aabbf67", null ],
     [ "PhotoCaptureListener", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#afcc0e565f83232da89c2f0e42082f501", null ],
-    [ "PhotoCaptureTarget", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#aa26129b1ebd1d898a36c797857c11f0a", null ]
+    [ "PhotoCaptureTarget", "class_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_energy_scan_view.html#a44514158929e6bf6d1d3893edc4d09cd", null ]
 ];

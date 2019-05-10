@@ -36,5 +36,14 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification =
     [ "PersonalNumber2", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a20c46bdf8ffa7308bbf1618168ef60e4", null ],
     [ "Sex", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#ae87ac80345930a040cafae27e0bfcb68", null ],
     [ "Surname", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a58b6c7bfa9577a9fed5115a488e48311", null ],
-    [ "SurNames", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#af56c3c7c94bd2ff47efbe52379def56b", null ]
+    [ "SurNames", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#af56c3c7c94bd2ff47efbe52379def56b", null ],
+    [ "VizAddress", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#aef38037a6ec034bd7d81632d36754de9", null ],
+    [ "VizDateOfBirth", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a4020cba8bad4853692fbaed6e44307bf", null ],
+    [ "VizDateOfBirthObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a71cff1c50ac25c4723f9d1511cb0a00f", null ],
+    [ "VizDateOfExpiry", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#aae19c9f4729ba026f89f1eeddd307223", null ],
+    [ "VizDateOfExpiryObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a9ccc5bc2f4ca310089a8cd6dad1328f0", null ],
+    [ "VizDateOfIssue", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a07682969bcbcf5ea129896afe7be6e80", null ],
+    [ "VizDateOfIssueObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#ada3bbdfdd6a4816490aff8d59bbc0cd3", null ],
+    [ "VizGivenNames", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a4cd11f0c8ce321f6c7c84f395495b7f5", null ],
+    [ "VizSurname", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html#a4dcd940beb956d6fabae3e17fbfbb891", null ]
 ];

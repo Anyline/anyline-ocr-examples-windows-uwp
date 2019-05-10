@@ -1,21 +1,25 @@
 var namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d =
 [
     [ "DrivingLicenseConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_config.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_config" ],
+    [ "DrivingLicenseFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_confidences.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_confidences" ],
     [ "DrivingLicenseFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_scan_options.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_scan_options" ],
     [ "DrivingLicenseIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_identification.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_identification" ],
     [ "GermanIDFrontConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_config.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_config" ],
+    [ "GermanIDFrontFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_confidences.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_confidences" ],
     [ "GermanIDFrontFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_scan_options.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_scan_options" ],
     [ "GermanIDFrontIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_identification.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_identification" ],
-    [ "ID", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d" ],
+    [ "ID", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html", null ],
     [ "IDConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_config.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_config" ],
+    [ "IDFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_field_confidences.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_field_confidences" ],
     [ "IDFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_field_scan_options.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_field_scan_options" ],
     [ "IDrivingLicenseIdentification", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification.html", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification" ],
     [ "IDScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_scan_plugin.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_scan_plugin" ],
     [ "IDScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_scan_view_plugin.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d_scan_view_plugin" ],
     [ "IGermanIDFrontIdentification", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification.html", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification" ],
-    [ "IIdentification", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_identification.html", null ],
-    [ "IMrzIdentification", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification.html", null ],
+    [ "IIdentificationFields", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_identification_fields.html", null ],
+    [ "IMrzIdentificationFields", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification_fields.html", null ],
     [ "MrzConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_config.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_config" ],
+    [ "MrzFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences" ],
     [ "MrzFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options" ],
     [ "MrzIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_identification" ]
 ];
