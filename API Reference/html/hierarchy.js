@@ -56,7 +56,10 @@ var hierarchy =
     [ "Anyline.SDK.Plugins.Ocr.AnylineOcrBaseConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_base_config.html", [
       [ "Anyline.SDK.Plugins.Ocr.AnylineOcrConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html", [
         [ "Anyline.SDK.Modules.Ocr.AnylineOcrConfig", "class_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_anyline_ocr_config.html", null ]
-      ] ]
+      ] ],
+      [ "Anyline.SDK.Plugins.Ocr.CattleTagConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_cattle_tag_config.html", null ],
+      [ "Anyline.SDK.Plugins.Ocr.ContainerConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_container_config.html", null ],
+      [ "Anyline.SDK.Plugins.Ocr.VINConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_v_i_n_config.html", null ]
     ] ],
     [ "Anyline.SDK.Plugins.Ocr.AnylineOcrLanguage", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_language.html", null ],
     [ "Anyline.SDK.Plugins.Ocr.AnylineOcrRegex", "struct_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_regex.html", null ],
