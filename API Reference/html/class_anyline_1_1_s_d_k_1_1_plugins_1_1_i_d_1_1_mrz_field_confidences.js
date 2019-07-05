@@ -2,7 +2,6 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences =
 [
     [ "MrzFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a62f2ef275e19077d7e9b8fa2ca54ac5c", null ],
     [ "MrzFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a6cb7397c08ad420e8559e70af8b5eedc", null ],
-    [ "MrzFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a8f58798cebfa1b26d664b4b3ec03e5de", null ],
     [ "Address", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#aa053c4182a0011049abe424003663617", null ],
     [ "AllCheckDigitsValid", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a65f704a16b36eba55af7d62e52a505a8", null ],
     [ "CheckDigitDateOfBirth", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#af2926ecd9909e21e745808f5c575165e", null ],

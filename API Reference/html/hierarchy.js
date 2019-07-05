@@ -169,17 +169,23 @@ var hierarchy =
       ] ],
       [ "Anyline.SDK.Views.ScanView", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html", null ]
     ] ],
-    [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentification< FieldScanOption >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification.html", [
+    [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentificationFields< FieldScanOption >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification_fields.html", [
       [ "Anyline.SDK.Plugins.ID.DrivingLicenseFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_scan_options.html", null ]
     ] ],
-    [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentification< string >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification.html", [
+    [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentificationFields< int >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification_fields.html", [
+      [ "Anyline.SDK.Plugins.ID.DrivingLicenseFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_field_confidences.html", null ]
+    ] ],
+    [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentificationFields< string >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification_fields.html", [
       [ "Anyline.SDK.Plugins.ID.DrivingLicenseIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_driving_license_identification.html", null ]
     ] ],
     [ "Anyline.SDK.Core.Exceptions.IExceptionListener", "interface_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_i_exception_listener.html", null ],
-    [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentification< FieldScanOption >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification.html", [
+    [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentificationFields< FieldScanOption >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification_fields.html", [
       [ "Anyline.SDK.Plugins.ID.GermanIDFrontFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_scan_options.html", null ]
     ] ],
-    [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentification< string >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification.html", [
+    [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentificationFields< int >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification_fields.html", [
+      [ "Anyline.SDK.Plugins.ID.GermanIDFrontFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_confidences.html", null ]
+    ] ],
+    [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentificationFields< string >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification_fields.html", [
       [ "Anyline.SDK.Plugins.ID.GermanIDFrontIdentification", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_identification.html", null ]
     ] ],
     [ "Anyline.SDK.Camera.IHighResolutionImageListener", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_high_resolution_image_listener.html", [
@@ -189,8 +195,8 @@ var hierarchy =
       [ "Anyline.SDK.Camera.ICombinedImageProvider", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_combined_image_provider.html", null ]
     ] ],
     [ "Anyline.SDK.Plugins.ID.IIdentificationFields< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_identification_fields.html", [
-      [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentification< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification.html", null ],
-      [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentification< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification.html", null ],
+      [ "Anyline.SDK.Plugins.ID.IDrivingLicenseIdentificationFields< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_driving_license_identification_fields.html", null ],
+      [ "Anyline.SDK.Plugins.ID.IGermanIDFrontIdentificationFields< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_german_i_d_front_identification_fields.html", null ],
       [ "Anyline.SDK.Plugins.ID.IMrzIdentificationFields< T, V >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification_fields.html", null ]
     ] ],
     [ "Anyline.SDK.Core.IImageProvider", "interface_anyline_1_1_s_d_k_1_1_core_1_1_i_image_provider.html", [
