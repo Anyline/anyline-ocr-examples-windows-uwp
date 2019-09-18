@@ -25,5 +25,6 @@
     <AppxPackageIsForStore>True</AppxPackageIsForStore>
     <AppxShowAllApps>True</AppxShowAllApps>
     <AppxBuildConfigurationSelection>x86</AppxBuildConfigurationSelection>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>
