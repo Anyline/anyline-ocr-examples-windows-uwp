@@ -1,0 +1,15 @@
+﻿<Page
+    x:Class="Anyline_Windows_UWP_Examples.ScanViewPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Anyline_Windows_UWP_Examples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    xmlns:anyline="using:Anyline.SDK.Views">
+
+    <Grid BorderBrush="White" BorderThickness="2">
+        <anyline:ScanView x:Name="AnylineScanView" />
+    </Grid>
+</Page>
