@@ -1,0 +1,50 @@
+﻿{
+  "camera": {
+    "captureResolution": "1080p",
+    "pictureResolution": "1080p"
+  },
+  "flash": {
+    "mode": "manual",
+    "alignment": "top_right"
+  },
+  "viewPlugin": {
+    "plugin": {
+      "id": "METER_PLUGIN",
+      "meterPlugin": {
+        "scanMode": "PHOTO_CAPTURE"
+      }
+    },
+    "cutoutConfig": {
+      "width": 1200,
+      "ratioFromSize": {
+        "width": 1,
+        "height": 1
+      },
+      "style": "rect",
+      "alignment": "top_half",
+      "strokeWidth": 2,
+      "strokeColor": "FFFFFF",
+      "cornerRadius": 4,
+      "outerColor": "000000",
+      "outerAlpha": 0.3,
+      "feedbackStrokeColor": "0099FF",
+      "offset": {
+        "x": 0,
+        "y": 0
+      }
+    },
+    "scanFeedback": {
+      "style": "CONTOUR_RECT",
+      "strokeColor": "0099FF",
+      "strokeWidth": 2,
+      "fillColor": "220099FF",
+      "cornerRadius": 2,
+      "redrawTimeout": 200,
+      "animationDuration": 75,
+      "blinkOnResult": true,
+      "beepOnResult": true,
+      "vibrateOnResult": true
+    },
+    "cancelOnResult": true
+  }
+}

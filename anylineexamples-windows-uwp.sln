@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.779
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anyline Windows UWP Examples", "Anyline Windows UWP Examples\Anyline Windows UWP Examples.csproj", "{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anyline Windows UWP Examples", "Anyline Windows UWP Examples\Anyline Windows UWP Examples.csproj", "{BEF76193-1BCB-4069-AC3E-7664B1D260AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,17 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}.Debug|x86.ActiveCfg = Debug|x86
-		{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}.Debug|x86.Build.0 = Debug|x86
-		{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}.Debug|x86.Deploy.0 = Debug|x86
-		{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}.Release|x86.ActiveCfg = Release|x86
-		{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}.Release|x86.Build.0 = Release|x86
-		{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}.Release|x86.Deploy.0 = Release|x86
+		{BEF76193-1BCB-4069-AC3E-7664B1D260AE}.Debug|x86.ActiveCfg = Debug|x86
+		{BEF76193-1BCB-4069-AC3E-7664B1D260AE}.Debug|x86.Build.0 = Debug|x86
+		{BEF76193-1BCB-4069-AC3E-7664B1D260AE}.Debug|x86.Deploy.0 = Debug|x86
+		{BEF76193-1BCB-4069-AC3E-7664B1D260AE}.Release|x86.ActiveCfg = Release|x86
+		{BEF76193-1BCB-4069-AC3E-7664B1D260AE}.Release|x86.Build.0 = Release|x86
+		{BEF76193-1BCB-4069-AC3E-7664B1D260AE}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {533E6991-7730-40AE-B51D-73602E5137F2}
 	EndGlobalSection
 EndGlobal

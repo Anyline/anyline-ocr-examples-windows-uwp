@@ -1,29 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DebugEngines>
-    </DebugEngines>
-    <BackgroundTaskDebugEngines>
-    </BackgroundTaskDebugEngines>
-    <RemoteDebugMachine>192.168.100.138:4020 (DESKTOP-4E978BE)</RemoteDebugMachine>
-    <AuthenticationMode>Windows</AuthenticationMode>
-    <RemoteDebugEnabled>false</RemoteDebugEnabled>
-    <CreateCleanLayout>false</CreateCleanLayout>
-    <UseEmulator>false</UseEmulator>
-    <DeviceId>6C3DD314-EF85-06D2-68DF-7734EA48770B</DeviceId>
-    <DeploymentType>CopyToDevice</DeploymentType>
-    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
-    <RemoteDebugMachine>192.168.100.138:4020 (DESKTOP-4E978BE)</RemoteDebugMachine>
-    <AuthenticationMode>Windows</AuthenticationMode>
-    <RemoteDebugEnabled>true</RemoteDebugEnabled>
-    <CreateCleanLayout>true</CreateCleanLayout>
-  </PropertyGroup>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <AppxPackageIsForStore>True</AppxPackageIsForStore>
-    <AppxShowAllApps>True</AppxShowAllApps>
-    <AppxBuildConfigurationSelection>x86</AppxBuildConfigurationSelection>
+    <ProjectView>ProjectFiles</ProjectView>
   </PropertyGroup>
 </Project>

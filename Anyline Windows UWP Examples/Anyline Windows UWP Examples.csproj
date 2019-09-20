@@ -1,28 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{E64CDFED-CBE6-42D7-9755-D739EFF1E2BB}</ProjectGuid>
+    <ProjectGuid>{BEF76193-1BCB-4069-AC3E-7664B1D260AE}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AnylineExamplesApp</RootNamespace>
-    <AssemblyName>AnylineExamplesApp</AssemblyName>
+    <RootNamespace>Anyline_Windows_UWP_Examples</RootNamespace>
+    <AssemblyName>Anyline Windows UWP Examples</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion>10.0.14393.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.17134.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.15063.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Anyline Windows UWP Examples_StoreKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>00B2F2235346B350D6F29C093EC226CB59FBA432</PackageCertificateThumbprint>
-    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxBundle>Always</AppxBundle>
-    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
-    <AppxPackageDir>D:\ANYLINE\anyline-ocr-examples-windows-uwp\DELETE\</AppxPackageDir>
-    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <PackageCertificateKeyFile>Anyline Windows UWP Examples_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -37,7 +32,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
     <OutputPath>bin\x86\Release\</OutputPath>
-    <DefineConstants>NETFX_CORE;WINDOWS_UWP;CODE_ANALYSIS</DefineConstants>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>;2008</NoWarn>
     <DebugType>pdbonly</DebugType>
@@ -45,93 +40,55 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
-    <UseDotNetNativeToolchain>false</UseDotNetNativeToolchain>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
   </PropertyGroup>
-  <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <Content Include="Assets\FlashIcons\torch_auto.png" />
-    <Content Include="Assets\FlashIcons\torch_off.png" />
-    <Content Include="Assets\FlashIcons\torch_on.png" />
-    <Content Include="Assets\Images\pass.png" />
-    <None Include="Anyline Windows UWP Examples_StoreKey.pfx" />
-    <Content Include="Modules\DrivingLicense\driving_license_view_config.json" />
-    <Content Include="Modules\Energy\energy_view_config.json" />
-    <Content Include="Modules\Energy\photocapture_view_config.json" />
-    <Content Include="Modules\LicensePlate\license_plate_view_config.json" />
-    <Content Include="Modules\Mrz\mrz_view_config.json" />
-    <Content Include="Modules\Ocr\serial_number_view_config.json" />
-    <Content Include="Modules\Ocr\USNr.any" />
-    <None Include="project.json" />
-  </ItemGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Converters\ExistsToVisibleConverter.cs" />
-    <Compile Include="LoadingPage.xaml.cs">
-      <DependentUpon>LoadingPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Entry.cs" />
+    <Compile Include="Model\ExampleCategory.cs" />
     <Compile Include="Model\ExampleList.cs" />
-    <Compile Include="Modules\DrivingLicense\ScanDrivingLicense.xaml.cs">
-      <DependentUpon>ScanDrivingLicense.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Energy\DoubleTariffCutoutView.cs" />
-    <Compile Include="Modules\Energy\DoubleTariffResultPage.xaml.cs">
-      <DependentUpon>DoubleTariffResultPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Energy\EnergyResultView.xaml.cs">
-      <DependentUpon>EnergyResultView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Energy\ExtendedRadioButton.cs" />
-    <Compile Include="Modules\Energy\ScanEnergy.xaml.cs">
-      <DependentUpon>ScanEnergy.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Energy\ScanEnergyDoubleTariff.xaml.cs">
-      <DependentUpon>ScanEnergyDoubleTariff.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\LicensePlate\ScanLicensePlate.xaml.cs">
-      <DependentUpon>ScanLicensePlate.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Mrz\MrzResultView.xaml.cs">
-      <DependentUpon>MrzResultView.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Mrz\ScanMrz.xaml.cs">
-      <DependentUpon>ScanMrz.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Modules\Ocr\ScanUniversalSerialNumber.xaml.cs">
-      <DependentUpon>ScanUniversalSerialNumber.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Model\ExamplePlugin.cs" />
+    <Compile Include="Model\ObjectExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Util\ResultView.xaml.cs">
-      <DependentUpon>ResultView.xaml</DependentUpon>
+    <Compile Include="ResultsPage.xaml.cs">
+      <DependentUpon>ResultsPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Util\TemplateSelector.cs" />
-    <Compile Include="Util\Utils.cs" />
-    <Compile Include="ViewModels\EntryViewModel.cs" />
-    <Compile Include="ViewModels\ListViewModel.cs" />
-    <Compile Include="ViewModels\ViewModelHelper.cs" />
+    <Compile Include="ScanViewPage.xaml.cs">
+      <DependentUpon>ScanViewPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="AnylineExamplesApp_TemporaryKey.pfx" />
+    <None Include="Anyline Windows UWP Examples_TemporaryKey.pfx" />
+    <Content Include="Assets\jsonConfigs\energy_config_analog_digital.json" />
+    <Content Include="Assets\jsonConfigs\energy_config_dial.json" />
+    <Content Include="Assets\jsonConfigs\id_config_driving_license.json" />
+    <Content Include="Assets\jsonConfigs\id_config_german_id_front.json" />
+    <Content Include="Assets\jsonConfigs\id_config_mrz.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_shipping_container.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_tin.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_usnr.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_vin.json" />
+    <Content Include="Assets\jsonConfigs\others_config_barcode.json" />
+    <Content Include="Assets\jsonConfigs\others_config_bottlecap.json" />
+    <Content Include="Assets\jsonConfigs\others_config_cow_tag.json" />
+    <Content Include="Assets\jsonConfigs\others_config_voucher_code.json" />
+    <Content Include="Assets\jsonConfigs\vehicle_config_license_plate.json" />
+    <Content Include="Assets\jsonConfigs\energy_config_photo.json" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Images\barcode.png" />
-    <Content Include="Assets\Images\digital.png" />
-    <Content Include="Assets\Images\electric.png" />
-    <Content Include="Assets\Images\heat.png" />
-    <Content Include="Assets\Images\icon_analog.png" />
-    <Content Include="Assets\Images\icon_barcode.png" />
-    <Content Include="Assets\Images\icon_digital.png" />
-    <Content Include="Assets\Images\icon_mrz.png" />
-    <Content Include="Assets\Images\passport.png" />
-    <None Include="Package.StoreAssociation.xml" />
+    <Content Include="Assets\FlashIcons\torch_auto.png" />
+    <Content Include="Assets\FlashIcons\torch_off.png" />
+    <Content Include="Assets\FlashIcons\torch_on.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -146,70 +103,34 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="LoadingPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Modules\DrivingLicense\ScanDrivingLicense.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Modules\Energy\DoubleTariffResultPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Modules\Energy\EnergyResultView.xaml">
+    <Page Include="ResultsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Modules\Energy\ScanEnergy.xaml">
+    <Page Include="ScanViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Modules\Energy\ScanEnergyDoubleTariff.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Modules\LicensePlate\ScanLicensePlate.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Modules\Mrz\MrzResultView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Modules\Mrz\ScanMrz.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Modules\Ocr\ScanUniversalSerialNumber.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Util\ResultView.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Anyline, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.8</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Anyline">
       <HintPath>..\Anyline.winmd</HintPath>
     </Reference>
     <Reference Include="Anyline.SDK">
       <HintPath>..\Anyline.SDK.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
-  </PropertyGroup>
-  <PropertyGroup>
-    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

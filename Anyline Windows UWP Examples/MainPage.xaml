@@ -1,65 +1,85 @@
 ﻿<Page
-    x:Class="AnylineExamplesApp.MainPage"
+    x:Class="Anyline_Windows_UWP_Examples.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:AnylineExamplesApp"
-    xmlns:viewModels="using:ViewModels"
-    xmlns:converters="using:Converters"
+    xmlns:local="using:Anyline_Windows_UWP_Examples"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" >
+    xmlns:models="using:Anyline_Windows_UWP_Examples.Model"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
-        
-        <!-- header template -->
-        <DataTemplate x:DataType="viewModels:EntryViewModel" x:Key="headerTemplate">
-            <TextBlock Text="{x:Bind Name, Mode=OneWay}" 
-                       FontSize="20" FontWeight="Thin" FontStyle="Italic"/>
-        </DataTemplate>
-
-        <!-- entry template -->
-        <DataTemplate x:DataType="viewModels:EntryViewModel" x:Key="entryTemplate">
-            <StackPanel Orientation="Horizontal" Margin="5" HorizontalAlignment="Stretch">
-                <!--="{x:Bind BackgroundSource, Mode=OneWay}"-->
-                <Image Source="{x:Bind IconSource, Mode=OneWay}" 
-                                       Margin="10, 0, 20, 7"
-                                       MaxWidth="52" MaxHeight="52">
-                </Image>
-                <StackPanel Orientation="Vertical" Margin="0,7">
-                    <TextBlock Text="{x:Bind Name, Mode=OneWay}"
-                                               FontSize="22"
-                                               VerticalAlignment="Center"/>
-                    <TextBlock Text="{x:Bind Description, Mode=OneWay}" 
-                                               FontSize="12"
-                                               Margin="25,0" VerticalAlignment="Center"/>
-                </StackPanel>
-            </StackPanel>
-        </DataTemplate>
-
-        <!-- version template -->
-        <DataTemplate x:DataType="viewModels:EntryViewModel" x:Key="versionTemplate">
-            <TextBlock Text="{x:Bind Name, Mode=OneWay}" 
-                       FontSize="14" FontWeight="Thin" FontStyle="Normal"/>
-        </DataTemplate>
-        
-        <!-- template selector -->
-        <local:TemplateSelector x:Key="templateSelector" 
-            HeaderTemplate="{StaticResource headerTemplate}"
-            EntryTemplate="{StaticResource entryTemplate}"
-            VersionTemplate="{StaticResource versionTemplate}"/>
-
+        <CollectionViewSource x:Name="pluginsSource" IsSourceGrouped="True" Source="{x:Bind models:ExampleList.Items}" />
     </Page.Resources>
+    <Page.Content>
+        <Grid>
 
-    <Grid Background="{StaticResource AppBarBackgroundThemeBrush}">
-        <ScrollViewer>
-            <StackPanel Grid.Column="0" Orientation="Vertical">
-                <ListView  x:Name="MainListView" 
-                           ItemsSource="{x:Bind MainList.Entries, Mode=OneWay}"
-                           SelectedIndex="{x:Bind MainList.SelectedIndex, Mode=TwoWay}"
-                           MinWidth="250" Margin="5" ItemTemplateSelector="{StaticResource templateSelector}"
-                           HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                </ListView>
-            </StackPanel>
-        </ScrollViewer>
-    </Grid>
+            <ListView x:Name="lvPlugins" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ItemsSource="{Binding Source={StaticResource pluginsSource}}">
+                <ListView.HeaderTemplate>
+                    <DataTemplate>
+                        <Grid Background="Black" Height="70">
+                            <TextBlock Text="Anyline UWP Examples" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Foreground="White" />
+                        </Grid>
+                    </DataTemplate>
+                </ListView.HeaderTemplate>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem" BasedOn="{StaticResource ListViewItemExpanded}">
+                        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate x:DataType="models:ExamplePlugin">
+                        <TextBlock Text="{x:Bind Name}" Style="{StaticResource BodyTextBlockStyle}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+                <ListView.GroupStyle>
+                    <GroupStyle>
+                        <GroupStyle.HeaderContainerStyle>
+                            <Style TargetType="ListViewHeaderItem">
+                                <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+                                <Setter Property="FontSize" Value="{ThemeResource ListViewHeaderItemThemeFontSize}" />
+                                <Setter Property="Background" Value="Black"  />
+                                <Setter Property="Margin" Value="0" />
+                                <Setter Property="Padding" Value="12,8,12,0" />
+                                <Setter Property="HorizontalContentAlignment" Value="Left" />
+                                <Setter Property="VerticalContentAlignment" Value="Center" />
+                                <Setter Property="MinHeight" Value="{ThemeResource ListViewHeaderItemMinHeight}" />
+                                <Setter Property="UseSystemFocusVisuals" Value="True" />
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ListViewHeaderItem">
+                                            <ContentPresenter x:Name="ContentPresenter"
+                                                            Background="{TemplateBinding Background}"
+                                                            Content="{TemplateBinding Content}"
+                                                            ContentTemplate="{TemplateBinding ContentTemplate}"
+                                                            ContentTransitions="{TemplateBinding ContentTransitions}"
+                                                            HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                            VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </GroupStyle.HeaderContainerStyle>
+                        <GroupStyle.HeaderTemplate>
+                            <DataTemplate x:DataType="models:ExampleCategory">
+                                <TextBlock Text="{x:Bind _Category}" Margin="10,0" Foreground="White" />
+                            </DataTemplate>
+                        </GroupStyle.HeaderTemplate>
+                    </GroupStyle>
+                </ListView.GroupStyle>
+            </ListView>
+
+            <Grid x:Name="LoadingView" Background="#CC000000" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ProgressRing IsActive="True" Foreground="White" VerticalAlignment="Center" Width="30" Height="30" />
+                    <TextBlock Text="Loading assets, please wait..." Margin="20,0,0,0" Foreground="White" VerticalAlignment="Center" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Page.Content>
+
 </Page>
