@@ -12,7 +12,6 @@ var class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view =
     [ "CaptureElement", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a793e317db1afdc2d5f080d85afaaa525", null ],
     [ "CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#ac161d43df5321db763c952be6d7e4998", null ],
     [ "FocusController", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a1706c01329c3019182f5b0bd732f48c8", null ],
-    [ "ImageProvider", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#ad5e6a1a09414394e9ca132299dcad9f6", null ],
     [ "CameraClosed", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a9a712d7f879ee8785a6282d1a47625b0", null ],
     [ "CameraError", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a71641805b4bc678b3db8f94877f62c81", null ],
     [ "CameraOpened", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aeb2e494913ff15c8d3bf1a769c29076d", null ]

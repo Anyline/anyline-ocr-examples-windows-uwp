@@ -7,6 +7,7 @@ var namespace_anyline_1_1_s_d_k_1_1_plugins =
     [ "Meter", "namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_meter.html", "namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_meter" ],
     [ "Ocr", "namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr.html", "namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr" ],
     [ "AbstractScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin" ],
+    [ "IAssetDelegate", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_asset_delegate.html", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_asset_delegate" ],
     [ "IScanInfoListener", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_info_listener.html", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_info_listener" ],
     [ "IScanPlugin", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", null ],
     [ "IScanResultListener", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_result_listener.html", null ],

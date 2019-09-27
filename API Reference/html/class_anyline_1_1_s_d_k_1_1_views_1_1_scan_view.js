@@ -5,6 +5,7 @@ var class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view =
     [ "Dispose", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#ae8af6b15dc2e78454bbcc7ca5b24ecbf", null ],
     [ "Init", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#add272f42830425cb1c0e5dd7e7e19621", null ],
     [ "Init", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a1ca1ea3c7d5a15cff492431c312269a3", null ],
+    [ "Init", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a0588e265b72040628c0529662a4c9642", null ],
     [ "InvokeVisualResultFeedback", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#adb5d5c336a8aa2096dc8fcef113e2bb7", null ],
     [ "SetScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#aac5570f537205e7beb09176eb7783bb1", null ],
     [ "SetupWithConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#af45c1f152ef3b71ef1a5eedbdd06f0e1", null ],

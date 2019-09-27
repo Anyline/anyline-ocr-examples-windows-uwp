@@ -1,5 +1,10 @@
 var class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config =
 [
+    [ "AnimationStyle", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a2c6c235b1616a0dece95659ca1833f57", [
+      [ "None", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a2c6c235b1616a0dece95659ca1833f57a6adf97f83acf6453d4a6a4b1070f3754", null ],
+      [ "Fade", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a2c6c235b1616a0dece95659ca1833f57a04e0385c10aefee8e4681617d2f3ef40", null ],
+      [ "Zoom", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a2c6c235b1616a0dece95659ca1833f57a4252b72e6ebcd4d4b4c2e46a786f03d2", null ]
+    ] ],
     [ "CutoutAlignment", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a111321fec561943545ecf42950000108", [
       [ "Top", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a111321fec561943545ecf42950000108aa4ffdcf0dc1f31b9acaf295d75b51d00", null ],
       [ "TopHalf", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a111321fec561943545ecf42950000108a51f9ab089e0b40e3f7aa46e5291f30cb", null ],
@@ -13,10 +18,12 @@ var class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config =
     ] ],
     [ "CutoutConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#ac84d4a4195e4e36fb808bbc3caa58b52", null ],
     [ "CutoutConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#af9307fdcddf508b1d590f06fcbec9360", null ],
+    [ "GetAnimationStyle", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#aaf06c4bff7c99e166b9ac0ca45f26209", null ],
     [ "GetCutoutAlignment", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a7b3a69620ee7c97290c1a0dee26c89e7", null ],
     [ "GetCutoutAlignment", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a25dc0f5fbd3f0ebd7a266e3881e4bf37", null ],
     [ "GetCutoutStyle", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#af0451d2f1d646e459837df0960530181", null ],
     [ "Alignment", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a301662cab70317bb301c2cfc36fe6c7a", null ],
+    [ "Animation", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a8b1470b408b8dcae763d1b4d316c5f52", null ],
     [ "CornerRadius", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#abc7d6050429025af78fbfac08c18c4d5", null ],
     [ "CropOffset", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#aca449ae08e1748defcd7ccc6f6c82a7b", null ],
     [ "CropPadding", "class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#ab412c324593de186932568e39fb5ab6b", null ],

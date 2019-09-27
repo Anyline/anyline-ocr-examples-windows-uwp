@@ -13,6 +13,7 @@ var searchData=
   ['anylinebaseconfig',['AnylineBaseConfig',['../class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html',1,'Anyline::SDK::Views']]],
   ['anylineexception',['AnylineException',['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_anyline_exception.html',1,'Anyline::SDK::Core::Exceptions']]],
   ['anylineimage',['AnylineImage',['../class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html',1,'Anyline::SDK::Models']]],
+  ['anylineimageprovider',['AnylineImageProvider',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_image_provider.html',1,'Anyline::SDK::Camera']]],
   ['anylinemoduleview',['AnylineModuleView',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html',1,'Anyline::SDK::Modules']]],
   ['anylinemoduleview_3c_20barcodescanviewplugin_2c_20barcodescanplugin_2c_20ibarcoderesultlistener_2c_20barcodescanresult_2c_20barcoderesult_2c_20string_2c_20string_20_3e',['AnylineModuleView&lt; BarcodeScanViewPlugin, BarcodeScanPlugin, IBarcodeResultListener, BarcodeScanResult, BarcodeResult, string, string &gt;',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html',1,'Anyline::SDK::Modules']]],
   ['anylinemoduleview_3c_20idscanviewplugin_2c_20idscanplugin_2c_20imrzresultlistener_2c_20scanresult_3c_20id_20_3e_2c_20mrzresult_2c_20id_2c_20identification_20_3e',['AnylineModuleView&lt; IDScanViewPlugin, IDScanPlugin, IMrzResultListener, ScanResult&lt; ID &gt;, MrzResult, ID, Identification &gt;',['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html',1,'Anyline::SDK::Modules']]],

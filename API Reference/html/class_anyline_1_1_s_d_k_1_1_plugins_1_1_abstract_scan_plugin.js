@@ -12,6 +12,8 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin =
     [ "SetReportingEnabled", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a45940b55b80219e321b3a5842a292f96", null ],
     [ "Start", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a7770de06174593a9c23723006e854610", null ],
     [ "Stop", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a544dce46586df28911e78adef82d4c6f", null ],
+    [ "UpdateAssets", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a9133a0d9f7ddf42441abd4ee007510e7", null ],
+    [ "AssetPath", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a60d257e5e771bd419515a387a9b05a58", null ],
     [ "CoreController", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a27359c11226cc341dba5064bb3095543", null ],
     [ "CropRect", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a16538a097f59af107e215cfe3fa0493f", null ],
     [ "CurrentConfidence", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#aaa9fe4c07b90144540e6a2612724081d", null ],

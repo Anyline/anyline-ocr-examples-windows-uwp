@@ -1,7 +1,7 @@
 var searchData=
 [
   ['ianylinelistener',['IAnylineListener',['../interface_anyline_1_1_s_d_k_1_1_core_1_1_i_anyline_listener.html',1,'Anyline::SDK::Core']]],
-  ['ianylinemoduleresultlistener',['IAnylineModuleResultListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html',1,'Anyline.SDK.Modules.IAnylineModuleResultListener'],['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html',1,'Anyline.SDK.Modules.IAnylineModuleResultListener&lt; AnylineScanResult &gt;']]],
+  ['ianylinemoduleresultlistener',['IAnylineModuleResultListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html',1,'Anyline.SDK.Modules.IAnylineModuleResultListener&lt; AnylineScanResult &gt;'],['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html',1,'Anyline.SDK.Modules.IAnylineModuleResultListener']]],
   ['ianylinemoduleresultlistener_3c_20anylineocrresult_20_3e',['IAnylineModuleResultListener&lt; AnylineOcrResult &gt;',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html',1,'Anyline::SDK::Modules']]],
   ['ianylinemoduleresultlistener_3c_20barcoderesult_20_3e',['IAnylineModuleResultListener&lt; BarcodeResult &gt;',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html',1,'Anyline::SDK::Modules']]],
   ['ianylinemoduleresultlistener_3c_20energyresult_20_3e',['IAnylineModuleResultListener&lt; EnergyResult &gt;',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_result_listener.html',1,'Anyline::SDK::Modules']]],
@@ -11,8 +11,10 @@ var searchData=
   ['ianylinemoduleview_3c_20tmoduleresultlistenertype_20_3e',['IAnylineModuleView&lt; TModuleResultListenerType &gt;',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_i_anyline_module_view.html',1,'Anyline::SDK::Modules']]],
   ['ianylineocrresultlistener',['IAnylineOcrResultListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_ocr_1_1_i_anyline_ocr_result_listener.html',1,'Anyline::SDK::Modules::Ocr']]],
   ['ianylinescanresult',['IAnylineScanResult',['../interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html',1,'Anyline::SDK::Models']]],
+  ['iassetdelegate',['IAssetDelegate',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_asset_delegate.html',1,'Anyline::SDK::Plugins']]],
   ['ibarcoderesultlistener',['IBarcodeResultListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_barcode_1_1_i_barcode_result_listener.html',1,'Anyline::SDK::Modules::Barcode']]],
   ['icameralistener',['ICameraListener',['../interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html',1,'Anyline::SDK::Camera']]],
+  ['icapturemanager',['ICaptureManager',['../interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_capture_manager.html',1,'Anyline::SDK::Camera']]],
   ['icombinedimageprovider',['ICombinedImageProvider',['../interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_combined_image_provider.html',1,'Anyline::SDK::Camera']]],
   ['id',['ID',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html',1,'Anyline.SDK.Plugins.ID.ID'],['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html',1,'Anyline.SDK.Plugins.ID.ID&lt; TFieldConfidences &gt;']]],
   ['id_3c_20drivinglicensefieldconfidences_20_3e',['ID&lt; DrivingLicenseFieldConfidences &gt;',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html',1,'Anyline::SDK::Plugins::ID']]],
@@ -45,7 +47,7 @@ var searchData=
   ['imrzidentificationfields_3c_20string_20_3e',['IMrzIdentificationFields&lt; string &gt;',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification_fields.html',1,'Anyline::SDK::Plugins::ID']]],
   ['imrzidentificationfields_3c_20t_2c_20bool_20_3e',['IMrzIdentificationFields&lt; T, bool &gt;',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification_fields.html',1,'Anyline::SDK::Plugins::ID']]],
   ['imrzresultlistener',['IMrzResultListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_mrz_1_1_i_mrz_result_listener.html',1,'Anyline::SDK::Modules::Mrz']]],
-  ['iphotocapturelistener',['IPhotoCaptureListener',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_i_photo_capture_listener.html',1,'Anyline.SDK.Plugins.Meter.IPhotoCaptureListener'],['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html',1,'Anyline.SDK.Modules.Energy.IPhotoCaptureListener']]],
+  ['iphotocapturelistener',['IPhotoCaptureListener',['../interface_anyline_1_1_s_d_k_1_1_modules_1_1_energy_1_1_i_photo_capture_listener.html',1,'Anyline.SDK.Modules.Energy.IPhotoCaptureListener'],['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_i_photo_capture_listener.html',1,'Anyline.SDK.Plugins.Meter.IPhotoCaptureListener']]],
   ['iscaninfolistener',['IScanInfoListener',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_info_listener.html',1,'Anyline::SDK::Plugins']]],
   ['iscanplugin',['IScanPlugin',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html',1,'Anyline.SDK.Plugins.IScanPlugin'],['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html',1,'Anyline.SDK.Plugins.IScanPlugin&lt; TScanPluginResultType &gt;']]],
   ['iscanplugin_3c_20tscanpluginresulttype_20_3e',['IScanPlugin&lt; TScanPluginResultType &gt;',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html',1,'Anyline::SDK::Plugins']]],

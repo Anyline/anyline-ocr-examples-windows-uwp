@@ -37,7 +37,6 @@ var hierarchy =
       [ "Anyline.SDK.Plugins.Ocr.OcrScanViewPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_ocr_scan_view_plugin.html", null ]
     ] ],
     [ "Anyline.SDK.Views.AnylineBaseConfig", "class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html", null ],
-    [ "Anyline.SDK.Models.AnylineImage", "class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html", null ],
     [ "Anyline.SDK.Modules.AnylineModuleView< BarcodeScanViewPlugin, BarcodeScanPlugin, IBarcodeResultListener, BarcodeScanResult, BarcodeResult, string, string >", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html", [
       [ "Anyline.SDK.Modules.Barcode.BarcodeScanView", "class_anyline_1_1_s_d_k_1_1_modules_1_1_barcode_1_1_barcode_scan_view.html", null ]
     ] ],
@@ -126,7 +125,14 @@ var hierarchy =
     [ "Anyline.SDK.Models.IAnylineScanResult", "interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html", [
       [ "Anyline.SDK.Models.AnylineScanResult< T >", "class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_scan_result.html", null ]
     ] ],
+    [ "Anyline.SDK.Plugins.IAssetDelegate", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_asset_delegate.html", null ],
+    [ "IAssetDelegate", null, [
+      [ "Anyline.SDK.Plugins.AbstractScanPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html", null ]
+    ] ],
     [ "Anyline.SDK.Camera.ICameraListener", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html", null ],
+    [ "Anyline.SDK.Camera.ICaptureManager", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_capture_manager.html", [
+      [ "Anyline.SDK.Camera.CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html", null ]
+    ] ],
     [ "Anyline.SDK.Plugins.ID.ID", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html", [
       [ "Anyline.SDK.Plugins.ID.ID< TFieldConfidences >", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_d.html", null ]
     ] ],
@@ -161,6 +167,7 @@ var hierarchy =
       [ "Anyline.SDK.Camera.CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html", null ],
       [ "Anyline.SDK.Camera.CutoutView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_cutout_view.html", null ],
       [ "Anyline.SDK.Camera.FlashView", "class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html", null ],
+      [ "Anyline.SDK.Models.AnylineImage", "class_anyline_1_1_s_d_k_1_1_models_1_1_anyline_image.html", null ],
       [ "Anyline.SDK.Modules.AnylineModuleView< TScanViewPluginType, TScanPluginType, TModuleResultListenerType, TPluginScanResultType, TModuleScanResultType, TPluginResult, TModuleResult >", "class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html", null ],
       [ "Anyline.SDK.Plugins.IScanPlugin< TScanPluginResultType >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", null ],
       [ "Anyline.SDK.Plugins.IScanPlugin< TScanPluginResultType >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_plugin.html", null ],
@@ -200,6 +207,7 @@ var hierarchy =
       [ "Anyline.SDK.Plugins.ID.IMrzIdentificationFields< T, V >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification_fields.html", null ]
     ] ],
     [ "Anyline.SDK.Core.IImageProvider", "interface_anyline_1_1_s_d_k_1_1_core_1_1_i_image_provider.html", [
+      [ "Anyline.SDK.Camera.AnylineImageProvider", "class_anyline_1_1_s_d_k_1_1_camera_1_1_anyline_image_provider.html", null ],
       [ "Anyline.SDK.Camera.ICombinedImageProvider", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_combined_image_provider.html", null ]
     ] ],
     [ "Anyline.SDK.Plugins.ID.IMrzIdentificationFields< T >", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_i_mrz_identification_fields.html", null ],
