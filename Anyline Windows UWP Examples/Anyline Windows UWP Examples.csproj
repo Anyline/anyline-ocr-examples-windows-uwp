@@ -75,7 +75,6 @@
     <Content Include="Assets\jsonConfigs\id_config_german_id_front.json" />
     <Content Include="Assets\jsonConfigs\id_config_mrz.json" />
     <Content Include="Assets\jsonConfigs\mro_config_shipping_container.json" />
-    <Content Include="Assets\jsonConfigs\mro_config_tin.json" />
     <Content Include="Assets\jsonConfigs\mro_config_usnr.json" />
     <Content Include="Assets\jsonConfigs\mro_config_vin.json" />
     <Content Include="Assets\jsonConfigs\others_config_barcode.json" />
