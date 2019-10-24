@@ -1,0 +1,45 @@
+﻿{
+  "camera": {
+    "captureResolution": "720"
+  },
+  "flash": {
+    "mode": "manual",
+    "alignment": "bottom_left"
+  },
+  "viewPlugin": {
+    "plugin": {
+      "id": "TIN_ID",
+      "ocrPlugin": {
+        "tinConfig": {
+          "scanMode": "flexible",
+          "enableUpsideDownScan": true
+        }
+      }
+    },
+    "cutoutConfig": {
+      "style": "rect",
+      "alignment": "top_half",
+      "maxWidthPercent": "99%",
+      "maxHeightPercent": "99%",
+      "strokeWidth": 1,
+      "strokeColor": "FFFFFF",
+      "cornerRadius": 2,
+      "outerColor": "000000",
+      "outerAlpha": 0.3,
+      "feedbackStrokeColor": "0099FF"
+    },
+    "scanFeedback": {
+      "animation": "traverse_multi",
+      "animationDuration": 250,
+      "style": "contour_rect",
+      "strokeWidth": 2,
+      "strokeColor": "0099FF",
+      "beepOnResult": false,
+      "vibrateOnResult": true,
+      "blinkAnimationOnResult": true,
+      "cancelOnResult": true
+    },
+    "cancelOnResult": true,
+    "reportingEnabled": true
+  }
+}

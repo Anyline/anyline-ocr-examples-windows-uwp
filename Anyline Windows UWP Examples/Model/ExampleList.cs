@@ -13,6 +13,7 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string LicensePlate = "EU License Plate";
         private static readonly string UniversalSerialNumber = "Universal Serial Number";
         private static readonly string VIN = "Vehicle Identification Number";
+        private static readonly string TIN = "Tire Identification Number";
         private static readonly string ShippingContainer = "Shipping Container";
         private static readonly string Barcode = "Barcode";
         private static readonly string Bottlecap = "Bottlecap";
@@ -37,6 +38,7 @@ namespace Anyline_Windows_UWP_Examples.Model
             new ExampleCategory("MRO", new List<ExamplePlugin>{
                 new ExamplePlugin(UniversalSerialNumber, "mro_config_usnr"),
                 new ExamplePlugin(VIN, "mro_config_vin"),
+                new ExamplePlugin(TIN, "mro_config_tin"),
                 new ExamplePlugin(ShippingContainer, "mro_config_shipping_container"),
             }),
             new ExampleCategory("Others", new List<ExamplePlugin>{
