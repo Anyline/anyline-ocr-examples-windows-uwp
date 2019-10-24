@@ -84,6 +84,8 @@
     <Content Include="Assets\jsonConfigs\vehicle_config_license_plate.json" />
     <Content Include="Assets\jsonConfigs\energy_config_photo.json" />
     <Content Include="Assets\jsonConfigs\mro_config_tin.json" />
+    <Content Include="Assets\anyline_capitals.traineddata" />
+    <Content Include="Assets\bottlecap.traineddata" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\FlashIcons\torch_auto.png" />

@@ -12,7 +12,7 @@
       "ocrPlugin": {
         "ocrConfig": {
           "scanMode": "GRID",
-          "languages": [ "bottlecap.traineddata" ],
+          "languages": [ "Assets/bottlecap.traineddata" ],
           "charWhitelist": "123456789ABCDEFGHJKLMNPRSTUVWXYZ",
           "minCharHeight": 14,
           "maxCharHeight": 95,
