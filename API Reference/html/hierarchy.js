@@ -58,6 +58,7 @@ var hierarchy =
       ] ],
       [ "Anyline.SDK.Plugins.Ocr.CattleTagConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_cattle_tag_config.html", null ],
       [ "Anyline.SDK.Plugins.Ocr.ContainerConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_container_config.html", null ],
+      [ "Anyline.SDK.Plugins.Ocr.TINConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_t_i_n_config.html", null ],
       [ "Anyline.SDK.Plugins.Ocr.VINConfig", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_v_i_n_config.html", null ]
     ] ],
     [ "Anyline.SDK.Plugins.Ocr.AnylineOcrLanguage", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_language.html", null ],

@@ -51,8 +51,8 @@ var NAVTREEINDEX =
 "annotated.html",
 "class_anyline_1_1_s_d_k_1_1_plugins_1_1_barcode_1_1_barcode_scan_plugin.html#aeb9620ba7dc793e01f150c0f17b4d2eb",
 "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a61028632ad3b2e67733c2b4cdd660846",
-"class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a480a7778f57343356aec401190fc1a37",
-"interface_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_i_photo_capture_listener.html#ade03db27c5de3cd1438c04d229841499"
+"class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a1cd104048b79d3520a6db675ea1f8283",
+"interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_info_listener.html#a1eadfb2bbbb0f4e1aef16e9db1b1bc92"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
