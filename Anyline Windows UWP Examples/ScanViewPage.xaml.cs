@@ -5,6 +5,7 @@ using Anyline.SDK.Plugins.ID;
 using Anyline.SDK.Plugins.LicensePlate;
 using Anyline.SDK.Plugins.Meter;
 using Anyline.SDK.Plugins.Ocr;
+using Anyline.SDK.ViewPlugins;
 using Anyline.SDK.Views;
 using Anyline_Windows_UWP_Examples.Model;
 using System;
@@ -35,7 +36,7 @@ namespace Anyline_Windows_UWP_Examples
         IPhotoCaptureListener
     {
         private ScanView _anylineScanView;
-        private IScanViewPlugin _scanViewPlugin;
+        private AbstractBaseScanViewPlugin _scanViewPlugin;
 
         public ScanViewPage()
         {
