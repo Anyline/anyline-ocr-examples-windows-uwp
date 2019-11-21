@@ -2,7 +2,6 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options =
 [
     [ "MrzFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a2aec65d97df67082410d998da1206346", null ],
     [ "MrzFieldScanOptions", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a53eb9d326eb534ea567e3ba9716dce16", null ],
-    [ "Address", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a0e2001b65156f1dc233386c638ae0805", null ],
     [ "AllCheckDigitsValid", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a75232f60c5cb61b8320a12e73959ee4c", null ],
     [ "CheckDigitDateOfBirth", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#ac27d84a95900ee3a6a0dff400399e8cd", null ],
     [ "CheckDigitDateOfExpiry", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#addcb1987d6604ff06390685a39ef6fd2", null ],
@@ -13,8 +12,6 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options =
     [ "DateOfBirthObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a16f29c250f41d50308ff01da00e7fc48", null ],
     [ "DateOfExpiry", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a29be538b4f4f963650e829aca38a04db", null ],
     [ "DateOfExpiryObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a184409bf211b392a9ee0815584765fa2", null ],
-    [ "DateOfIssue", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#ace9a3c7dda31b30928f54e9cd79a4773", null ],
-    [ "DateOfIssueObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#abf6e1094b0d5b58b15f3937fa36ba218", null ],
     [ "DocumentNumber", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a044a48f323d1025135cf11e9b9e6583e", null ],
     [ "DocumentType", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a53ceba91ee42957a9bbaaff440af5a1e", null ],
     [ "GivenNames", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#ab90deca02cde7456911cbca3a8928d2d", null ],

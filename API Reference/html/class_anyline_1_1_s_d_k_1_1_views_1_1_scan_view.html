@@ -30,7 +30,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">Anyline SDK
-   &#160;<span id="projectnumber">15</span>
+   &#160;<span id="projectnumber">16</span>
    </div>
   </td>
  </tr>
@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('class_anyline_1_1_s_d_k_1_1_views_1_1_
 </div><!--header-->
 <div class="contents">
 
-<p>Inherits Grid, <a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html">Anyline.SDK.Views.IScanView</a>, and IDisposable.</p>
+<p>Inherits Grid, and IDisposable.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -106,21 +106,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ca1ea3c7d5a15cff492431c312269a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a1ca1ea3c7d5a15cff492431c312269a3">Init</a> (string jsonAssetPath, string licenseKey)</td></tr>
 <tr class="memdesc:a1ca1ea3c7d5a15cff492431c312269a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the <a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html">ScanView</a> with the file path to a JSON config file and a license key.  <a href="#a1ca1ea3c7d5a15cff492431c312269a3">More...</a><br /></td></tr>
 <tr class="separator:a1ca1ea3c7d5a15cff492431c312269a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0588e265b72040628c0529662a4c9642"><td class="memItemLeft" align="right" valign="top"><a id="a0588e265b72040628c0529662a4c9642"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Init</b> (string jsonAssetPath, string licenseKey, string apiKey)</td></tr>
-<tr class="separator:a0588e265b72040628c0529662a4c9642"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af45c1f152ef3b71ef1a5eedbdd06f0e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#af45c1f152ef3b71ef1a5eedbdd06f0e1">SetupWithConfig</a> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html">AnylineBaseConfig</a> config)</td></tr>
 <tr class="memdesc:af45c1f152ef3b71ef1a5eedbdd06f0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html">ScanView</a> up with an <a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html">AnylineBaseConfig</a> to reconfigure camera and flash configurations.  <a href="#af45c1f152ef3b71ef1a5eedbdd06f0e1">More...</a><br /></td></tr>
 <tr class="separator:af45c1f152ef3b71ef1a5eedbdd06f0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac5570f537205e7beb09176eb7783bb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#aac5570f537205e7beb09176eb7783bb1">SetScanViewPlugin</a> (<a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html">IScanViewPlugin</a> scanViewPlugin)</td></tr>
-<tr class="memdesc:aac5570f537205e7beb09176eb7783bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets a ScanViewPlugin to the <a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html">ScanView</a>.  <a href="#aac5570f537205e7beb09176eb7783bb1">More...</a><br /></td></tr>
-<tr class="separator:aac5570f537205e7beb09176eb7783bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d9d972035c10bfcb30a5d013e01df2"><td class="memItemLeft" align="right" valign="top"><a id="a06d9d972035c10bfcb30a5d013e01df2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>AttachScanViewPlugin</b> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_view_plugins_1_1_abstract_base_scan_view_plugin.html">AbstractBaseScanViewPlugin</a> scanViewPlugin)</td></tr>
+<tr class="separator:a06d9d972035c10bfcb30a5d013e01df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e498224a8fd4294e70d8fccbcb3a14b"><td class="memItemLeft" align="right" valign="top"><a id="a4e498224a8fd4294e70d8fccbcb3a14b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DetachScanViewPlugin</b> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_view_plugins_1_1_abstract_base_scan_view_plugin.html">AbstractBaseScanViewPlugin</a> scanViewPlugin)</td></tr>
+<tr class="separator:a4e498224a8fd4294e70d8fccbcb3a14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b2831991ca3b6465a0b80cf4c8e50d2"><td class="memItemLeft" align="right" valign="top"><a id="a1b2831991ca3b6465a0b80cf4c8e50d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StartCamera</b> ()</td></tr>
 <tr class="separator:a1b2831991ca3b6465a0b80cf4c8e50d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a1a24f96345590b6f2ad29cdd1ca5bd"><td class="memItemLeft" align="right" valign="top"><a id="a7a1a24f96345590b6f2ad29cdd1ca5bd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StopCamera</b> ()</td></tr>
-<tr class="separator:a7a1a24f96345590b6f2ad29cdd1ca5bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8622afe3f20b9bf131b4b4fb3ac668a8"><td class="memItemLeft" align="right" valign="top"><a id="a8622afe3f20b9bf131b4b4fb3ac668a8"></a>
 async Task&#160;</td><td class="memItemRight" valign="bottom"><b>StopCameraAsync</b> ()</td></tr>
 <tr class="separator:a8622afe3f20b9bf131b4b4fb3ac668a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,18 +127,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>StartScanning</b> ()<
 <tr class="memitem:a877901bad06887cbe344dc8f0b8f0515"><td class="memItemLeft" align="right" valign="top"><a id="a877901bad06887cbe344dc8f0b8f0515"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>StopScanning</b> ()</td></tr>
 <tr class="separator:a877901bad06887cbe344dc8f0b8f0515"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7f18735ded969f30229d4a876887cfc"><td class="memItemLeft" align="right" valign="top"><a id="aa7f18735ded969f30229d4a876887cfc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>ClearVisualFeedback</b> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html">CutoutConfig</a> cutoutConfig)</td></tr>
-<tr class="separator:aa7f18735ded969f30229d4a876887cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82e933e1d368193be7aee67eafc4c3cb"><td class="memItemLeft" align="right" valign="top"><a id="a82e933e1d368193be7aee67eafc4c3cb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateVisualFeedback&lt; T &gt;</b> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_plugins_1_1_scan_info.html">ScanInfo</a> info)</td></tr>
-<tr class="separator:a82e933e1d368193be7aee67eafc4c3cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb5d5c336a8aa2096dc8fcef113e2bb7"><td class="memItemLeft" align="right" valign="top"><a id="adb5d5c336a8aa2096dc8fcef113e2bb7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>InvokeVisualResultFeedback</b> (<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view_plugin_config.html">ScanViewPluginConfig</a> config)</td></tr>
-<tr class="separator:adb5d5c336a8aa2096dc8fcef113e2bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393eee35de8af1b4a52a7e5ad66aaff7"><td class="memItemLeft" align="right" valign="top"><a id="a393eee35de8af1b4a52a7e5ad66aaff7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateBrightness</b> (int brightness)</td></tr>
-<tr class="separator:a393eee35de8af1b4a52a7e5ad66aaff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b17cd781b84ba5ed105c7643b52818"><td class="memItemLeft" align="right" valign="top"><a id="a93b17cd781b84ba5ed105c7643b52818"></a>
+virtual <a class="el" href="class_anyline_1_1_s_d_k_1_1_view_plugins_1_1_abstract_base_scan_view_plugin.html">AbstractBaseScanViewPlugin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FindByID</b> (string id)</td></tr>
+<tr class="separator:a93b17cd781b84ba5ed105c7643b52818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78d1a183f0e5c9d490500550c8fec4e9"><td class="memItemLeft" align="right" valign="top"><a id="a78d1a183f0e5c9d490500550c8fec4e9"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateWatermarkVisibility</b> ()</td></tr>
 <tr class="separator:a78d1a183f0e5c9d490500550c8fec4e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -166,25 +154,15 @@ Properties</h2></td></tr>
 <tr class="memitem:a1c217d6374703728a9bc876122e93483"><td class="memItemLeft" align="right" valign="top"><a id="a1c217d6374703728a9bc876122e93483"></a>
 <a class="el" href="class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html">FlashView</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FlashView</b><code> [get]</code></td></tr>
 <tr class="separator:a1c217d6374703728a9bc876122e93483"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeed7a12e02e4eec5eb007727cecdf43b"><td class="memItemLeft" align="right" valign="top"><a id="aeed7a12e02e4eec5eb007727cecdf43b"></a>
-<a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html">IScanViewPlugin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ScanViewPlugin</b><code> [get]</code></td></tr>
-<tr class="separator:aeed7a12e02e4eec5eb007727cecdf43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad669d763c907e102b4e76f8a6ecfb443"><td class="memItemLeft" align="right" valign="top"><a id="ad669d763c907e102b4e76f8a6ecfb443"></a>
+<a class="el" href="class_anyline_1_1_s_d_k_1_1_view_plugins_1_1_abstract_base_scan_view_plugin.html">AbstractBaseScanViewPlugin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ScanViewPlugin</b><code> [get]</code></td></tr>
+<tr class="separator:ad669d763c907e102b4e76f8a6ecfb443"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3dd410065898b3b88b7e84b523af2a3a"><td class="memItemLeft" align="right" valign="top"><a id="a3dd410065898b3b88b7e84b523af2a3a"></a>
 <a class="el" href="interface_anyline_1_1_s_d_k_1_1_core_1_1_i_image_provider.html">IImageProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ImageProvider</b><code> [get]</code></td></tr>
 <tr class="separator:a3dd410065898b3b88b7e84b523af2a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61f328b87c9d1a7aab91f2dace79fd79"><td class="memItemLeft" align="right" valign="top"><a id="a61f328b87c9d1a7aab91f2dace79fd79"></a>
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html">AnylineBaseConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BaseConfig</b><code> [get]</code></td></tr>
+<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html">AnylineBaseConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BaseConfig</b> = new <a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html">AnylineBaseConfig</a>()<code> [get]</code></td></tr>
 <tr class="separator:a61f328b87c9d1a7aab91f2dace79fd79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html">Anyline.SDK.Views.IScanView</a></td></tr>
-<tr class="memitem:af5e12e3c54a8fc25466302bb3189c434 inherit properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view"><td class="memItemLeft" align="right" valign="top"><a id="af5e12e3c54a8fc25466302bb3189c434"></a>
-<a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html">IScanViewPlugin</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ScanViewPlugin</b><code> [get]</code></td></tr>
-<tr class="separator:af5e12e3c54a8fc25466302bb3189c434 inherit properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad07ca28862ffb0fb231b2d15bc81b2 inherit properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view"><td class="memItemLeft" align="right" valign="top"><a id="a7ad07ca28862ffb0fb231b2d15bc81b2"></a>
-<a class="el" href="interface_anyline_1_1_s_d_k_1_1_core_1_1_i_image_provider.html">IImageProvider</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ImageProvider</b><code> [get]</code></td></tr>
-<tr class="separator:a7ad07ca28862ffb0fb231b2d15bc81b2 inherit properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8539a3d23fb0c275ea8fd8cf7d491018 inherit properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view"><td class="memItemLeft" align="right" valign="top"><a id="a8539a3d23fb0c275ea8fd8cf7d491018"></a>
-<a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_anyline_base_config.html">AnylineBaseConfig</a>&#160;</td><td class="memItemRight" valign="bottom"><b>BaseConfig</b><code> [get]</code></td></tr>
-<tr class="separator:a8539a3d23fb0c275ea8fd8cf7d491018 inherit properties_interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="add272f42830425cb1c0e5dd7e7e19621"></a>
@@ -221,8 +199,6 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implements <a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html">Anyline.SDK.Views.IScanView</a>.</p>
 
 </div>
 </div>
@@ -261,36 +237,6 @@ Properties</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html">Anyline.SDK.Views.IScanView</a>.</p>
-
-</div>
-</div>
-<a id="aac5570f537205e7beb09176eb7783bb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac5570f537205e7beb09176eb7783bb1">&#9670;&nbsp;</a></span>SetScanViewPlugin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Anyline.SDK.Views.ScanView.SetScanViewPlugin </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view_plugin.html">IScanViewPlugin</a>&#160;</td>
-          <td class="paramname"><em>scanViewPlugin</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets a ScanViewPlugin to the <a class="el" href="class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html">ScanView</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">scanViewPlugin</td><td>The ScanViewPlugin</td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html">Anyline.SDK.Views.IScanView</a>.</p>
-
 </div>
 </div>
 <a id="af45c1f152ef3b71ef1a5eedbdd06f0e1"></a>
@@ -316,8 +262,6 @@ Properties</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-<p>Implements <a class="el" href="interface_anyline_1_1_s_d_k_1_1_views_1_1_i_scan_view.html">Anyline.SDK.Views.IScanView</a>.</p>
 
 </div>
 </div>

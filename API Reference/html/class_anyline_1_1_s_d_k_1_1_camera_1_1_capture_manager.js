@@ -10,7 +10,6 @@ var class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager =
     [ "TakeHighResolutionImageAsync", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a7933101384cd7af5b25678202785a442", null ],
     [ "UpdateFocusRegionAsync", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#acaacb28cfaafff3ec48af2188a9211e2", null ],
     [ "ImageProvider", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a5b9887d7a87869b7a0dfc15f8ee55a37", null ],
-    [ "CameraListener", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a65b77fdd9078618318745032887fdaad", null ],
     [ "CropRect", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a66f4298f396c64eec83bf0e6ce5e901d", null ],
     [ "CurrentOrientation", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a188d2fdb2b5700b1c42ec82cb30fad84", null ],
     [ "Dispatcher", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html#a1d7f8e7d7e721853aaaab470f354f1bd", null ],

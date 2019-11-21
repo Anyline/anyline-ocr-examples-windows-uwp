@@ -8,7 +8,6 @@ var class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view =
     [ "ReleaseCameraInBackground", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#abd31a6384fb3623e63e6441d7bbb709c", null ],
     [ "SetCameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a50437b52bc6b8ed4131bc7a7bbddf2d8", null ],
     [ "CameraConfig", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a44ea4758b9101dd8ce200625ac33ed42", null ],
-    [ "CameraListener", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#aa2208d0e789dfa5add19ae4114b764a8", null ],
     [ "CaptureElement", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a793e317db1afdc2d5f080d85afaaa525", null ],
     [ "CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#ac161d43df5321db763c952be6d7e4998", null ],
     [ "FocusController", "class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a1706c01329c3019182f5b0bd732f48c8", null ],

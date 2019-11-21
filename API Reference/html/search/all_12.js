@@ -4,5 +4,5 @@ var searchData=
   ['verbosity',['Verbosity',['../namespace_anyline_1_1_s_d_k_1_1_util.html#a44753ef31f217f72f7825f856ba71715',1,'Anyline::SDK::Util']]],
   ['vin',['VIN',['../struct_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_regex.html#ad5148339954d599ff1329ff59a13ebfd',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrRegex']]],
   ['vinconfig',['VINConfig',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_v_i_n_config.html',1,'Anyline::SDK::Plugins::Ocr']]],
-  ['visualfeedbackconfig',['VisualFeedbackConfig',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html',1,'Anyline::SDK::Camera']]]
+  ['visualfeedback',['VisualFeedback',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_visual_feedback.html',1,'Anyline::SDK::Plugins']]]
 ];

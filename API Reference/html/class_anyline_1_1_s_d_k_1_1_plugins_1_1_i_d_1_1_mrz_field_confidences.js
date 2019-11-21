@@ -2,7 +2,6 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences =
 [
     [ "MrzFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a62f2ef275e19077d7e9b8fa2ca54ac5c", null ],
     [ "MrzFieldConfidences", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a6cb7397c08ad420e8559e70af8b5eedc", null ],
-    [ "Address", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#aa053c4182a0011049abe424003663617", null ],
     [ "AllCheckDigitsValid", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a65f704a16b36eba55af7d62e52a505a8", null ],
     [ "CheckDigitDateOfBirth", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#af2926ecd9909e21e745808f5c575165e", null ],
     [ "CheckDigitDateOfExpiry", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a4edf1e1a17d26935a9aa81e2f0c7a62f", null ],
@@ -13,8 +12,6 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences =
     [ "DateOfBirthObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#ac065c3bacf2081450f6513ffaefe029e", null ],
     [ "DateOfExpiry", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a6859fccd951623403601dfa8e6a89ec9", null ],
     [ "DateOfExpiryObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a4792ee95c9893b3a76bd70f6542c6093", null ],
-    [ "DateOfIssue", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a2ae76bf4028c634048a9f202a4d0de4a", null ],
-    [ "DateOfIssueObject", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a57a228c16ef41c67d6ed82a89a770c8d", null ],
     [ "DocumentNumber", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a27d51df2b3ed5a30922eb38869fc666e", null ],
     [ "DocumentType", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a50301a35c5c298f259dfc3beeb894a64", null ],
     [ "GivenNames", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_confidences.html#a9bcb56a96b00a9aea43c320a850aa48a", null ],
