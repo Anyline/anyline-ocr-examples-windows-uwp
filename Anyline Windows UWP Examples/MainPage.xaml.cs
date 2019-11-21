@@ -37,7 +37,7 @@ namespace Anyline_Windows_UWP_Examples
         public MainPage()
         {
             // We don't want to keep multiple instances of the scan views that we're navigating to.
-            NavigationCacheMode = NavigationCacheMode.Disabled;
+            NavigationCacheMode = NavigationCacheMode.Required;
             ((Frame)Window.Current.Content).CacheSize = 0;
 
             ApplicationView.GetForCurrentView().Title = "Anyline Examples";

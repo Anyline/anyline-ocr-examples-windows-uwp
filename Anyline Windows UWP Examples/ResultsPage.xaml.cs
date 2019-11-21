@@ -27,6 +27,7 @@ namespace Anyline_Windows_UWP_Examples
             base.OnNavigatedTo(e);
 
             var results = e.Parameter as Dictionary<string, object>;
+            
             if (results == null) return;
 
             var defaultMargin = new Thickness(20, 5, 20, 5);
