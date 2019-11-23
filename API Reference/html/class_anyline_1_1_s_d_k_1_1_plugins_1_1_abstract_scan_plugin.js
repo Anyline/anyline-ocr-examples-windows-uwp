@@ -2,6 +2,7 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin =
 [
     [ "AbstractScanPlugin", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a3cbae98d66bfe572c63ebaecfc486fa9", null ],
     [ "Dispose", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#aa422366f0296fba300fd53725447abaf", null ],
+    [ "GetRequiredFeatures", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#ae55bbe834a7dc708486f1cfd8b8f9b88", null ],
     [ "InvokeScanInfoReceived", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a4b9b94924ded44a93071554726067300", null ],
     [ "IsScanning", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#abf2738f4de50e4f8480b9b56c4301e37", null ],
     [ "OnAbortRun", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a032699996f96f57c516655be48797d2f", null ],
@@ -19,7 +20,7 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin =
     [ "CurrentConfidence", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#aaa9fe4c07b90144540e6a2612724081d", null ],
     [ "CurrentImage", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a70a2bd33a4967f9927a472974bf8d96a", null ],
     [ "DelayStartScanTime", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a90893f3ad0e5b8a637c7a09317f84d64", null ],
-    [ "DelayStartScanTime", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a73f4677a0192c49d20b005a5486383ae", null ],
+    [ "DelayStartScanTime", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#afd9e99e6f0f8f196fe1d803a47b7686d", null ],
     [ "ExceptionListener", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a1982a067f6d5abf7e965884d684f06f6", null ],
     [ "ID", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#aa99319e8b4831f5adc17cedc958d4854", null ],
     [ "ImageProvider", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html#a002202e71499b0037082ac98fe6b44ea", null ],

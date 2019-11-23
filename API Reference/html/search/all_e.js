@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['redrawtimeout',['RedrawTimeout',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a7b69c5acb6877e34e9ae18d2ed02ceeb',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
   ['regex',['Regex',['../struct_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_regex.html#adc00d58432180fab50663de0c1f0ad42',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrRegex']]],
-  ['releasecameraasync',['ReleaseCameraAsync',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a4050e466a2120675e98a454ae9c7c6e5',1,'Anyline.SDK.Camera.CameraView.ReleaseCameraAsync()'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a31652b1429c9575a78c73a1ab0b95c45',1,'Anyline.SDK.Modules.AnylineModuleView.ReleaseCameraAsync()']]],
-  ['releasecamerainbackground',['ReleaseCameraInBackground',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#abd31a6384fb3623e63e6441d7bbb709c',1,'Anyline.SDK.Camera.CameraView.ReleaseCameraInBackground()'],['../class_anyline_1_1_s_d_k_1_1_modules_1_1_anyline_module_view.html#a87a48aba285c0101199206ae65d5d1c6',1,'Anyline.SDK.Modules.AnylineModuleView.ReleaseCameraInBackground()']]],
+  ['releasecameraasync',['ReleaseCameraAsync',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#a4050e466a2120675e98a454ae9c7c6e5',1,'Anyline::SDK::Camera::CameraView']]],
+  ['releasecamerainbackground',['ReleaseCameraInBackground',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_camera_view.html#abd31a6384fb3623e63e6441d7bbb709c',1,'Anyline::SDK::Camera::CameraView']]],
   ['removesmallcontours',['RemoveSmallContours',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a35c3b4d0beef2f33c86862834f4e4d70',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrConfig']]],
   ['removewhitespaces',['RemoveWhiteSpaces',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#af178764f0d9cb9507400b7ecff5c1c6f',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrConfig']]],
   ['resolutionratio',['ResolutionRatio',['../struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html',1,'Anyline.SDK.Util.ResolutionRatio'],['../struct_anyline_1_1_s_d_k_1_1_util_1_1_resolution_ratio.html#a78f30ae510e36f62a339af006e874528',1,'Anyline.SDK.Util.ResolutionRatio.ResolutionRatio()']]],

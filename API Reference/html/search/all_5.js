@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['feedbackstyle',['FeedbackStyle',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a651e0287f61583d2a2dc1271316ab13b',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
   ['fieldscanoption',['FieldScanOption',['../namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d.html#aab576768a7567fac796526feb90f4502',1,'Anyline::SDK::Plugins::ID']]],
-  ['file',['File',['../namespace_anyline_1_1_s_d_k_1_1_modules_1_1_energy.html#a6f66509040a9c08394c80fbb74a63087a0b27918290ff5323bea1e3b78a9cf04e',1,'Anyline.SDK.Modules.Energy.File()'],['../namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_meter.html#abdaf720c805b3d2fd500a6a37020b2c3a0b27918290ff5323bea1e3b78a9cf04e',1,'Anyline.SDK.Plugins.Meter.File()']]],
+  ['file',['File',['../namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_meter.html#abdaf720c805b3d2fd500a6a37020b2c3a0b27918290ff5323bea1e3b78a9cf04e',1,'Anyline::SDK::Plugins::Meter']]],
   ['filetype',['FileType',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_language.html#aac81a75a57a455517c8f57b81be775c0',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrLanguage']]],
-  ['fillcolor',['FillColor',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_visual_feedback_config.html#a2e8869931befb2c7512e75d6c65f7eaf',1,'Anyline::SDK::Camera::VisualFeedbackConfig']]],
   ['flashconfig',['FlashConfig',['../class_anyline_1_1_s_d_k_1_1_views_1_1_flash_config.html',1,'Anyline.SDK.Views.FlashConfig'],['../class_anyline_1_1_s_d_k_1_1_camera_1_1_flash_view.html#a82341bb8e96423e558f9857af649c7a1',1,'Anyline.SDK.Camera.FlashView.FlashConfig()']]],
   ['flashimageauto',['FlashImageAuto',['../class_anyline_1_1_s_d_k_1_1_views_1_1_flash_config.html#ad7d7420d1a913227594c2603f4730c81',1,'Anyline::SDK::Views::FlashConfig']]],
   ['flashimageoff',['FlashImageOff',['../class_anyline_1_1_s_d_k_1_1_views_1_1_flash_config.html#a05e8f0d93d0e345d5db56391aad7d11b',1,'Anyline::SDK::Views::FlashConfig']]],

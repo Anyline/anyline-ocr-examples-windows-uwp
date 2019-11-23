@@ -5,6 +5,8 @@ using Anyline.SDK.Plugins.ID;
 using Anyline.SDK.Plugins.LicensePlate;
 using Anyline.SDK.Plugins.Meter;
 using Anyline.SDK.Plugins.Ocr;
+using Anyline.SDK.Util;
+using Anyline.SDK.ViewPlugins;
 using Anyline.SDK.Views;
 using Anyline_Windows_UWP_Examples.Model;
 using System;
@@ -35,30 +37,21 @@ namespace Anyline_Windows_UWP_Examples
         IPhotoCaptureListener
     {
         private ScanView _anylineScanView;
-        private IScanViewPlugin _scanViewPlugin;
+        private AbstractBaseScanViewPlugin _scanViewPlugin;
 
         public ScanViewPage()
         {
             // We don't want to keep multiple instances of the scan views that we're navigating to.
-            NavigationCacheMode = NavigationCacheMode.Disabled;
+            NavigationCacheMode = NavigationCacheMode.Required;
             ((Frame)Window.Current.Content).CacheSize = 0;
 
             ApplicationView.GetForCurrentView().Title = "Anyline Examples";
 
-
             this.InitializeComponent();
 
+            AnylineDebug.SetVerbosity(Verbosity.Debug);
+
             _anylineScanView = AnylineScanView;
-
-            if (_anylineScanView != null)
-            {
-                _anylineScanView.CameraView.CameraOpened += CameraView_CameraOpened;
-                _anylineScanView.CameraView.CameraClosed += CameraView_CameraClosed;
-                _anylineScanView.CameraView.CameraError += CameraView_CameraError;
-
-                Window.Current.VisibilityChanged -= Current_VisibilityChanged;
-                Window.Current.VisibilityChanged += Current_VisibilityChanged;
-            }
         }
 
         private void CameraView_CameraOpened(object sender, Size args)
@@ -67,7 +60,7 @@ namespace Anyline_Windows_UWP_Examples
 
             try
             {
-                _anylineScanView.StartScanning();
+                _anylineScanView?.StartScanning();
             }
             catch (Exception e)
             {
@@ -81,7 +74,7 @@ namespace Anyline_Windows_UWP_Examples
 
             try
             {
-                _anylineScanView.StopScanning();
+                _anylineScanView?.StopScanning();
             }
             catch (Exception e)
             {
@@ -99,23 +92,52 @@ namespace Anyline_Windows_UWP_Examples
         {
             if (args.Visible == false)
             {
-                await _anylineScanView.StopCameraAsync();
+                if (_anylineScanView != null)
+                {
+                    await _anylineScanView.StopCameraAsync();
+                }
             }
             if (args.Visible == true)
             {
-                _anylineScanView.StartCamera();
+                _anylineScanView?.StartCamera();
             }
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        protected override async void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            _anylineScanView?.StopCameraAsync();
+            
+            Window.Current.VisibilityChanged -= Current_VisibilityChanged;
+            
+            if (_anylineScanView != null)
+            {
+                _anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
+                _anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
+                _anylineScanView.CameraView.CameraError -= CameraView_CameraError;
+
+                await _anylineScanView.StopCameraAsync();
+            }
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+
+            // register events
+            if (_anylineScanView != null)
+            {
+                _anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
+                _anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
+                _anylineScanView.CameraView.CameraError -= CameraView_CameraError;
+
+                _anylineScanView.CameraView.CameraOpened += CameraView_CameraOpened;
+                _anylineScanView.CameraView.CameraClosed += CameraView_CameraClosed;
+                _anylineScanView.CameraView.CameraError += CameraView_CameraError;
+
+                Window.Current.VisibilityChanged -= Current_VisibilityChanged;
+                Window.Current.VisibilityChanged += Current_VisibilityChanged;
+            }
+
             ApplicationView.GetForCurrentView().Title = (e.Parameter as ExamplePlugin).Name;
 
             string jsonConfig = (e.Parameter as ExamplePlugin).JSONConfigFile;

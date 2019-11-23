@@ -36,7 +36,7 @@ var NAVTREE =
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
+        [ "All", "functions.html", null ],
         [ "Functions", "functions_func.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Properties", "functions_prop.html", null ],
@@ -49,10 +49,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"class_anyline_1_1_s_d_k_1_1_plugins_1_1_barcode_1_1_barcode_scan_plugin.html#aeb9620ba7dc793e01f150c0f17b4d2eb",
-"class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_mrz_field_scan_options.html#a61028632ad3b2e67733c2b4cdd660846",
-"class_anyline_1_1_s_d_k_1_1_views_1_1_cutout_config.html#a1cd104048b79d3520a6db675ea1f8283",
-"interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_scan_info_listener.html#a1eadfb2bbbb0f4e1aef16e9db1b1bc92"
+"class_anyline_1_1_s_d_k_1_1_plugins_1_1_i_d_1_1_german_i_d_front_field_scan_options.html#a457a5ec0f9c1d697666f9baec14ba8cf",
+"class_anyline_1_1_s_d_k_1_1_plugins_1_1_meter_1_1_meter_scan_view_plugin.html#a3ea1abefc08c823e4e4c0d2e33acf201",
+"class_anyline_1_1_s_d_k_1_1_views_1_1_scan_view.html#a4e498224a8fd4294e70d8fccbcb3a14b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
