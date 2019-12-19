@@ -64,37 +64,56 @@ Example for **config** for MRZ:
 
 ```json
 	{
-	"captureResolution":"1080p",
-	"cutout": {
-		"style": "rect",
-		"maxWidthPercent": "90%",
-		"maxHeightPercent": "90%",
-		"alignment": "center",
-		"strokeWidth": 2,
-		"cornerRadius": 4,
-		"strokeColor": "FFFFFF",
-		"outerColor": "000000",
-		"outerAlpha": 0.3,
-		"feedbackStrokeColor": "0099FF",
-		"cropOffset": {
-			"x": 10,
-			"y": 20
-		}
-	},
-	"flash": {
+	  "camera": {
+		"captureResolution": "1080p"
+	  },
+	  "flash": {
 		"mode": "manual",
 		"alignment": "bottom_right"
-	},
-	"beepOnResult": true,
-	"vibrateOnResult": true,
-	"blinkAnimationOnResult": true,
-	"cancelOnResult": true,
-	"visualFeedback": {
-		"style": "RECT",
-		"strokeColor": "0099FF",
-		"fillColor": "220099FF",
-		"animationDuration": 70
-		}
+	  },
+	  "viewPlugin": {
+		"plugin": {
+		  "id": "ID_PLUGIN",
+		  "idPlugin": {
+			"mrzConfig": {
+			  "mrzFieldScanOptions": {
+				"vizAddress": "optional",
+				"vizDateOfIssue": "optional"
+			  }
+			}
+		  }
+		},
+		"cutoutConfig": {
+		  "style": "rect",
+		  "maxWidthPercent": "90%",
+		  "maxHeightPercent": "90%",
+		  "alignment": "center",
+		  "strokeWidth": 2,
+		  "cornerRadius": 4,
+		  "strokeColor": "FFFFFF",
+		  "outerColor": "000000",
+		  "outerAlpha": 0.3,
+		  "cropPadding": {
+			"x": -30,
+			"y": -90
+		  },
+		  "cropOffset": {
+			"x": 0,
+			"y": 90
+		  },
+		  "feedbackStrokeColor": "0099FF"
+		},
+		"scanFeedback": {
+		  "style": "rect",
+		  "visualFeedbackRedrawTimeout": 100,
+		  "strokeColor": "0099FF",
+		  "fillColor": "220099FF",
+		  "beepOnResult": true,
+		  "vibrateOnResult": true,
+		  "strokeWidth": 2
+		},
+		"cancelOnResult": true
+	  }
 	}
 ```
 
