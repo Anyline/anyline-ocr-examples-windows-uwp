@@ -76,7 +76,6 @@ var hierarchy =
     [ "IAssetDelegate", null, [
       [ "Anyline.SDK.Plugins.AbstractScanPlugin< TScanPluginResultType >", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_abstract_scan_plugin.html", null ]
     ] ],
-    [ "Anyline.SDK.Plugins.IAssetDelegate", "interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_asset_delegate.html", null ],
     [ "Anyline.SDK.Camera.ICameraListener", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html", null ],
     [ "Anyline.SDK.Camera.ICaptureManager", "interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_capture_manager.html", [
       [ "Anyline.SDK.Camera.CaptureManager", "class_anyline_1_1_s_d_k_1_1_camera_1_1_capture_manager.html", null ]

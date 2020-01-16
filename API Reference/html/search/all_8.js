@@ -2,7 +2,6 @@ var searchData=
 [
   ['ianylinelistener',['IAnylineListener',['../interface_anyline_1_1_s_d_k_1_1_core_1_1_i_anyline_listener.html',1,'Anyline::SDK::Core']]],
   ['ianylinescanresult',['IAnylineScanResult',['../interface_anyline_1_1_s_d_k_1_1_models_1_1_i_anyline_scan_result.html',1,'Anyline::SDK::Models']]],
-  ['iassetdelegate',['IAssetDelegate',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_asset_delegate.html',1,'Anyline::SDK::Plugins']]],
   ['icameralistener',['ICameraListener',['../interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_camera_listener.html',1,'Anyline::SDK::Camera']]],
   ['icapturemanager',['ICaptureManager',['../interface_anyline_1_1_s_d_k_1_1_camera_1_1_i_capture_manager.html',1,'Anyline::SDK::Camera']]],
   ['iconfigurablecharacterconfig',['IConfigurableCharacterConfig',['../interface_anyline_1_1_s_d_k_1_1_plugins_1_1_i_configurable_character_config.html',1,'Anyline::SDK::Plugins']]],

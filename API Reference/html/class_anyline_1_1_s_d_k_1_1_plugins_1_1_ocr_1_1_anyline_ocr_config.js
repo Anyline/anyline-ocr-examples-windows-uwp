@@ -15,7 +15,6 @@ var class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config =
     [ "GetTesseractParametersAsJsonString", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a0fc95d204a5e75a4cd5a6d96dfe806cd", null ],
     [ "SetLanguages", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a575c7430bf280875befdd1905357261d", null ],
     [ "SetTesseractLanguages", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a80a7a409c0c9ac97dea8d4bad204d9a4", null ],
-    [ "ToString", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a03ed30ee1183b8fde372804e160e29e2", null ],
     [ "AllowLowerCase", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a019c3fe822dcd19c8514b55d98eec418", null ],
     [ "CharacterWhitelist", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#a7bc85ee2426515b321c3b47d607cd698", null ],
     [ "CharCountX", "class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#aabebc253a30b42c26c940c64aafe77cb", null ],

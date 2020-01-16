@@ -30,6 +30,7 @@ var searchData=
   ['anylinesdk',['AnylineSDK',['../namespace_anyline_s_d_k.html',1,'']]],
   ['arealllanguagesanyfiles',['AreAllLanguagesAnyFiles',['../class_anyline_1_1_s_d_k_1_1_plugins_1_1_ocr_1_1_anyline_ocr_config.html#aee35756f18b17d5ad966ca0a1eff6391',1,'Anyline::SDK::Plugins::Ocr::AnylineOcrConfig']]],
   ['argumentexception',['ArgumentException',['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_argument_exception.html',1,'Anyline.SDK.Core.Exceptions.ArgumentException'],['../class_anyline_1_1_s_d_k_1_1_core_1_1_exceptions_1_1_argument_exception.html#acf1c17f1d9ece20e9f1524858b13de0f',1,'Anyline.SDK.Core.Exceptions.ArgumentException.ArgumentException()']]],
+  ['asset',['Asset',['../namespace_anyline_1_1_s_d_k_1_1_asset.html',1,'Anyline::SDK']]],
   ['autofocusinterval',['AutoFocusInterval',['../class_anyline_1_1_s_d_k_1_1_camera_1_1_focus_controller.html#a88181b2f1336a030370cdb4a2521c94d',1,'Anyline::SDK::Camera::FocusController']]],
   ['barcode',['Barcode',['../namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_barcode.html',1,'Anyline::SDK::Plugins']]],
   ['camera',['Camera',['../namespace_anyline_1_1_s_d_k_1_1_camera.html',1,'Anyline::SDK']]],

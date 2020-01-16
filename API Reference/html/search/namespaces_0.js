@@ -2,6 +2,7 @@ var searchData=
 [
   ['anyline',['Anyline',['../namespace_anyline.html',1,'']]],
   ['anylinesdk',['AnylineSDK',['../namespace_anyline_s_d_k.html',1,'']]],
+  ['asset',['Asset',['../namespace_anyline_1_1_s_d_k_1_1_asset.html',1,'Anyline::SDK']]],
   ['barcode',['Barcode',['../namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_barcode.html',1,'Anyline::SDK::Plugins']]],
   ['camera',['Camera',['../namespace_anyline_1_1_s_d_k_1_1_camera.html',1,'Anyline::SDK']]],
   ['composites',['Composites',['../namespace_anyline_1_1_s_d_k_1_1_plugins_1_1_composites.html',1,'Anyline::SDK::Plugins']]],
