@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     xmlns:anyline="using:Anyline.SDK.Views">
 
-    <Grid BorderBrush="White" BorderThickness="2">
+    <Grid>
         <anyline:ScanView x:Name="AnylineScanView" />
     </Grid>
 </Page>
