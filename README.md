@@ -12,6 +12,11 @@ Anyline - A powerful OCR SDK for Windows UWP
 * `LICENSE.md` - The license file.
 
 
+## API Reference
+
+The API reference for the Anyline SDK for Windows UWP can be found here: https://documentation.anyline.com/api/windows/index.html
+
+
 ## Requirements
 
 - Windows 10 + Visual Studio 2015 with the Windows 10 SDK
