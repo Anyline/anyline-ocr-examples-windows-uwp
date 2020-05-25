@@ -91,13 +91,13 @@ namespace Anyline_Windows_UWP_Examples
             Debug.WriteLine("{0}: {1}", name, value);
             if (value != null)
             {
-                if (value is MrzIdentification
+                if (value is MRZIdentification
                     || value is DrivingLicenseIdentification
                     || value is GermanIDFrontIdentification)
                 {
                     value.CreatePropertyDictionary().ToList().ForEach(x => dict.Add(x.Key, x.Value));
                 }
-                else if (value is MrzFieldConfidences || value is GermanIDFrontFieldConfidences || value is DrivingLicenseFieldConfidences)
+                else if (value is MRZFieldConfidences || value is GermanIDFrontFieldConfidences || value is DrivingLicenseFieldConfidences)
                 {
                     value.CreatePropertyDictionary().ToList().ForEach(x => dict.Add($"{x.Key} (field confidence)", x.Value));
                 }

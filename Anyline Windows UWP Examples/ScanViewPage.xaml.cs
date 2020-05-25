@@ -4,7 +4,8 @@ using Anyline.SDK.Plugins.Barcode;
 using Anyline.SDK.Plugins.ID;
 using Anyline.SDK.Plugins.LicensePlate;
 using Anyline.SDK.Plugins.Meter;
-using Anyline.SDK.Plugins.Ocr;
+using Anyline.SDK.Plugins.OCR;
+using Anyline.SDK.Plugins.ViewPlugins;
 using Anyline.SDK.Util;
 using Anyline.SDK.ViewPlugins;
 using Anyline.SDK.Views;
@@ -33,11 +34,11 @@ namespace Anyline_Windows_UWP_Examples
         IScanResultListener<ScanResult<ID>>,
         IScanResultListener<LicensePlateScanResult>,
         IScanResultListener<MeterScanResult>,
-        IScanResultListener<OcrScanResult>,
+        IScanResultListener<OCRScanResult>,
         IPhotoCaptureListener
     {
-        private ScanView _anylineScanView;
-        private AbstractBaseScanViewPlugin _scanViewPlugin;
+        private ScanView anylineScanView;
+        private IViewPluginBase scanViewPlugin;
 
         public ScanViewPage()
         {
@@ -49,9 +50,9 @@ namespace Anyline_Windows_UWP_Examples
 
             this.InitializeComponent();
 
-            AnylineDebug.SetVerbosity(Verbosity.Debug);
+            AnylineDebug.SetVerbosity(Verbosity.Diagnostic);
 
-            _anylineScanView = AnylineScanView;
+            anylineScanView = AnylineScanView;
         }
 
         private void CameraView_CameraOpened(object sender, Size args)
@@ -60,7 +61,7 @@ namespace Anyline_Windows_UWP_Examples
 
             try
             {
-                _anylineScanView?.StartScanning();
+                anylineScanView?.StartScanning();
             }
             catch (Exception e)
             {
@@ -74,7 +75,7 @@ namespace Anyline_Windows_UWP_Examples
 
             try
             {
-                _anylineScanView?.StopScanning();
+                anylineScanView?.StopScanning();
             }
             catch (Exception e)
             {
@@ -92,14 +93,14 @@ namespace Anyline_Windows_UWP_Examples
         {
             if (args.Visible == false)
             {
-                if (_anylineScanView != null)
+                if (anylineScanView != null)
                 {
-                    await _anylineScanView.StopCameraAsync();
+                    await anylineScanView.StopCameraAsync();
                 }
             }
             if (args.Visible == true)
             {
-                _anylineScanView?.StartCamera();
+                anylineScanView?.StartCamera();
             }
         }
 
@@ -109,30 +110,34 @@ namespace Anyline_Windows_UWP_Examples
             
             Window.Current.VisibilityChanged -= Current_VisibilityChanged;
             
-            if (_anylineScanView != null)
+            if (anylineScanView != null)
             {
-                _anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
-                _anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
-                _anylineScanView.CameraView.CameraError -= CameraView_CameraError;
+                anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
+                anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
+                anylineScanView.CameraView.CameraError -= CameraView_CameraError;
 
-                await _anylineScanView.StopCameraAsync();
+                await anylineScanView.StopCameraAsync();
+
+                anylineScanView.Dispose();
             }
         }
 
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
 
-            // register events
-            if (_anylineScanView != null)
-            {
-                _anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
-                _anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
-                _anylineScanView.CameraView.CameraError -= CameraView_CameraError;
+            if (anylineScanView == null) return;
 
-                _anylineScanView.CameraView.CameraOpened += CameraView_CameraOpened;
-                _anylineScanView.CameraView.CameraClosed += CameraView_CameraClosed;
-                _anylineScanView.CameraView.CameraError += CameraView_CameraError;
+            // register events
+            if (anylineScanView != null)
+            {
+                anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
+                anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
+                anylineScanView.CameraView.CameraError -= CameraView_CameraError;
+
+                anylineScanView.CameraView.CameraOpened += CameraView_CameraOpened;
+                anylineScanView.CameraView.CameraClosed += CameraView_CameraClosed;
+                anylineScanView.CameraView.CameraError += CameraView_CameraError;
 
                 Window.Current.VisibilityChanged -= Current_VisibilityChanged;
                 Window.Current.VisibilityChanged += Current_VisibilityChanged;
@@ -141,24 +146,19 @@ namespace Anyline_Windows_UWP_Examples
             ApplicationView.GetForCurrentView().Title = (e.Parameter as ExamplePlugin).Name;
 
             string jsonConfig = (e.Parameter as ExamplePlugin).JSONConfigFile;
-            _anylineScanView?.Init("Assets/jsonConfigs/" + jsonConfig.Replace(".json", "") + ".json", MainPage.LicenseKey);
+            await anylineScanView.InitAsync("Assets/jsonConfigs/" + jsonConfig.Replace(".json", "") + ".json", MainPage.LicenseKey);
             // the correct plugin is loaded according to the .json config file informed
-            _scanViewPlugin = _anylineScanView?.ScanViewPlugin;
+            scanViewPlugin = anylineScanView.ScanViewPlugin;
 
-            /// here you need to add this class as a Result Listener for the plugin that you will use
-            (_scanViewPlugin as BarcodeScanViewPlugin)?.AddScanResultListener(this);
-            (_scanViewPlugin as IDScanViewPlugin)?.AddScanResultListener(this);
-            (_scanViewPlugin as LicensePlateScanViewPlugin)?.AddScanResultListener(this);
-            (_scanViewPlugin as MeterScanViewPlugin)?.AddScanResultListener(this);
-            (_scanViewPlugin as OcrScanViewPlugin)?.AddScanResultListener(this);
+            scanViewPlugin.AddResultListener(this);
 
-            if (_scanViewPlugin is MeterScanViewPlugin)
+            if (scanViewPlugin is PhotoCaptureViewPlugin photoCapturePlugin)
             {
-                (_scanViewPlugin as MeterScanViewPlugin).PhotoCaptureListener = this;
-                (_scanViewPlugin as MeterScanViewPlugin).PhotoCaptureTarget = PhotoCaptureTarget.File;
+                photoCapturePlugin.PhotoCaptureListener = this;
+                photoCapturePlugin.PhotoCaptureTarget = PhotoCaptureTarget.File;
             }
 
-            _anylineScanView?.StartCamera();
+            anylineScanView?.StartCamera();
         }
 
         public void OnResult(LicensePlateScanResult result)
@@ -176,7 +176,7 @@ namespace Anyline_Windows_UWP_Examples
             OpenResultsPage(result.CreatePropertyDictionary());
         }
 
-        public void OnResult(OcrScanResult result)
+        public void OnResult(OCRScanResult result)
         {
             OpenResultsPage(result.CreatePropertyDictionary());
         }

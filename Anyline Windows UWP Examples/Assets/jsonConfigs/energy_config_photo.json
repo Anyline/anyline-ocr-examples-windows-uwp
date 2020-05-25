@@ -9,9 +9,8 @@
   },
   "viewPlugin": {
     "plugin": {
-      "id": "METER_PLUGIN",
-      "meterPlugin": {
-        "scanMode": "PHOTO_CAPTURE"
+      "id": "PHOTO_PLUGIN",
+      "photoCapturePlugin": {
       }
     },
     "cutoutConfig": {
