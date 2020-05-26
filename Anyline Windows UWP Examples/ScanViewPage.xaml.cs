@@ -150,7 +150,7 @@ namespace Anyline_Windows_UWP_Examples
             // the correct plugin is loaded according to the .json config file informed
             scanViewPlugin = anylineScanView.ScanViewPlugin;
 
-            scanViewPlugin.AddResultListener(this);
+            scanViewPlugin.AddScanResultListener(this);
 
             if (scanViewPlugin is PhotoCaptureViewPlugin photoCapturePlugin)
             {
