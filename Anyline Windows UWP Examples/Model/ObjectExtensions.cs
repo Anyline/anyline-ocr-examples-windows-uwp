@@ -97,6 +97,14 @@ namespace Anyline_Windows_UWP_Examples
                 {
                     value.CreatePropertyDictionary().ToList().ForEach(x => dict.Add(x.Key, x.Value));
                 }
+                else if(value is Identification id)
+                {
+                    id.LayoutDefinition.CreatePropertyDictionary().ToList().ForEach(x => dict.Add(x.Key, x.Value));
+                    foreach (var param in id)
+                    {
+                        dict.Add(param.Key, $"{param.Value} - (Confidence: {id.FieldConfidences[param.Key]})");
+                    }
+                }
                 else if (value is MRZFieldConfidences || value is GermanIDFrontFieldConfidences || value is DrivingLicenseFieldConfidences)
                 {
                     value.CreatePropertyDictionary().ToList().ForEach(x => dict.Add($"{x.Key} (field confidence)", x.Value));

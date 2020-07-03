@@ -10,6 +10,7 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string MRZ = "Passport/MRZ";
         private static readonly string DrivingLicense = "Driving License";
         private static readonly string GermanIDFront = "German ID Front";
+        private static readonly string UniversalID = "Universal ID (alpha)";
         private static readonly string LicensePlate = "EU License Plate";
         private static readonly string UniversalSerialNumber = "Universal Serial Number";
         private static readonly string VIN = "Vehicle Identification Number";
@@ -31,6 +32,7 @@ namespace Anyline_Windows_UWP_Examples.Model
                 new ExamplePlugin(MRZ, "id_config_mrz"),
                 new ExamplePlugin(DrivingLicense, "id_config_driving_license"),
                 new ExamplePlugin(GermanIDFront, "id_config_german_id_front"),
+                new ExamplePlugin(UniversalID, "id_config_template"),
             }),
             new ExampleCategory("Vehicle", new List<ExamplePlugin>{
                 new ExamplePlugin(LicensePlate, "vehicle_config_license_plate"),
