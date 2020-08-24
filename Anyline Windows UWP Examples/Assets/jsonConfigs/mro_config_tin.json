@@ -12,7 +12,7 @@
       "ocrPlugin": {
         "tinConfig": {
           "scanMode": "flexible",
-          "enableUpsideDownScan": true
+          "upsideDownMode": "auto"
         }
       }
     },
