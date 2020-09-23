@@ -50,8 +50,6 @@ namespace Anyline_Windows_UWP_Examples
 
             this.InitializeComponent();
 
-            //AnylineDebug.SetVerbosity(Verbosity.Diagnostic);
-
             anylineScanView = AnylineScanView;
         }
 
