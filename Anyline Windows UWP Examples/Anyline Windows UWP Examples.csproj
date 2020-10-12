@@ -54,6 +54,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+	<EnableSigningChecks>false</EnableSigningChecks>  
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
