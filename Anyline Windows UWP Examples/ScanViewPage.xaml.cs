@@ -144,7 +144,7 @@ namespace Anyline_Windows_UWP_Examples
             ApplicationView.GetForCurrentView().Title = (e.Parameter as ExamplePlugin).Name;
 
             string jsonConfig = (e.Parameter as ExamplePlugin).JSONConfigFile;
-            await anylineScanView.InitAsync("Assets/jsonConfigs/" + jsonConfig.Replace(".json", "") + ".json", MainPage.LicenseKey);
+            await anylineScanView.InitAsync("Assets/jsonConfigs/" + jsonConfig.Replace(".json", "") + ".json");
             // the correct plugin is loaded according to the .json config file informed
             scanViewPlugin = anylineScanView.ScanViewPlugin;
 

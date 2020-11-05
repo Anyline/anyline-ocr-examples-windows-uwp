@@ -44,6 +44,10 @@ namespace Anyline_Windows_UWP_Examples
 
             this.InitializeComponent();
 
+            // This must be called before doing anything Anyline-related!
+            // Try/Catch this to check wheather or not your license key is valid!
+            AnylineSDK.Init(LicenseKey);
+
             // Back button functionality
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;

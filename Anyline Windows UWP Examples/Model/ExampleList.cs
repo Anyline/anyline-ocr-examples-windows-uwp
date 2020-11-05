@@ -17,7 +17,6 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string TIN = "Tire Identification Number";
         private static readonly string ShippingContainer = "Shipping Container";
         private static readonly string Barcode = "Barcode";
-        private static readonly string Bottlecap = "Bottlecap";
         private static readonly string VoucherCode = "Voucher Code";
         private static readonly string CowTag = "Cattle Tag";
 
@@ -45,7 +44,6 @@ namespace Anyline_Windows_UWP_Examples.Model
             }),
             new ExampleCategory("Others", new List<ExamplePlugin>{
                 new ExamplePlugin(Barcode, "others_config_barcode"),
-                new ExamplePlugin(Bottlecap, "others_config_bottlecap"),
                 new ExamplePlugin(VoucherCode, "others_config_voucher_code"),
                 new ExamplePlugin(CowTag, "others_config_cow_tag"),
             })

@@ -11,8 +11,7 @@
       "id": "OCR_VOUCHER_PLUGIN",
       "ocrPlugin": {
         "ocrConfig": {
-          "scanMode": "AUTO",
-          "languages": [ "Assets/anyline_capitals.traineddata" ],
+          "scanMode": "LINE",          
           "charWhitelist": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
           "validationRegex": "[A-Z0-9]{8}$",
           "minConfidence": 85
