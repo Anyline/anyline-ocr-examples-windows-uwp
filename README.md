@@ -20,8 +20,8 @@ The API reference for the Anyline SDK for Windows UWP can be found here: https:/
 ## Requirements
 
 - Windows 10 + Visual Studio 2015 with the Windows 10 SDK
-- An Windows 10 x86 device
-- An integrated or external camera/webcam (recommended: 720p and focus capability)
+- A Windows 10 x86 device
+- An integrated camera or external webcam (recommended: 1080 and focus capability)
 
 
 ## Quick Start
@@ -55,7 +55,7 @@ Make sure the Package Name in Package.appxmanifest matches the license.
 
 To generate a license key for windows, you'll need the Package Name located under `Packaging` in the `Package.appxmanifest` file of your example project.
 
-To claim a free developer / trial license, go to: [Anyline SDK Register Form](http://anyline.io/sdk-register?utm_source=githubios&utm_medium=readme&utm_campaign=examplesapp)
+To claim a free trial license, go to the [Anyline Customer Portal](https://customer.anyline.com/login)
 
 The software underlies the MIT License. As Anyline is a paid software for Commerical Projects, the License Agreement of Anyline GmbH apply, when used commercially. Please have a look at [Anyline License Agreement](https://anylinewebsiteresource.blob.core.windows.net/wordpressmedia/2015/12/ULA-AnylineSDK-August2015.pdf)
 
