@@ -67,13 +67,13 @@ namespace Anyline_Windows_UWP_Examples
             }
         }
 
-        private void CameraView_CameraClosed(object sender, bool success)
+        private async void CameraView_CameraClosed(object sender, bool success)
         {
             Debug.WriteLine($"(APP) Camera Closed: {success}");
 
             try
             {
-                anylineScanView?.StopScanning();
+                await anylineScanView?.StopScanningAsync();
             }
             catch (Exception e)
             {
@@ -106,12 +106,11 @@ namespace Anyline_Windows_UWP_Examples
         {
             base.OnNavigatedFrom(e);
             
-            Window.Current.VisibilityChanged -= Current_VisibilityChanged;
+            Window.Current.VisibilityChanged -= Current_VisibilityChanged;            
 
             if (anylineScanView != null)
             {
-
-                anylineScanView?.StopScanning();
+                await anylineScanView.StopScanningAsync();
 
                 anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
                 anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
