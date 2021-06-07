@@ -106,10 +106,12 @@ namespace Anyline_Windows_UWP_Examples
         {
             base.OnNavigatedFrom(e);
             
-            Window.Current.VisibilityChanged -= Current_VisibilityChanged;
-            
+            Window.Current.VisibilityChanged -= Current_VisibilityChanged;            
+
             if (anylineScanView != null)
             {
+                anylineScanView.StopScanning();
+
                 anylineScanView.CameraView.CameraOpened -= CameraView_CameraOpened;
                 anylineScanView.CameraView.CameraClosed -= CameraView_CameraClosed;
                 anylineScanView.CameraView.CameraError -= CameraView_CameraError;
