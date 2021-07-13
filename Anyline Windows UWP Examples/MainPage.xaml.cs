@@ -6,6 +6,7 @@ using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
+using System.Threading.Tasks;
 
 
 /*
@@ -86,7 +87,7 @@ namespace Anyline_Windows_UWP_Examples
 
             await Task.Run(() =>
             {
-                ResourceManager.Load();
+                AnylineLoader.Load();
                 Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => LoadingView.Visibility = Visibility.Collapsed);
             });
         }
