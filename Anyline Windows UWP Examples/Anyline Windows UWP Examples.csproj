@@ -97,6 +97,7 @@
     <Content Include="Assets\anyline_capitals.traineddata" />
     <Content Include="Assets\bottlecap.traineddata" />
     <Content Include="Assets\jsonConfigs\id_config_universal_id.json" />
+    <Content Include="Assets\jsonConfigs\id_config_arabic_id.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\FlashIcons\torch_auto.png" />
