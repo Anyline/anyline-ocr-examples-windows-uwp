@@ -85,7 +85,7 @@
     <Content Include="Assets\jsonConfigs\id_config_driving_license.json" />
     <Content Include="Assets\jsonConfigs\id_config_german_id_front.json" />
     <Content Include="Assets\jsonConfigs\id_config_mrz.json" />
-    <Content Include="Assets\jsonConfigs\mro_config_shipping_container.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_shipping_container_horizontal.json" />
     <Content Include="Assets\jsonConfigs\mro_config_usnr.json" />
     <Content Include="Assets\jsonConfigs\mro_config_vin.json" />
     <Content Include="Assets\jsonConfigs\others_config_barcode.json" />
@@ -98,6 +98,10 @@
     <Content Include="Assets\bottlecap.traineddata" />
     <Content Include="Assets\jsonConfigs\id_config_universal_id.json" />
     <Content Include="Assets\jsonConfigs\id_config_arabic_id.json" />
+    <Content Include="Assets\jsonConfigs\id_config_cyrillic_id.json" />
+    <Content Include="Assets\jsonConfigs\vehicle_config_license_plate_us.json" />
+    <Content Include="Assets\jsonConfigs\vehicle_config_license_plate_africa.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_shipping_container_vertical.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\FlashIcons\torch_auto.png" />

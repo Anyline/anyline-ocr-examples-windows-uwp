@@ -12,11 +12,15 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string GermanIDFront = "German ID Front";
         private static readonly string UniversalID = "Universal ID";
         private static readonly string ArabicID = "Arabic IDs";
-        private static readonly string LicensePlate = "EU License Plate";
+        private static readonly string CyrillicID = "Cyrillic IDs";
+        private static readonly string LicensePlate = "License Plates";
+        private static readonly string LicensePlateUS = "License Plates - US";
+        private static readonly string LicensePlateAfrica = "License Plates - Africa";
         private static readonly string UniversalSerialNumber = "Universal Serial Number";
         private static readonly string VIN = "Vehicle Identification Number";
         private static readonly string TIN = "Tire Identification Number";
-        private static readonly string ShippingContainer = "Shipping Container";
+        private static readonly string ShippingContainerHorizontal = "Shipping Container - Horizontal";
+        private static readonly string ShippingContainerVertical = "Shipping Container - Vertical";
         private static readonly string Barcode = "Barcode";
         private static readonly string VoucherCode = "Voucher Code";
         private static readonly string CowTag = "Cattle Tag";
@@ -31,18 +35,22 @@ namespace Anyline_Windows_UWP_Examples.Model
             new ExampleCategory("ID", new List<ExamplePlugin>{
                 new ExamplePlugin(UniversalID, "id_config_universal_id"),
                 new ExamplePlugin(ArabicID, "id_config_arabic_id"),
+                new ExamplePlugin(CyrillicID, "id_config_cyrillic_id"),
                 new ExamplePlugin(MRZ, "id_config_mrz"),
                 new ExamplePlugin(DrivingLicense, "id_config_driving_license"),
                 new ExamplePlugin(GermanIDFront, "id_config_german_id_front")                
             }),
             new ExampleCategory("Vehicle", new List<ExamplePlugin>{
                 new ExamplePlugin(LicensePlate, "vehicle_config_license_plate"),
+                new ExamplePlugin(LicensePlateUS, "vehicle_config_license_plate_us"),
+                new ExamplePlugin(LicensePlateAfrica, "vehicle_config_license_plate_africa"),
             }),
             new ExampleCategory("MRO", new List<ExamplePlugin>{
                 new ExamplePlugin(UniversalSerialNumber, "mro_config_usnr"),
                 new ExamplePlugin(VIN, "mro_config_vin"),
                 new ExamplePlugin(TIN, "mro_config_tin"),
-                new ExamplePlugin(ShippingContainer, "mro_config_shipping_container"),
+                new ExamplePlugin(ShippingContainerHorizontal, "mro_config_shipping_container_horizontal"),
+                new ExamplePlugin(ShippingContainerVertical, "mro_config_shipping_container_vertical"),
             }),
             new ExampleCategory("Others", new List<ExamplePlugin>{
                 new ExamplePlugin(Barcode, "others_config_barcode"),
