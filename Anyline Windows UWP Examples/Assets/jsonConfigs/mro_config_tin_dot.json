@@ -11,9 +11,9 @@
       "id": "TIN_ID",
       "ocrPlugin": {
         "tinConfig": {
-          "scanMode": "flexible",
+          "scanMode": "DOT",
           "upsideDownMode": "auto"
-        }
+        },
       }
     },
     "cutoutConfig": {

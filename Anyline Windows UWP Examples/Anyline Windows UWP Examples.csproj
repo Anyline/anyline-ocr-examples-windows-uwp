@@ -93,7 +93,7 @@
     <Content Include="Assets\jsonConfigs\others_config_voucher_code.json" />
     <Content Include="Assets\jsonConfigs\vehicle_config_license_plate.json" />
     <Content Include="Assets\jsonConfigs\energy_config_photo.json" />
-    <Content Include="Assets\jsonConfigs\mro_config_tin.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_tin_universal.json" />
     <Content Include="Assets\anyline_capitals.traineddata" />
     <Content Include="Assets\bottlecap.traineddata" />
     <Content Include="Assets\jsonConfigs\id_config_universal_id.json" />
@@ -102,6 +102,7 @@
     <Content Include="Assets\jsonConfigs\vehicle_config_license_plate_us.json" />
     <Content Include="Assets\jsonConfigs\vehicle_config_license_plate_africa.json" />
     <Content Include="Assets\jsonConfigs\mro_config_shipping_container_vertical.json" />
+    <Content Include="Assets\jsonConfigs\mro_config_tin_dot.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\FlashIcons\torch_auto.png" />

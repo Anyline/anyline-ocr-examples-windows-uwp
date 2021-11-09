@@ -27,10 +27,15 @@ namespace Anyline_Windows_UWP_Examples
             base.OnNavigatedTo(e);
 
             var results = e.Parameter as Dictionary<string, object>;
-            
+
             if (results == null) return;
 
             var defaultMargin = new Thickness(20, 5, 20, 5);
+
+            var foregroundColor = new SolidColorBrush(Colors.Black);
+            
+            if (Application.Current.RequestedTheme == ApplicationTheme.Dark)
+                foregroundColor = new SolidColorBrush(Colors.White);
 
             foreach (var result in results)
             {
@@ -49,7 +54,7 @@ namespace Anyline_Windows_UWP_Examples
 
                     stackResults.Children.Add(img);
                 }
-                else if(result.Value is BitmapImage bitmap)
+                else if (result.Value is BitmapImage bitmap)
                 {
                     var img = new Image()
                     {
@@ -64,7 +69,7 @@ namespace Anyline_Windows_UWP_Examples
                 }
                 else
                 {
-                    stackResults.Children.Add(new TextBlock { Text = result.Value.ToString().Replace("|", " - "), FontSize = 17, Foreground = new SolidColorBrush(Colors.Black), Margin = defaultMargin, FontWeight = FontWeights.Bold });
+                    stackResults.Children.Add(new TextBlock { Text = result.Value.ToString().Replace("|", " - "), FontSize = 17, Foreground = foregroundColor, Margin = defaultMargin, FontWeight = FontWeights.Bold });
                 }
                 stackResults.Children.Add(new Line { X1 = 0, X2 = 1, Stretch = Stretch.Fill, Stroke = new SolidColorBrush(Colors.LightGray), Margin = new Thickness(0, 10, 0, 10), StrokeThickness = 1 });
             }
