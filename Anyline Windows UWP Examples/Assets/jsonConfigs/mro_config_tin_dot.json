@@ -13,20 +13,28 @@
         "tinConfig": {
           "scanMode": "DOT",
           "upsideDownMode": "auto"
-        },
+        }
       }
     },
     "cutoutConfig": {
       "style": "rect",
-      "alignment": "top_half",
-      "maxWidthPercent": "99%",
-      "maxHeightPercent": "99%",
-      "strokeWidth": 1,
+      "width": 720,
+      "alignment": "center",
+      "maxWidthPercent": "80%",
+      "ratioFromSize": {
+        "width": 720,
+        "height": 144
+      },
+      "strokeWidth": 2,
       "strokeColor": "FFFFFF",
-      "cornerRadius": 2,
+      "cornerRadius": 4,
       "outerColor": "000000",
-      "outerAlpha": 0.3,
-      "feedbackStrokeColor": "0099FF"
+      "outerAlpha": 0.5,
+      "feedbackStrokeColor": "0099FF",
+      "offset": {
+        "x": 0,
+        "y": -15
+      }
     },
     "scanFeedback": {
       "animation": "traverse_multi",
