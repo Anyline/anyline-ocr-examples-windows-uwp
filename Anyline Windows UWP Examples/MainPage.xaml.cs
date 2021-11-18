@@ -88,7 +88,7 @@ namespace Anyline_Windows_UWP_Examples
             await Task.Run(() =>
             {
                 AnylineLoader.Load();
-                Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => LoadingView.Visibility = Visibility.Collapsed);
+                _ = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => LoadingView.Visibility = Visibility.Collapsed);
             });
         }
     }

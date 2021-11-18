@@ -18,7 +18,8 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string LicensePlateAfrica = "License Plates - Africa";
         private static readonly string UniversalSerialNumber = "Universal Serial Number";
         private static readonly string VIN = "Vehicle Identification Number";
-        private static readonly string TIN = "Tire Identification Number";
+        private static readonly string TIN_UNIVERSAL = "Tire Identification Number - Universal";
+        private static readonly string TIN_DOT = "Tire Identification Number - DOT (North America only)";
         private static readonly string ShippingContainerHorizontal = "Shipping Container - Horizontal";
         private static readonly string ShippingContainerVertical = "Shipping Container - Vertical";
         private static readonly string Barcode = "Barcode";
@@ -48,7 +49,8 @@ namespace Anyline_Windows_UWP_Examples.Model
             new ExampleCategory("MRO", new List<ExamplePlugin>{
                 new ExamplePlugin(UniversalSerialNumber, "mro_config_usnr"),
                 new ExamplePlugin(VIN, "mro_config_vin"),
-                new ExamplePlugin(TIN, "mro_config_tin"),
+                new ExamplePlugin(TIN_UNIVERSAL, "mro_config_tin_universal"),
+                new ExamplePlugin(TIN_DOT, "mro_config_tin_dot"),
                 new ExamplePlugin(ShippingContainerHorizontal, "mro_config_shipping_container_horizontal"),
                 new ExamplePlugin(ShippingContainerVertical, "mro_config_shipping_container_vertical"),
             }),
