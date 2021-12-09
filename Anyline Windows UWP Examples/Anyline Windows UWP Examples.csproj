@@ -82,8 +82,6 @@
     <None Include="Anyline Windows UWP Examples_TemporaryKey.pfx" />
     <Content Include="Assets\jsonConfigs\energy_config_analog_digital.json" />
     <Content Include="Assets\jsonConfigs\energy_config_dial.json" />
-    <Content Include="Assets\jsonConfigs\id_config_driving_license.json" />
-    <Content Include="Assets\jsonConfigs\id_config_german_id_front.json" />
     <Content Include="Assets\jsonConfigs\id_config_mrz.json" />
     <Content Include="Assets\jsonConfigs\mro_config_shipping_container_horizontal.json" />
     <Content Include="Assets\jsonConfigs\mro_config_usnr.json" />

@@ -91,9 +91,7 @@ namespace Anyline_Windows_UWP_Examples
             Debug.WriteLine("{0}: {1}", name, value);
             if (value != null)
             {
-                if (value is MRZIdentification
-                    || value is DrivingLicenseIdentification
-                    || value is GermanIDFrontIdentification)
+                if (value is MRZIdentification)
                 {
                     value.CreatePropertyDictionary().ToList().ForEach(x => dict.Add(x.Key, x.Value));
                 }
@@ -105,7 +103,7 @@ namespace Anyline_Windows_UWP_Examples
                         dict.Add(param.Key, $"{param.Value} - (Confidence: {id.FieldConfidences[param.Key]})");
                     }
                 }
-                else if (value is MRZFieldConfidences || value is GermanIDFrontFieldConfidences || value is DrivingLicenseFieldConfidences)
+                else if (value is MRZFieldConfidences)
                 {
                     value.CreatePropertyDictionary().ToList().ForEach(x => dict.Add($"{x.Key} (field confidence)", x.Value));
                 }

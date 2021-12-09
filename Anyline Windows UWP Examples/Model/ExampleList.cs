@@ -8,8 +8,6 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string DialMeter = "Dial Meter";
         private static readonly string PhotoCapture = "Photo Capture";
         private static readonly string MRZ = "Passport/MRZ";
-        private static readonly string DrivingLicense = "Driving License";
-        private static readonly string GermanIDFront = "German ID Front";
         private static readonly string UniversalID = "Universal ID";
         private static readonly string ArabicID = "Arabic IDs";
         private static readonly string CyrillicID = "Cyrillic IDs";
@@ -37,9 +35,7 @@ namespace Anyline_Windows_UWP_Examples.Model
                 new ExamplePlugin(UniversalID, "id_config_universal_id"),
                 new ExamplePlugin(ArabicID, "id_config_arabic_id"),
                 new ExamplePlugin(CyrillicID, "id_config_cyrillic_id"),
-                new ExamplePlugin(MRZ, "id_config_mrz"),
-                new ExamplePlugin(DrivingLicense, "id_config_driving_license"),
-                new ExamplePlugin(GermanIDFront, "id_config_german_id_front")                
+                new ExamplePlugin(MRZ, "id_config_mrz")
             }),
             new ExampleCategory("Vehicle", new List<ExamplePlugin>{
                 new ExamplePlugin(LicensePlate, "vehicle_config_license_plate"),
