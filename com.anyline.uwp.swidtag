@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoftwareIdentity corpus="true" name="Anyline UWP SDK v36.0" patch="false" supplemental="false" tagId="com.anyline.uwp.sdk-v36.0" tagVersion="0" version="36.0" versionScheme="semver" xml:lang="en" xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd" xmlns:SHA256="http://www.w3.org/2001/04/xmlenc#sha256" xmlns:n8060="http://csrc.nist.gov/ns/swid/2015-extensions/1.0">
+  <Entity name="Anyline GmbH" regid="https://anyline.com" role="softwareCreator licensor tagCreator distributor"/>
+  <Payload n8060:envVarPrefix="$" n8060:envVarSuffix="" n8060:pathSeparator="/">
+    <Directory location="" name="">
+      <File SHA256:hash="757da3c95a02d80bb2eefa6fe966a55bcebed0b3fa18142fe6cb704bd1abd969" name="Anyline.dll" size="10029568" version="36.0"/>
+      <File SHA256:hash="ccf924e2f9bc65849254753eb06ceaf305740b19fe1ab53699d2562bd751d9a3" name="Anyline.SDK.dll" size="63791104" version="36.0"/>
+      <File SHA256:hash="868dbdf39c73555ba708cf094c5b78eb7e0b6bf14f5b686ca7343b5b94cf5138" name="Anyline.winmd" size="14336" version="36.0"/>
+      <File SHA256:hash="83dfdab07a97f80cd8b120c047e5a4d105a9b7ba607583c944fdda2c70adf545" name="anylineexamples-windows-uwp.sln" size="1257" version="36.0"/>
+      <File SHA256:hash="a318889c06fac504a5ab6535f270c0c09d19332ad4c50322a97861286e57ed23" name="LICENSE.md" size="122035" version="36.0"/>
+      <File SHA256:hash="feb580c127d13d288d10228076eb7a15b9a89903cc637aebba8d718071f4d36c" name="README.md" size="3506" version="36.0"/>
+    </Directory>
+    <Directory location="" name="Anyline Windows UWP Examples">
+      <File SHA256:hash="fa23647939de7dbc7a216ed394c93f422813786886caaeabfa8c38ea594afa0f" name="Anyline Windows UWP Examples.csproj" size="7928" version="36.0"/>
+      <File SHA256:hash="00485cb082f2dd7bae839a693b97bbf21cdc8cd93e768518c9690f06ad57b1b7" name="Anyline Windows UWP Examples_TemporaryKey.pfx" size="2536" version="36.0"/>
+      <File SHA256:hash="e8e3f4bf9358354984d9eec3ac2402c2fe38515413f1e9d6211a0dabab3534a1" name="App.xaml" size="262" version="36.0"/>
+      <File SHA256:hash="dced8a316ae2277fc469edaf92f7bf0f2a947019819882516cd18126a7fabfda" name="App.xaml.cs" size="3794" version="36.0"/>
+      <File SHA256:hash="d956dbeabf5c760f7efbb8a9e952397c35ec6a098788a8938f3c963559cbbc04" name="MainPage.xaml" size="5316" version="36.0"/>
+      <File SHA256:hash="eb2cf73374f6c6e254b20cbb9c5570ee2e2de5fb299725fed06309aadab5923c" name="MainPage.xaml.cs" size="4510" version="36.0"/>
+      <File SHA256:hash="7de449fc359ed7f537d6d679e573fbd9cfab0348f02e1f2dc0b8e3b173598773" name="Package.appxmanifest" size="1669" version="36.0"/>
+      <File SHA256:hash="5a54576a3dfc836f82fd25776bb31d363d642c6c7a1f4e1f4aee063cda473f10" name="ResultsPage.xaml" size="814" version="36.0"/>
+      <File SHA256:hash="10f386b630ac250cd999ba47bad8d003c7c78dda139d0032f75416d440ee443e" name="ResultsPage.xaml.cs" size="3033" version="36.0"/>
+      <File SHA256:hash="99464f29a3da92adeb97bb3d90602528c5f3e862007102bc98c8ce3b1141e0f1" name="ScanViewPage.xaml" size="608" version="36.0"/>
+      <File SHA256:hash="9f70e9628a7ac9ffb28d3892c73c8a7698e817eb7480fb8eeea558ad5d5091f5" name="ScanViewPage.xaml.cs" size="7685" version="36.0"/>
+    </Directory>
+    <Directory location="Anyline Windows UWP Examples" name="Assets">
+      <File SHA256:hash="99dd6099671b2a6f7e7083bdf56532c2dcf42d3bd48359adb08cdf926b61c36a" name="anyline_capitals.traineddata" size="315369" version="36.0"/>
+      <File SHA256:hash="fc377d86711a25ceba551828350e84a0bb9834fbbef6866b12c8e3f04623f3fe" name="bottlecap.traineddata" size="304819" version="36.0"/>
+      <File SHA256:hash="05c2b12c51b62e89df2a0e35ae64f40979259bd6e55c5dfb40d460d5cf08ef25" name="LockScreenLogo.scale-200.png" size="1011" version="36.0"/>
+      <File SHA256:hash="93edabce3c51447e1cc61c5d08786386ee03bc4679ebdf1ea9e56c9c8f348749" name="SplashScreen.scale-200.png" size="27635" version="36.0"/>
+      <File SHA256:hash="08babe0a64d94037ed9e79a5cd810653b06609cf26ce30647f1550fcaf31560a" name="Square150x150Logo.scale-200.png" size="10384" version="36.0"/>
+      <File SHA256:hash="f181696031460af8e07c7c67005e3d01e9479e3a558249b44dcffdeb4ea94e29" name="Square44x44Logo.scale-200.png" size="2149" version="36.0"/>
+      <File SHA256:hash="0f6ed6cbf3685a20ee29a6d1226e90fd9cf30515cdb524e07667367b29471169" name="Square44x44Logo.targetsize-24_altform-unplated.png" size="568" version="36.0"/>
+      <File SHA256:hash="19fc1b389a4fdd0b2e1ad60ece8c3fcc998720cdc8cd83e24a2525a099f5664b" name="StoreLogo.png" size="934" version="36.0"/>
+      <File SHA256:hash="c4f865b1fbc80f402b2f42f49e581dac03c90f00baead1ef1f023fa12f3eb3db" name="Wide310x150Logo.scale-200.png" size="12499" version="36.0"/>
+    </Directory>
+    <Directory location="Anyline Windows UWP Examples/Assets" name="FlashIcons">
+      <File SHA256:hash="cf44036a3c63e613c48a5231f3a0ec673379430a188ac51f5ec295e00d977bc7" name="torch_auto.png" size="1813" version="36.0"/>
+      <File SHA256:hash="3d22f9d8682cda0bdc43b3637ba1c2f97c2a6b49ff6a9dfe5b6750c3a1b520b4" name="torch_off.png" size="1628" version="36.0"/>
+      <File SHA256:hash="1ae6add868182e940854c7da55a54d9ce4722dc50759d36e93124c441706ce7f" name="torch_on.png" size="1614" version="36.0"/>
+    </Directory>
+    <Directory location="Anyline Windows UWP Examples/Assets" name="jsonConfigs">
+      <File SHA256:hash="e4dd4b05c4133dfe5c928df6a5c0c670f89e36838dbdd8908d0b284a7687ea66" name="energy_config_analog_digital.json" size="977" version="36.0"/>
+      <File SHA256:hash="04169aa205c8376023171a9df04b49cdee9be73f7f9cc6b6bd497ecfc72c095d" name="energy_config_dial.json" size="803" version="36.0"/>
+      <File SHA256:hash="f25e4e6592686e55eb33d6d321ddb54994df27383b4609ea34bc74b4e5741be7" name="energy_config_photo.json" size="1025" version="36.0"/>
+      <File SHA256:hash="3aab6fca472eea901c6eaacfa1f71ef2b61483baeb65a9461a05ed8fa94c4390" name="id_config_arabic_id.json" size="2198" version="36.0"/>
+      <File SHA256:hash="ab15a0f3379174b81f5f41eb934ff3753d1d2c0e553db5895e12afcd64b4e364" name="id_config_cyrillic_id.json" size="3123" version="36.0"/>
+      <File SHA256:hash="cf3ce437641a5ac833e9e7aed8da2ed139d1bee7a642c021ec9ab3bc0826c1f1" name="id_config_mrz.json" size="1103" version="36.0"/>
+      <File SHA256:hash="e5b3fe3b0b0252d196b865313aa14413e6b02af22362ee67410eb7b357fa68bb" name="id_config_universal_id.json" size="4428" version="36.0"/>
+      <File SHA256:hash="9a3a42052cd4adec4909fb86845f37efc978669925ab001e408f3ea8fe80e1ae" name="mro_config_shipping_container_horizontal.json" size="1077" version="36.0"/>
+      <File SHA256:hash="77b0b6ea8193bb74ed4a5d3598fd2d953b1a24d3b6f91b9ca5f224f03f5e898b" name="mro_config_shipping_container_vertical.json" size="1050" version="36.0"/>
+      <File SHA256:hash="08a799324a9dd0413f9fa554f5c293fb011fb8395b5fa3d41063a57af033c78e" name="mro_config_tin_dot.json" size="1132" version="36.0"/>
+      <File SHA256:hash="8826165134aab63da068b35ab35d920b39108cc77089029efdbf984589642822" name="mro_config_tin_universal.json" size="1138" version="36.0"/>
+      <File SHA256:hash="420774f58ff5fd0aa8fd1e5ddf9b02ea943cc7c7f4e754a5fdfa9db46cc8e482" name="mro_config_usnr.json" size="976" version="36.0"/>
+      <File SHA256:hash="b34779f1aa5980fe7c0b04e139e2fc568759386013d6769cdf1f58b2b9575553" name="mro_config_vin.json" size="1014" version="36.0"/>
+      <File SHA256:hash="2aeb29e471037151f23bc3f371a3a89db50d6d4e74f8ae1b942a9e632eb6f014" name="others_config_barcode.json" size="897" version="36.0"/>
+      <File SHA256:hash="36a5c1bffa776292a0749f43a419856040c071522af65a21735a187a09081e90" name="others_config_cow_tag.json" size="1095" version="36.0"/>
+      <File SHA256:hash="8587b03d10ea380816b42a9a8b9ac586b67c28b37aafc378cf53752b8cceac9a" name="others_config_voucher_code.json" size="1136" version="36.0"/>
+      <File SHA256:hash="c6c03a77c525edf92b148a2c64ffcf6f0bb415837727538144e7c3b01d542379" name="vehicle_config_license_plate.json" size="1006" version="36.0"/>
+      <File SHA256:hash="679418e3096c80c9222b166fecb212dbd3d814820c9374395638b29958091c0c" name="vehicle_config_license_plate_africa.json" size="1035" version="36.0"/>
+      <File SHA256:hash="854516822ec594d6bbf06db890dbee25cec2cf0a40ce4d372955f1e6544ff119" name="vehicle_config_license_plate_us.json" size="1041" version="36.0"/>
+    </Directory>
+    <Directory location="Anyline Windows UWP Examples" name="Model">
+      <File SHA256:hash="5970d9c28a35f8609d08f354399ca22be6ba2acafdbbb34d05efe39b0e62e339" name="ExampleCategory.cs" size="816" version="36.0"/>
+      <File SHA256:hash="e14c860917fc3476bb9e90628174737c739cfb7efc4a4009542cbfd94cc34d14" name="ExampleList.cs" size="3591" version="36.0"/>
+      <File SHA256:hash="ca53db32c2692045d5da98a5d4540ed66a7a2986ce5b3f6bed63a517f15a012d" name="ExamplePlugin.cs" size="343" version="36.0"/>
+      <File SHA256:hash="1483c5631ad5b0fd7959116956efef54b48ebc10c0b8cc4c42bd40b8aef77550" name="ObjectExtensions.cs" size="4538" version="36.0"/>
+    </Directory>
+    <Directory location="Anyline Windows UWP Examples" name="Properties">
+      <File SHA256:hash="07d8b414a40b7b979fafffa59644b692f83488b488f92b8dd5cb3127df092eda" name="AssemblyInfo.cs" size="1076" version="36.0"/>
+      <File SHA256:hash="55f3a7334f63f736f217e76629065b10fc987c6112f0948557b84f67f8b1581e" name="Default.rd.xml" size="1243" version="36.0"/>
+    </Directory>
+  </Payload>
+</SoftwareIdentity>
