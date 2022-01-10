@@ -4,7 +4,7 @@
   <Payload n8060:envVarPrefix="$" n8060:envVarSuffix="" n8060:pathSeparator="/">
     <Directory location="" name="">
       <File SHA256:hash="757da3c95a02d80bb2eefa6fe966a55bcebed0b3fa18142fe6cb704bd1abd969" name="Anyline.dll" size="10029568" version="36.0"/>
-      <File SHA256:hash="ccf924e2f9bc65849254753eb06ceaf305740b19fe1ab53699d2562bd751d9a3" name="Anyline.SDK.dll" size="63791104" version="36.0"/>
+      <File SHA256:hash="21c552b1f06b749d99604d252cd971a2ecacf2196e792a1b82665820c1584a16" name="Anyline.SDK.dll" size="63791104" version="36.0"/>
       <File SHA256:hash="868dbdf39c73555ba708cf094c5b78eb7e0b6bf14f5b686ca7343b5b94cf5138" name="Anyline.winmd" size="14336" version="36.0"/>
       <File SHA256:hash="83dfdab07a97f80cd8b120c047e5a4d105a9b7ba607583c944fdda2c70adf545" name="anylineexamples-windows-uwp.sln" size="1257" version="36.0"/>
       <File SHA256:hash="a318889c06fac504a5ab6535f270c0c09d19332ad4c50322a97861286e57ed23" name="LICENSE.md" size="122035" version="36.0"/>
