@@ -5,8 +5,8 @@ using Anyline.SDK.Plugins.ID;
 using Anyline.SDK.Plugins.LicensePlate;
 using Anyline.SDK.Plugins.Meter;
 using Anyline.SDK.Plugins.OCR;
+using Anyline.SDK.Plugins.Tire;
 using Anyline.SDK.Plugins.ViewPlugins;
-using Anyline.SDK.Util;
 using Anyline.SDK.ViewPlugins;
 using Anyline.SDK.Views;
 using Anyline_Windows_UWP_Examples.Model;
@@ -35,6 +35,7 @@ namespace Anyline_Windows_UWP_Examples
         IScanResultListener<LicensePlateScanResult>,
         IScanResultListener<MeterScanResult>,
         IScanResultListener<OCRScanResult>,
+        IScanResultListener<TireScanResult>,
         IPhotoCaptureListener
     {
         private ScanView anylineScanView;
@@ -186,6 +187,11 @@ namespace Anyline_Windows_UWP_Examples
             OpenResultsPage(result.CreatePropertyDictionary());
         }
 
+        public void OnResult(TireScanResult result)
+        {
+            OpenResultsPage(result.CreatePropertyDictionary());
+        }
+
         private void OpenResultsPage(Dictionary<string, object> dictionary)
         {
             /// in our example app, we dynamically extract result values from the object via reflection.
@@ -210,5 +216,6 @@ namespace Anyline_Windows_UWP_Examples
             result.Add("Image result", bitmapImage);
             (Window.Current.Content as Frame).Navigate(typeof(ResultsPage), result);
         }
+
     }
 }

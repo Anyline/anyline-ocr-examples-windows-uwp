@@ -1,6 +1,6 @@
 ﻿{
   "camera": {
-    "captureResolution": "720"
+    "captureResolution": "1080"
   },
   "flash": {
     "mode": "manual",
@@ -9,10 +9,8 @@
   "viewPlugin": {
     "plugin": {
       "id": "TIN_ID",
-      "ocrPlugin": {
-        "tinConfig": {
-          "scanMode": "UNIVERSAL",
-          "upsideDownMode": "auto"
+      "tirePlugin": {
+        "commercialTireIdConfig": {
         }
       }
     },
