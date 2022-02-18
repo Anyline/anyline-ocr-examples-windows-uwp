@@ -18,6 +18,8 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string VIN = "Vehicle Identification Number";
         private static readonly string TIN_UNIVERSAL = "Tire Identification Number - Universal";
         private static readonly string TIN_DOT = "Tire Identification Number - DOT (North America only)";
+        private static readonly string TIRE_SIZE = "Tire Size";
+        private static readonly string COMMERCIAL_TIRE_ID = "Commercial Tire ID";
         private static readonly string ShippingContainerHorizontal = "Shipping Container - Horizontal";
         private static readonly string ShippingContainerVertical = "Shipping Container - Vertical";
         private static readonly string Barcode = "Barcode";
@@ -41,12 +43,16 @@ namespace Anyline_Windows_UWP_Examples.Model
                 new ExamplePlugin(LicensePlate, "vehicle_config_license_plate"),
                 new ExamplePlugin(LicensePlateUS, "vehicle_config_license_plate_us"),
                 new ExamplePlugin(LicensePlateAfrica, "vehicle_config_license_plate_africa"),
+                new ExamplePlugin(VIN, "mro_config_vin"),
+            }),
+            new ExampleCategory("Tire", new List<ExamplePlugin>{
+                new ExamplePlugin(TIN_UNIVERSAL, "tin_universal"),
+                new ExamplePlugin(TIN_DOT, "tin_dot"),
+                new ExamplePlugin(TIRE_SIZE, "tire_size"),
+                new ExamplePlugin(COMMERCIAL_TIRE_ID, "commercial_tire_id"),
             }),
             new ExampleCategory("MRO", new List<ExamplePlugin>{
                 new ExamplePlugin(UniversalSerialNumber, "mro_config_usnr"),
-                new ExamplePlugin(VIN, "mro_config_vin"),
-                new ExamplePlugin(TIN_UNIVERSAL, "mro_config_tin_universal"),
-                new ExamplePlugin(TIN_DOT, "mro_config_tin_dot"),
                 new ExamplePlugin(ShippingContainerHorizontal, "mro_config_shipping_container_horizontal"),
                 new ExamplePlugin(ShippingContainerVertical, "mro_config_shipping_container_vertical"),
             }),
