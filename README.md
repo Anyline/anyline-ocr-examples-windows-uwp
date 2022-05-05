@@ -128,6 +128,19 @@ Example for **config** for MRZ:
 For a detailed implementation guide, follow the Windows implementation guide on the [Anyline documentation](https://documentation.anyline.com) website.
 
 
+## Get Help (Support)
+
+We don't actively monitor the Github Issues, please raise a support request using the [Anyline Helpdesk](https://anyline.atlassian.net/servicedesk/customer/portal/2/group/6).
+When raising a support request based on this Github Issue, please fill out and include the following information:
+
+```
+Support request concerning Anyline Github Repository: anyline-ocr-flutterexamples-windows-uwp
+```
+
+Thank you!
+
+
+
 ## License
 
 See LICENSE file.
