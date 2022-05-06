@@ -23,8 +23,6 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string ShippingContainerHorizontal = "Shipping Container - Horizontal";
         private static readonly string ShippingContainerVertical = "Shipping Container - Vertical";
         private static readonly string Barcode = "Barcode";
-        private static readonly string VoucherCode = "Voucher Code";
-        private static readonly string CowTag = "Cattle Tag";
 
         public static List<ExampleCategory> Items { get; } = new List<ExampleCategory>
         {
@@ -57,9 +55,7 @@ namespace Anyline_Windows_UWP_Examples.Model
                 new ExamplePlugin(ShippingContainerVertical, "mro_config_shipping_container_vertical"),
             }),
             new ExampleCategory("Others", new List<ExamplePlugin>{
-                new ExamplePlugin(Barcode, "others_config_barcode"),
-                new ExamplePlugin(VoucherCode, "others_config_voucher_code"),
-                new ExamplePlugin(CowTag, "others_config_cow_tag"),
+                new ExamplePlugin(Barcode, "others_config_barcode")
             })
         };
     }
