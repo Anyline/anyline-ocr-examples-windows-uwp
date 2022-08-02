@@ -18,7 +18,7 @@ namespace Anyline_Windows_UWP_Examples.Model
         private static readonly string VIN = "Vehicle Identification Number";
         private static readonly string TIN_UNIVERSAL = "Tire Identification Number - Universal";
         private static readonly string TIN_DOT = "Tire Identification Number - DOT (North America only)";
-        private static readonly string TIRE_SIZE = "Tire Size";
+        private static readonly string TIRE_SIZE = "Tire Size Specifications";
         private static readonly string COMMERCIAL_TIRE_ID = "Commercial Tire ID";
         private static readonly string ShippingContainerHorizontal = "Shipping Container - Horizontal";
         private static readonly string ShippingContainerVertical = "Shipping Container - Vertical";
