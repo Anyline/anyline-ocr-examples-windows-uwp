@@ -1,0 +1,42 @@
+﻿<Page
+    x:Class="AnylineExamples.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AnylineExamples"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UWPToolKIT="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="RootGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="11"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListView x:Name="ExampleListView" Grid.Column="0" Visibility="Collapsed" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></ListView>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Name="ScanButton" Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="6" FontWeight="Bold" IsEnabled="False">(Select an example)</Button>
+            <ScrollViewer Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" VerticalScrollBarVisibility="Visible">
+                <TextBox Name="JSONConfigTextBox" AcceptsReturn="True" PlaceholderText="Edit JSON config here"></TextBox>
+            </ScrollViewer>
+        </Grid>
+        
+        <UWPToolKIT:GridSplitter Grid.Column="1" HorizontalAlignment="Center" Width="11" ResizeBehavior="BasedOnAlignment" ResizeDirection="Columns">
+            <UWPToolKIT:GridSplitter.Element>
+                <TextBlock HorizontalAlignment="Center" Text="" IsHitTestVisible="False" VerticalAlignment="Center" Foreground="Black" FontFamily="Segoe MDL2 Assets"/>
+            </UWPToolKIT:GridSplitter.Element>
+        </UWPToolKIT:GridSplitter>
+        <Grid x:Name="LoadingView" Grid.ColumnSpan="3" Background="#CC000000" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <ProgressRing IsActive="True" Foreground="White" VerticalAlignment="Center" Width="30" Height="30" />
+                <TextBlock Text="Loading assets, please wait..." Margin="20,0,0,0" Foreground="White" VerticalAlignment="Center" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
