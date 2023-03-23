@@ -10,12 +10,11 @@
     "pluginConfig": {
       "id": "Voucher Codes",
       "ocrConfig": {
-        "scanMode": "line",
+        "scanMode": "LINE",
         "charWhitelist": "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
         "validationRegex": "[A-Z0-9]{8}$",
         "minConfidence": 85
-      },
-      "cancelOnResult": true
+      }
     },
     "cutoutConfig": {
       "style": "rect",
@@ -34,7 +33,7 @@
       "outerAlpha": 0.3,
       "feedbackStrokeColor": "0099FF"
     },
-    "scanFeedbackConfig": {
+    "scanFeedback": {
       "style": "contour_point",
       "strokeWidth": 3,
       "strokeColor": "0099FF",
@@ -42,6 +41,7 @@
       "beepOnResult": true,
       "vibrateOnResult": true,
       "blinkAnimationOnResult": true
-    }
+    },
+    "cancelOnResult": true
   }
 }
