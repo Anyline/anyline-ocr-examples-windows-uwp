@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnylineExamples.Utility;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -56,18 +57,24 @@ namespace AnylineExamples
             SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
 
             this.InitializeComponent();
+            
+            bool initSuccess = false;
 
             // Initialize Anyline SDK asynchronously and hide loading display upon completion
             Task.Run((Action)(() =>
             {
                 try
                 {
-                    // Check out our documentation on how to acquire a license key for your app!
-					// Please visit https://documentation-preview.anyline.com/main-component/license-key-generation.html
-                    const string licenseKey = "<insert your license key here>";
-
-                    // This has to be done once per app lifetime, otherwise Anyline will not scan.
-                    AnylineSDK.Init(licenseKey);
+                    DirectoryInfo executingDirectoryInfo = new DirectoryInfo(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location));
+                    var licenseKeyPath = Path.Combine(executingDirectoryInfo.Parent.FullName, "licensekey.txt");
+                    
+                    string licenseKey = LicenseKeyHelper.ReadLicenseKeyFromFile(Dispatcher, licenseKeyPath);
+                    if (!string.IsNullOrEmpty(licenseKey))
+                    {
+                        // This has to be done once per app lifetime, otherwise Anyline will not scan.
+                        AnylineSDK.Init(licenseKey);
+                        initSuccess = true;
+                    }
                 }
                 catch(Exception e)
                 {
@@ -82,7 +89,7 @@ namespace AnylineExamples
                     _ = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                     {
                         LoadingView.Visibility = Visibility.Collapsed;
-                        ExampleListView.Visibility = Visibility.Visible;
+                        ExampleListView.Visibility = initSuccess ? Visibility.Visible : Visibility.Collapsed;
                     });
                 }
             }));
