@@ -12,15 +12,15 @@ Anyline - A powerful OCR SDK for Windows UWP
 
 ## API Reference
 
-The API reference for the Anyline SDK for Windows UWP can be found here: https://documentation-preview.anyline.com/windows-sdk-component/43.0.0/_attachments/apidoc/html/index.html
+The API reference for the Anyline SDK for Windows UWP can be found here: https://documentation.anyline.com/windows-sdk-component/latest/_attachments/apidoc/html/index.html
 
 ## Getting Started
 
-Check out our getting-started section here: https://documentation-preview.anyline.com/windows-sdk-component/43.0.0/getting-started.html
+Check out our getting-started section here: https://documentation.anyline.com/windows-sdk-component/latest/getting-started.html
 
 ## Documentation
 
-Check out our developer guide here: https://documentation-preview.anyline.com/windows-sdk-component/43.0.0/index.html
+Check out our developer guide here: https://documentation.anyline.com/windows-sdk-component/latest/index.html
 
 ## License
 
