@@ -4,13 +4,14 @@
   },
   "flashConfig": {
     "mode": "manual",
-    "alignment": "bottom_right"
+    "alignment": "top_right"
   },
   "viewPluginConfig": {
     "pluginConfig": {
       "id": "ID|MRZ & Passports",
       "cancelOnResult": true,
       "mrzConfig": {
+        "faceDetectionEnabled": true,
         "mrzFieldScanOptions": {
           "vizAddress": "optional",
           "vizDateOfIssue": "optional"
@@ -20,7 +21,6 @@
       }
     },
     "cutoutConfig": {
-      "style": "rect",
       "maxWidthPercent": "90%",
       "maxHeightPercent": "90%",
       "alignment": "center",

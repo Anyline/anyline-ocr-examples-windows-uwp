@@ -1,11 +1,11 @@
-﻿{
+{
   "cameraConfig": {
     "captureResolution": "1080p",
     "pictureResolution": "1080p"
   },
   "flashConfig": {
     "mode": "manual",
-    "alignment": "bottom_left"
+    "alignment": "top_left"
   },
   "viewPluginCompositeConfig": {
     "id": "Workflows|License Plate / DrivingLicense / VIN (sequential)",
@@ -20,7 +20,6 @@
             }
           },
           "cutoutConfig": {
-            "style": "rect",
             "maxWidthPercent": "80%",
             "maxHeightPercent": "80%",
             "alignment": "top_half",
@@ -59,7 +58,6 @@
             }
           },
           "cutoutConfig": {
-            "style": "rect",
             "maxWidthPercent": "99%",
             "maxHeightPercent": "100%",
             "alignment": "center",
@@ -79,7 +77,7 @@
             "style": "CONTOUR_POINT",
             "strokeColor": "0099FF",
             "strokeWidth": 2,
-            "blinkOnResult": true,
+            "blinkAnimationOnResult": true,
             "beepOnResult": true,
             "vibrateOnResult": true
           }
@@ -92,7 +90,6 @@
             "vinConfig": {}
           },
           "cutoutConfig": {
-            "style": "rect",
             "maxWidthPercent": "70%",
             "alignment": "top_half",
             "ratioFromSize": {

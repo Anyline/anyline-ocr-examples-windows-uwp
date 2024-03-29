@@ -7,7 +7,7 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="AnylineExamplesUWP"
+    Name="AnylineExamplesApp.Windows"
     Publisher="CN=sperl"
     Version="1.0.0.0" />
 

@@ -170,6 +170,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="JsonSchema.Net">
+      <Version>6.0.7</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.14</Version>
     </PackageReference>
@@ -208,7 +211,7 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>if exist "$(ProjectDir)..\..\"licensekey.txt xcopy "$(ProjectDir)..\..\"licensekey.txt "$(TargetDir)AppX\" /y</PostBuildEvent>
+    <PostBuildEvent>if exist "$(ProjectDir)..\"licensekey.txt xcopy "$(ProjectDir)..\"licensekey.txt "$(TargetDir)AppX\" /y</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

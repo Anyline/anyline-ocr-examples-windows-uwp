@@ -92,7 +92,7 @@ namespace AnylineExamples
             }
             catch(Exception e)
             {
-                Debug.WriteLine("Unable to initialize Anyline: " + e.Message + e.InnerException != null ? $" ({e.InnerException.Message})" : "");
+                Debug.WriteLine("Unable to initialize Anyline: " + e.Message + ((e.InnerException != null) ? $" ({e.InnerException.Message})" : ""));
 
                     MessageDialog dialog = new MessageDialog(e.ToString(), e.GetType().Name);
                     await dialog.ShowAsync();
