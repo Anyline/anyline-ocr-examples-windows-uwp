@@ -5,15 +5,14 @@
   },
   "flashConfig": {
     "mode": "manual",
-    "alignment": "bottom_right",
-    "imageOn": "flash_on",
-    "imageOff": "flash_off"
+    "alignment": "top_right"
   },
   "viewPluginConfig": {
     "pluginConfig": {
       "id": "ID|Universal IDs",
       "cancelOnResult": true,
       "universalIdConfig": {
+        "faceDetectionEnabled": true,
         "allowedLayouts": {
           "mrz": [],
           "drivingLicense": [],
@@ -23,7 +22,6 @@
       }
     },
     "cutoutConfig": {
-      "style": "animated_rect",
       "maxWidthPercent": "90%",
       "maxHeightPercent": "90%",
       "alignment": "center",
@@ -47,7 +45,7 @@
       "feedbackStrokeColor": "0099FF"
     },
     "scanFeedbackConfig": {
-      "style": "CONTOUR_RECT",
+      "style": "contour_rect",
       "visualFeedbackRedrawTimeout": 100,
       "strokeColor": "0099FF",
       "fillColor": "220099FF",

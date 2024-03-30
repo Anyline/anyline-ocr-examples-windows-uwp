@@ -8,8 +8,8 @@
     "alignment": "top_right"
   },
   "viewPluginCompositeConfig": {
-    "id": "Workflows|Meter & Barcode (parallel)",
-    "processingMode": "parallel",
+    "id": "Workflows|Meter & Barcode (parallelFirst)",
+    "processingMode": "parallelFirstScan",
     "viewPlugins": [
       {
         "viewPluginConfig": {
